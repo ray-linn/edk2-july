@@ -1,0 +1,1 @@
+  d:\myedk2\edk2\MdeModulePkg\Library\PiSmmCoreMemoryAllocationLib\MemoryAllocationLib.c d:\myedk2\edk2\MdeModulePkg\Library\PiSmmCoreMemoryAllocationLib\PiSmmCoreMemoryProfileLibNull.c

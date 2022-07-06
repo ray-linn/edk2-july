@@ -1,0 +1,1 @@
+  d:\myedk2\edk2\OvmfPkg\Library\LockBoxLib\LockBoxLib.c d:\myedk2\edk2\OvmfPkg\Library\LockBoxLib\LockBoxDxe.c

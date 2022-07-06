@@ -1,0 +1,1 @@
+  d:\myedk2\edk2\OvmfPkg\Library\VmgExitLib\VmgExitVcHandler.c d:\myedk2\edk2\OvmfPkg\Library\VmgExitLib\VmTdExitVeHandler.c d:\myedk2\edk2\OvmfPkg\Library\VmgExitLib\SecVmgExitVcHandler.c d:\myedk2\edk2\OvmfPkg\Library\VmgExitLib\VmgExitLib.c

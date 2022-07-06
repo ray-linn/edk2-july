@@ -1,0 +1,1 @@
+  d:\myedk2\edk2\MdeModulePkg\Library\LzmaCustomDecompressLib\Sdk\C\LzFind.c d:\myedk2\edk2\MdeModulePkg\Library\LzmaCustomDecompressLib\Sdk\C\LzmaDec.c

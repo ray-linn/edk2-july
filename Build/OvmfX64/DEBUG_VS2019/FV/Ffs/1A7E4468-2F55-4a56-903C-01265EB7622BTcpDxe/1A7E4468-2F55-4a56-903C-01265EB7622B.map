@@ -1,0 +1,841 @@
+ TcpDxe
+
+ Timestamp is 62c3c28f (Tue Jul  5 12:48:15 2022)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 000001d8H .text                   CODE
+ 0001:000001d8 0000d949H .text$mn                CODE
+ 0002:00000000 000045b0H .rdata                  DATA
+ 0002:000045b0 00000020H .rdata$voltmd           DATA
+ 0002:000045d0 0000012cH .rdata$zzzdbg           DATA
+ 0003:00000000 00000388H .data                   DATA
+ 0003:00000388 00000054H .bss                    DATA
+ 0004:00000000 00000924H .pdata                  DATA
+ 0005:00000000 000004c0H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __ImageBase                0000000000000000     <linker-defined>
+ 0001:00000000       InternalMemCopyMem         00000000000002c0     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000040       InternalMemZeroMem         0000000000000300     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000060       InternalMemCompareMem      0000000000000320     BaseMemoryLibRepStr:CompareMem.obj
+ 0001:00000080       InternalMemSetMem          0000000000000340     BaseMemoryLibRepStr:SetMem.obj
+ 0001:000000a0       InternalMemSetMem64        0000000000000360     BaseMemoryLibRepStr:SetMem64.obj
+ 0001:000000c0       InternalMemSetMem32        0000000000000380     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:000000e0       CpuPause                   00000000000003a0     BaseLib:CpuPause.obj
+ 0001:000000f0       TdVmCall                   00000000000003b0     BaseLib:TdVmcall.obj
+ 0001:00000180       TdCall                     0000000000000440     BaseLib:TdCall.obj
+ 0001:000001d8       _DriverUnloadHandler       0000000000000498 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:0000035c       _ModuleEntryPoint          000000000000061c f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:000003d8       ProcessLibraryConstructorList 0000000000000698 f   TcpDxe:AutoGen.obj
+ 0001:000005e8       ProcessModuleEntryPointList 00000000000008a8 f   TcpDxe:AutoGen.obj
+ 0001:0000076c       TcpDestroyTimer            0000000000000a2c f   TcpDxe:TcpDriver.obj
+ 0001:000007e0       TcpCreateService           0000000000000aa0 f   TcpDxe:TcpDriver.obj
+ 0001:00000a84       TcpDestroyChildEntryInHandleBuffer 0000000000000d44 f   TcpDxe:TcpDriver.obj
+ 0001:00000b20       TcpDestroyService          0000000000000de0 f   TcpDxe:TcpDriver.obj
+ 0001:00000cf8       Tcp4DriverBindingSupported 0000000000000fb8 f   TcpDxe:TcpDriver.obj
+ 0001:00000d7c       Tcp4DriverBindingStart     000000000000103c f   TcpDxe:TcpDriver.obj
+ 0001:00000db8       Tcp4DriverBindingStop      0000000000001078 f   TcpDxe:TcpDriver.obj
+ 0001:00000dd8       Tcp6DriverBindingSupported 0000000000001098 f   TcpDxe:TcpDriver.obj
+ 0001:00000e5c       Tcp6DriverBindingStart     000000000000111c f   TcpDxe:TcpDriver.obj
+ 0001:00000e98       Tcp6DriverBindingStop      0000000000001158 f   TcpDxe:TcpDriver.obj
+ 0001:00000eb8       TcpCreateSocketCallback    0000000000001178 f   TcpDxe:TcpDriver.obj
+ 0001:00000fa8       TcpDestroySocketCallback   0000000000001268 f   TcpDxe:TcpDriver.obj
+ 0001:00001014       TcpServiceBindingCreateChild 00000000000012d4 f   TcpDxe:TcpDriver.obj
+ 0001:0000113c       TcpServiceBindingDestroyChild 00000000000013fc f   TcpDxe:TcpDriver.obj
+ 0001:00001228       Tcp4GetModeData            00000000000014e8 f   TcpDxe:TcpMain.obj
+ 0001:000012d4       Tcp4Configure              0000000000001594 f   TcpDxe:TcpMain.obj
+ 0001:00001480       Tcp4Routes                 0000000000001740 f   TcpDxe:TcpMain.obj
+ 0001:00001580       Tcp4Connect                0000000000001840 f   TcpDxe:TcpMain.obj
+ 0001:000015f0       Tcp4Accept                 00000000000018b0 f   TcpDxe:TcpMain.obj
+ 0001:00001660       Tcp4Transmit               0000000000001920 f   TcpDxe:TcpMain.obj
+ 0001:00001714       Tcp4Receive                00000000000019d4 f   TcpDxe:TcpMain.obj
+ 0001:000017c8       Tcp4Close                  0000000000001a88 f   TcpDxe:TcpMain.obj
+ 0001:0000183c       Tcp4Cancel                 0000000000001afc f   TcpDxe:TcpMain.obj
+ 0001:000018a0       Tcp4Poll                   0000000000001b60 f   TcpDxe:TcpMain.obj
+ 0001:00001904       Tcp6GetModeData            0000000000001bc4 f   TcpDxe:TcpMain.obj
+ 0001:000019b0       Tcp6Configure              0000000000001c70 f   TcpDxe:TcpMain.obj
+ 0001:00001b4c       Tcp6Connect                0000000000001e0c f   TcpDxe:TcpMain.obj
+ 0001:00001bbc       Tcp6Accept                 0000000000001e7c f   TcpDxe:TcpMain.obj
+ 0001:00001c2c       Tcp6Transmit               0000000000001eec f   TcpDxe:TcpMain.obj
+ 0001:00001ce0       Tcp6Receive                0000000000001fa0 f   TcpDxe:TcpMain.obj
+ 0001:00001d94       Tcp6Close                  0000000000002054 f   TcpDxe:TcpMain.obj
+ 0001:00001e08       Tcp6Cancel                 00000000000020c8 f   TcpDxe:TcpMain.obj
+ 0001:00001e6c       Tcp6Poll                   000000000000212c f   TcpDxe:TcpMain.obj
+ 0001:00001ed0       SockTokenExisted           0000000000002190 f   TcpDxe:SockInterface.obj
+ 0001:00001f74       SockBufferToken            0000000000002234 f   TcpDxe:SockInterface.obj
+ 0001:00001ff4       SockDestroyChild           00000000000022b4 f   TcpDxe:SockInterface.obj
+ 0001:000021e4       SockCreateChild            00000000000024a4 f   TcpDxe:SockInterface.obj
+ 0001:00002300       SockConfigure              00000000000025c0 f   TcpDxe:SockInterface.obj
+ 0001:000023a8       SockConnect                0000000000002668 f   TcpDxe:SockInterface.obj
+ 0001:00002470       SockAccept                 0000000000002730 f   TcpDxe:SockInterface.obj
+ 0001:00002604       SockSend                   00000000000028c4 f   TcpDxe:SockInterface.obj
+ 0001:000027a8       SockRcv                    0000000000002a68 f   TcpDxe:SockInterface.obj
+ 0001:00002928       SockFlush                  0000000000002be8 f   TcpDxe:SockInterface.obj
+ 0001:00002a04       SockClose                  0000000000002cc4 f   TcpDxe:SockInterface.obj
+ 0001:00002afc       SockCancel                 0000000000002dbc f   TcpDxe:SockInterface.obj
+ 0001:00002c50       TcpInitTcbLocal            0000000000002f10 f   TcpDxe:TcpMisc.obj
+ 0001:00002cd4       TcpInitTcbPeer             0000000000002f94 f   TcpDxe:TcpMisc.obj
+ 0001:00002e4c       TcpIsIpEqual               000000000000310c f   TcpDxe:TcpMisc.obj
+ 0001:00002ea8       TcpIsIpZero                0000000000003168 f   TcpDxe:TcpMisc.obj
+ 0001:00002f00       TcpFindTcbByPeer           00000000000031c0 f   TcpDxe:TcpMisc.obj
+ 0001:00002fe4       TcpLocateTcb               00000000000032a4 f   TcpDxe:TcpMisc.obj
+ 0001:000031ec       TcpInsertTcb               00000000000034ac f   TcpDxe:TcpMisc.obj
+ 0001:000032c8       TcpCloneTcb                0000000000003588 f   TcpDxe:TcpMisc.obj
+ 0001:000033b0       TcpGetRcvMss               0000000000003670 f   TcpDxe:TcpMisc.obj
+ 0001:000034f0       TcpSetState                00000000000037b0 f   TcpDxe:TcpMisc.obj
+ 0001:00003678       TcpChecksum                0000000000003938 f   TcpDxe:TcpMisc.obj
+ 0001:00003778       TcpFormatNetbuf            0000000000003a38 f   TcpDxe:TcpMisc.obj
+ 0001:00003884       TcpResetConnection         0000000000003b44 f   TcpDxe:TcpMisc.obj
+ 0001:00003998       TcpInstallDevicePath       0000000000003c58 f   TcpDxe:TcpMisc.obj
+ 0001:00003b2c       TcpRxCallback              0000000000003dec f   TcpDxe:TcpIo.obj
+ 0001:00003b5c       TcpSendIpPacket            0000000000003e1c f   TcpDxe:TcpIo.obj
+ 0001:00003d24       Tcp4GetMode                0000000000003fe4 f   TcpDxe:TcpDispatcher.obj
+ 0001:00003f14       Tcp6GetMode                00000000000041d4 f   TcpDxe:TcpDispatcher.obj
+ 0001:000040e8       TcpBind                    00000000000043a8 f   TcpDxe:TcpDispatcher.obj
+ 0001:00004220       TcpFlushPcb                00000000000044e0 f   TcpDxe:TcpDispatcher.obj
+ 0001:000042a8       TcpAttachPcb               0000000000004568 f   TcpDxe:TcpDispatcher.obj
+ 0001:00004408       TcpConfigurePcb            00000000000046c8 f   TcpDxe:TcpDispatcher.obj
+ 0001:00004968       TcpDispatcher              0000000000004c28 f   TcpDxe:TcpDispatcher.obj
+ 0001:00004df4       TcpComponentNameGetDriverName 00000000000050b4 f   TcpDxe:ComponentName.obj
+ 0001:00004e28       UpdateTcp4Name             00000000000050e8 f   TcpDxe:ComponentName.obj
+ 0001:00004f40       UpdateTcp6Name             0000000000005200 f   TcpDxe:ComponentName.obj
+ 0001:00005044       TcpComponentNameGetControllerName 0000000000005304 f   TcpDxe:ComponentName.obj
+ 0001:00005170       TcpClose                   0000000000005430 f   TcpDxe:TcpTimer.obj
+ 0001:0000519c       TcpConnectTimeout          000000000000545c f   TcpDxe:TcpTimer.obj
+ 0001:00005218       TcpRexmitTimeout           00000000000054d8 f   TcpDxe:TcpTimer.obj
+ 0001:00005350       TcpProbeTimeout            0000000000005610 f   TcpDxe:TcpTimer.obj
+ 0001:000053bc       TcpKeepaliveTimeout        000000000000567c f   TcpDxe:TcpTimer.obj
+ 0001:00005420       TcpFinwait2Timeout         00000000000056e0 f   TcpDxe:TcpTimer.obj
+ 0001:0000544c       Tcp2MSLTimeout             000000000000570c f   TcpDxe:TcpTimer.obj
+ 0001:00005478       TcpUpdateTimer             0000000000005738 f   TcpDxe:TcpTimer.obj
+ 0001:000054d8       TcpSetTimer                0000000000005798 f   TcpDxe:TcpTimer.obj
+ 0001:00005508       TcpSetProbeTimer           00000000000057c8 f   TcpDxe:TcpTimer.obj
+ 0001:00005568       TcpSetKeepaliveTimer       0000000000005828 f   TcpDxe:TcpTimer.obj
+ 0001:000055c0       TcpTickingDpc              0000000000005880 f   TcpDxe:TcpTimer.obj
+ 0001:00005700       TcpTicking                 00000000000059c0 f   TcpDxe:TcpTimer.obj
+ 0001:0000571c       SockFreeFoo                00000000000059dc f   TcpDxe:SockImpl.obj
+ 0001:00005720       SockProcessSndToken        00000000000059e0 f   TcpDxe:SockImpl.obj
+ 0001:00005810       SockProcessRcvToken        0000000000005ad0 f   TcpDxe:SockImpl.obj
+ 0001:00005a48       SockProcessTcpSndData      0000000000005d08 f   TcpDxe:SockImpl.obj
+ 0001:00005b00       SockFlushPendingToken      0000000000005dc0 f   TcpDxe:SockImpl.obj
+ 0001:00005b84       SockWakeListenToken        0000000000005e44 f   TcpDxe:SockImpl.obj
+ 0001:00005c4c       SockCancelToken            0000000000005f0c f   TcpDxe:SockImpl.obj
+ 0001:00005d5c       SockCreate                 000000000000601c f   TcpDxe:SockImpl.obj
+ 0001:000061b0       SockDestroy                0000000000006470 f   TcpDxe:SockImpl.obj
+ 0001:00006258       SockConnFlush              0000000000006518 f   TcpDxe:SockImpl.obj
+ 0001:00006380       SockClone                  0000000000006640 f   TcpDxe:SockImpl.obj
+ 0001:00006458       SockDataSent               0000000000006718 f   TcpDxe:SockImpl.obj
+ 0001:00006530       SockGetFreeSpace           00000000000067f0 f   TcpDxe:SockImpl.obj
+ 0001:00006590       TcpGetUint32               0000000000006850 f   TcpDxe:TcpOption.obj
+ 0001:000065c8       TcpPutUint32               0000000000006888 f   TcpDxe:TcpOption.obj
+ 0001:00006600       TcpComputeScale            00000000000068c0 f   TcpDxe:TcpOption.obj
+ 0001:00006660       TcpSynBuildOption          0000000000006920 f   TcpDxe:TcpOption.obj
+ 0001:000067ec       TcpBuildOption             0000000000006aac f   TcpDxe:TcpOption.obj
+ 0001:000068bc       TcpParseOption             0000000000006b7c f   TcpDxe:TcpOption.obj
+ 0001:00006a84       TcpRcvWinNow               0000000000006d44 f   TcpDxe:TcpOutput.obj
+ 0001:00006b20       TcpGetMaxSndNxt            0000000000006de0 f   TcpDxe:TcpOutput.obj
+ 0001:00006b74       TcpDataToSend              0000000000006e34 f   TcpDxe:TcpOutput.obj
+ 0001:00006c88       TcpTransmitSegment         0000000000006f48 f   TcpDxe:TcpOutput.obj
+ 0001:00006f38       TcpGetSegmentSndQue        00000000000071f8 f   TcpDxe:TcpOutput.obj
+ 0001:00007120       TcpRetransmit              00000000000073e0 f   TcpDxe:TcpOutput.obj
+ 0001:00007270       TcpToSendData              0000000000007530 f   TcpDxe:TcpOutput.obj
+ 0001:000076f0       TcpSendAck                 00000000000079b0 f   TcpDxe:TcpOutput.obj
+ 0001:00007754       TcpSendZeroProbe           0000000000007a14 f   TcpDxe:TcpOutput.obj
+ 0001:000077bc       TcpSendReset               0000000000007a7c f   TcpDxe:TcpOutput.obj
+ 0001:00007970       TcpVerifySegment           0000000000007c30 f   TcpDxe:TcpOutput.obj
+ 0001:000079ec       TcpComputeRtt              0000000000007cac f   TcpDxe:TcpInput.obj
+ 0001:00007ab0       TcpTrimSegment             0000000000007d70 f   TcpDxe:TcpInput.obj
+ 0001:00007b94       TcpDeliverData             0000000000007e54 f   TcpDxe:TcpInput.obj
+ 0001:00007f40       TcpQueueData               0000000000008200 f   TcpDxe:TcpInput.obj
+ 0001:00008090       TcpAdjustSndQue            0000000000008350 f   TcpDxe:TcpInput.obj
+ 0001:00008108       TcpInput                   00000000000083c8 f   TcpDxe:TcpInput.obj
+ 0001:00009020       TcpIcmpInput               00000000000092e0 f   TcpDxe:TcpInput.obj
+ 0001:0000912c       CopyMem                    00000000000093ec f   BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0001:000091c8       ZeroMem                    0000000000009488 f   BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0001:00009238       CompareMem                 00000000000094f8 f   BaseMemoryLibRepStr:CompareMemWrapper.obj
+ 0001:00009308       InternalBaseLibIsListValid 00000000000095c8 f   BaseLib:LinkedList.obj
+ 0001:00009374       InsertHeadList             0000000000009634 f   BaseLib:LinkedList.obj
+ 0001:000093c4       InsertTailList             0000000000009684 f   BaseLib:LinkedList.obj
+ 0001:00009418       IsListEmpty                00000000000096d8 f   BaseLib:LinkedList.obj
+ 0001:00009450       RemoveEntryList            0000000000009710 f   BaseLib:LinkedList.obj
+ 0001:00009498       UnicodeSPrint              0000000000009758 f   BasePrintLib:PrintLib.obj
+ 0001:0000951c       AsciiSPrint                00000000000097dc f   BasePrintLib:PrintLib.obj
+ 0001:00009548       BasePrintLibFillBuffer     0000000000009808 f   BasePrintLib:PrintLibInternal.obj
+ 0001:0000957c       BasePrintLibValueToString  000000000000983c f   BasePrintLib:PrintLibInternal.obj
+ 0001:000095e8       BasePrintLibSPrintMarker   00000000000098a8 f   BasePrintLib:PrintLibInternal.obj
+ 0001:0000a4f4       BasePrintLibSPrint         000000000000a7b4 f   BasePrintLib:PrintLibInternal.obj
+ 0001:0000a518       DebugPrint                 000000000000a7d8 f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:0000a53c       DebugPrintMarker           000000000000a7fc f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:0000a5ec       DebugAssert                000000000000a8ac f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:0000a664       InternalAllocatePool       000000000000a924 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:0000a694       AllocateZeroPool           000000000000a954 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:0000a6bc       InternalAllocateCopyPool   000000000000a97c f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:0000a734       FreePool                   000000000000a9f4 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:0000a778       SetDevicePathNodeLength    000000000000aa38 f   UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0001:0000a7f8       EfiAcquireLockOrFail       000000000000aab8 f   UefiLib:UefiLib.obj
+ 0001:0000a874       EfiReleaseLock             000000000000ab34 f   UefiLib:UefiLib.obj
+ 0001:0000a8d4       EfiTestChildHandle         000000000000ab94 f   UefiLib:UefiLib.obj
+ 0001:0000a98c       IsLanguageSupported        000000000000ac4c f   UefiLib:UefiLib.obj
+ 0001:0000aa14       LookupUnicodeString2       000000000000acd4 f   UefiLib:UefiLib.obj
+ 0001:0000ab08       AddUnicodeString2          000000000000adc8 f   UefiLib:UefiLib.obj
+ 0001:0000acfc       FreeUnicodeStringTable     000000000000afbc f   UefiLib:UefiLib.obj
+ 0001:0000ad6c       EfiLibInstallDriverBindingComponentName2 000000000000b02c f   UefiLib:UefiDriverModel.obj
+ 0001:0000ae3c       NetIp4IsUnicast            000000000000b0fc f   DxeNetLib:DxeNetLib.obj
+ 0001:0000aed4       NetIp6IsValidUnicast       000000000000b194 f   DxeNetLib:DxeNetLib.obj
+ 0001:0000af24       NetDestroyLinkList         000000000000b1e4 f   DxeNetLib:DxeNetLib.obj
+ 0001:0000b02c       NetLibDestroyServiceChild  000000000000b2ec f   DxeNetLib:DxeNetLib.obj
+ 0001:0000b0bc       NetLibCreateIPv4DPathNode  000000000000b37c f   DxeNetLib:DxeNetLib.obj
+ 0001:0000b200       NetbufAllocStruct          000000000000b4c0 f   DxeNetLib:NetBuffer.obj
+ 0001:0000b2d8       NetbufAlloc                000000000000b598 f   DxeNetLib:NetBuffer.obj
+ 0001:0000b380       NetbufFreeVector           000000000000b640 f   DxeNetLib:NetBuffer.obj
+ 0001:0000b45c       NetbufFree                 000000000000b71c f   DxeNetLib:NetBuffer.obj
+ 0001:0000b4ec       NetbufFreeList             000000000000b7ac f   DxeNetLib:NetBuffer.obj
+ 0001:0000b588       NetbufGetByte              000000000000b848 f   DxeNetLib:NetBuffer.obj
+ 0001:0000b62c       NetbufSetBlock             000000000000b8ec f   DxeNetLib:NetBuffer.obj
+ 0001:0000b710       NetbufFromExt              000000000000b9d0 f   DxeNetLib:NetBuffer.obj
+ 0001:0000b7d8       NetbufReserve              000000000000ba98 f   DxeNetLib:NetBuffer.obj
+ 0001:0000b8c8       NetbufAllocSpace           000000000000bb88 f   DxeNetLib:NetBuffer.obj
+ 0001:0000ba6c       NetblockTrim               000000000000bd2c f   DxeNetLib:NetBuffer.obj
+ 0001:0000bad4       NetbufTrim                 000000000000bd94 f   DxeNetLib:NetBuffer.obj
+ 0001:0000bbb0       NetbufCopy                 000000000000be70 f   DxeNetLib:NetBuffer.obj
+ 0001:0000bd10       NetbufQueAlloc             000000000000bfd0 f   DxeNetLib:NetBuffer.obj
+ 0001:0000bda0       NetbufQueFree              000000000000c060 f   DxeNetLib:NetBuffer.obj
+ 0001:0000be08       NetbufQueAppend            000000000000c0c8 f   DxeNetLib:NetBuffer.obj
+ 0001:0000be88       NetbufQueCopy              000000000000c148 f   DxeNetLib:NetBuffer.obj
+ 0001:0000bff0       NetbufQueTrim              000000000000c2b0 f   DxeNetLib:NetBuffer.obj
+ 0001:0000c0b8       NetbufQueFlush             000000000000c378 f   DxeNetLib:NetBuffer.obj
+ 0001:0000c100       NetblockChecksum           000000000000c3c0 f   DxeNetLib:NetBuffer.obj
+ 0001:0000c144       NetPseudoHeadChecksum      000000000000c404 f   DxeNetLib:NetBuffer.obj
+ 0001:0000c190       NetIp6PseudoHeadChecksum   000000000000c450 f   DxeNetLib:NetBuffer.obj
+ 0001:0000c208       IpIoCreateIpChildOpenProtocol 000000000000c4c8 f   DxeIpIoLib:DxeIpIoLib.obj
+ 0001:0000c320       IpIoCloseProtocolDestroyIpChild 000000000000c5e0 f   DxeIpIoLib:DxeIpIoLib.obj
+ 0001:0000c3b4       IpIoIcmpv4Handler          000000000000c674 f   DxeIpIoLib:DxeIpIoLib.obj
+ 0001:0000c560       IpIoIcmpv6Handler          000000000000c820 f   DxeIpIoLib:DxeIpIoLib.obj
+ 0001:0000c704       IpIoExtFree                000000000000c9c4 f   DxeIpIoLib:DxeIpIoLib.obj
+ 0001:0000c710       IpIoCreateSndEntry         000000000000c9d0 f   DxeIpIoLib:DxeIpIoLib.obj
+ 0001:0000c934       IpIoDestroySndEntry        000000000000cbf4 f   DxeIpIoLib:DxeIpIoLib.obj
+ 0001:0000c9b8       IpIoTransmitHandlerDpc     000000000000cc78 f   DxeIpIoLib:DxeIpIoLib.obj
+ 0001:0000ca04       IpIoTransmitHandler        000000000000ccc4 f   DxeIpIoLib:DxeIpIoLib.obj
+ 0001:0000ca20       IpIoDummyHandlerDpc        000000000000cce0 f   DxeIpIoLib:DxeIpIoLib.obj
+ 0001:0000cab0       IpIoDummyHandler           000000000000cd70 f   DxeIpIoLib:DxeIpIoLib.obj
+ 0001:0000cacc       IpIoListenHandlerDpc       000000000000cd8c f   DxeIpIoLib:DxeIpIoLib.obj
+ 0001:0000cddc       IpIoListenHandler          000000000000d09c f   DxeIpIoLib:DxeIpIoLib.obj
+ 0001:0000cdf8       IpIoCreate                 000000000000d0b8 f   DxeIpIoLib:DxeIpIoLib.obj
+ 0001:0000cf40       IpIoOpen                   000000000000d200 f   DxeIpIoLib:DxeIpIoLib.obj
+ 0001:0000d11c       IpIoDestroy                000000000000d3dc f   DxeIpIoLib:DxeIpIoLib.obj
+ 0001:0000d224       IpIoAddIp                  000000000000d4e4 f   DxeIpIoLib:DxeIpIoLib.obj
+ 0001:0000d390       IpIoConfigIp               000000000000d650 f   DxeIpIoLib:DxeIpIoLib.obj
+ 0001:0000d5c0       IpIoRemoveIp               000000000000d880 f   DxeIpIoLib:DxeIpIoLib.obj
+ 0001:0000d698       IpIoFindSender             000000000000d958 f   DxeIpIoLib:DxeIpIoLib.obj
+ 0001:0000d75c       IpIoGetIcmpErrStatus       000000000000da1c f   DxeIpIoLib:DxeIpIoLib.obj
+ 0001:0000d90c       StrnLenS                   000000000000dbcc f   BaseLib:SafeString.obj
+ 0001:0000d964       StrLen                     000000000000dc24 f   BaseLib:String.obj
+ 0001:0000d9ec       AsciiStrLen                000000000000dcac f   BaseLib:String.obj
+ 0001:0000da58       AsciiStrnCmp               000000000000dd18 f   BaseLib:String.obj
+ 0002:00000000       ??_C@_0CB@DMEJJJHA@?6ASSERT_EFI_ERROR?5?$CIStatus?5?$DN?5?$CFr?$CJ@ 000000000000de00     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0002:00000028       ??_C@_0CH@BBNBJKHK@?$CB?$CI?$CI?$CIINTN?$CJ?$CIRETURN_STATUS?$CJ?$CIStatus@ 000000000000de28     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0002:00000050       ??_C@_0EG@HIPMDNNL@d?3?2myedk2?2edk2?2MdePkg?2Library?2U@ 000000000000de50     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0002:00000098       ??_C@_06JEKFBJHO@TcpDxe@   000000000000de98     TcpDxe:AutoGen.obj
+ 0002:000000a0       ??_C@_0FH@GABOJKJK@d?3?2myedk2?2edk2?2Build?2OvmfX64?2DE@ 000000000000dea0     TcpDxe:AutoGen.obj
+ 0002:000000f8       ??_C@_0BF@ENNCMFDP@mTcpTimer?4RefCnt?5?$DO?50@ 000000000000def8     TcpDxe:TcpDriver.obj
+ 0002:00000110       ??_C@_0CN@COMPNPGE@d?3?2myedk2?2edk2?2NetworkPkg?2TcpDx@ 000000000000df10     TcpDxe:TcpDriver.obj
+ 0002:00000140       ??_C@_0BF@NDBIKIKC@CR?5has?5Bad?5Signature@ 000000000000df40     TcpDxe:TcpDriver.obj
+ 0002:00000158       ??_C@_0CF@BLOJFCO@?$CIIpVersion?5?$DN?$DN?54?$CJ?5?$HM?$HM?5?$CIIpVersion?5@ 000000000000df58     TcpDxe:TcpDriver.obj
+ 0002:00000180       ??_C@_0EA@HCOPIIAF@TcpDriverBindingCreateChild?3?5No@ 000000000000df80     TcpDxe:TcpDriver.obj
+ 0002:000001c0       ??_C@_0CL@BFHJNFMB@d?3?2myedk2?2edk2?2NetworkPkg?2TcpDx@ 000000000000dfc0     TcpDxe:TcpMain.obj
+ 0002:000001f0       ??_C@_0DE@HDACILPM@SockBufferIOToken?3?5No?5Memory?5to@ 000000000000dff0     TcpDxe:SockInterface.obj
+ 0002:00000228       ??_C@_0DP@GOHFACGD@?$CISock?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ?5?$CG?$CG?5?$CISock@ 000000000000e028     TcpDxe:SockInterface.obj
+ 0002:00000268       ??_C@_0DB@EIMEJGHC@d?3?2myedk2?2edk2?2NetworkPkg?2TcpDx@ 000000000000e068     TcpDxe:SockInterface.obj
+ 0002:000002a0       ??_C@_0BE@CLBLKENM@Tcb?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000e0a0     TcpDxe:SockInterface.obj
+ 0002:000002c0       ??_C@_0EE@FOFLLEEG@SockDestroyChild?3?5Open?5protocol@ 000000000000e0c0     TcpDxe:SockInterface.obj
+ 0002:00000310       ??_C@_0EA@DJBDANEJ@SockDestroyChild?3?5Get?5the?5lock?5@ 000000000000e110     TcpDxe:SockInterface.obj
+ 0002:00000350       ??_C@_0DJ@KAODAPAC@SockDestroyChild?3?5Protocol?5deta@ 000000000000e150     TcpDxe:SockInterface.obj
+ 0002:00000390       ??_C@_0DF@NBHAGCFB@SockCreateChild?3?5No?5resource?5to@ 000000000000e190     TcpDxe:SockInterface.obj
+ 0002:000003c8       ??_C@_0DP@KEEICHIG@SockCreateChild?3?5Get?5the?5lock?5t@ 000000000000e1c8     TcpDxe:SockInterface.obj
+ 0002:00000408       ??_C@_0DN@MNCCAGOB@SockCreateChild?3?5Protocol?5faile@ 000000000000e208     TcpDxe:SockInterface.obj
+ 0002:00000448       ??_C@_0DI@JCNEGHBA@SockConfigure?3?5Get?5the?5access?5f@ 000000000000e248     TcpDxe:SockInterface.obj
+ 0002:00000480       ??_C@_0BB@BOPPMIFL@Sock?9?$DOState?5?$DN?$DN?50@ 000000000000e280     TcpDxe:SockInterface.obj
+ 0002:00000498       ??_C@_0DG@HEAAIPHA@SockConnect?3?5Get?5the?5access?5for@ 000000000000e298     TcpDxe:SockInterface.obj
+ 0002:000004d0       ??_C@_0BJ@CEHICELN@SockStream?5?$DN?$DN?5Sock?9?$DOType@ 000000000000e2d0     TcpDxe:SockInterface.obj
+ 0002:000004f0       ??_C@_0DF@BIKGHOHM@SockAccept?3?5Get?5the?5access?5for?5@ 000000000000e2f0     TcpDxe:SockInterface.obj
+ 0002:00000528       ??_C@_0BP@HEBNJKJJ@Socket?9?$DOParent?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000e328     TcpDxe:SockInterface.obj
+ 0002:00000548       ??_C@_0DB@BLKJJOFH@SockAccept?3?5Accept?5a?5socket?0?5no@ 000000000000e348     TcpDxe:SockInterface.obj
+ 0002:00000580       ??_C@_0DD@CJKGKBDK@SockSend?3?5Get?5the?5access?5for?5so@ 000000000000e380     TcpDxe:SockInterface.obj
+ 0002:000005c0       ??_C@_0EK@COMFDOKO@SockSend?3?5Failed?5to?5buffer?5IO?5t@ 000000000000e3c0     TcpDxe:SockInterface.obj
+ 0002:00000610       ??_C@_0CG@MELMGPIA@SockSend?3?5Failed?5to?5process?5Snd@ 000000000000e410     TcpDxe:SockInterface.obj
+ 0002:00000638       ??_C@_0DC@HOGGOGIE@SockRcv?3?5Get?5the?5access?5for?5soc@ 000000000000e438     TcpDxe:SockInterface.obj
+ 0002:00000670       ??_C@_0DE@DOJDBFBK@SockFlush?3?5Get?5the?5access?5for?5s@ 000000000000e470     TcpDxe:SockInterface.obj
+ 0002:000006a8       ??_C@_0DH@JFJOBMNI@SockFlush?3?5Protocol?5failed?5hand@ 000000000000e4a8     TcpDxe:SockInterface.obj
+ 0002:000006e0       ??_C@_0DE@NLDNBBAF@SockClose?3?5Get?5the?5access?5for?5s@ 000000000000e4e0     TcpDxe:SockInterface.obj
+ 0002:00000718       ??_C@_0DF@KLLHLONB@SockCancel?3?5Get?5the?5access?5for?5@ 000000000000e518     TcpDxe:SockInterface.obj
+ 0002:00000750       ??_C@_0DE@MKJLLDFK@SockRoute?3?5Get?5the?5access?5for?5s@ 000000000000e550     TcpDxe:SockInterface.obj
+ 0002:00000788       ??_C@_1BG@NHEIAOIF@?$AAT?$AAC?$AAP?$AA_?$AAC?$AAL?$AAO?$AAS?$AAE?$AAD@ 000000000000e588     TcpDxe:TcpMisc.obj
+ 0002:000007a0       ??_C@_1BG@EBJFEFHI@?$AAT?$AAC?$AAP?$AA_?$AAL?$AAI?$AAS?$AAT?$AAE?$AAN@ 000000000000e5a0     TcpDxe:TcpMisc.obj
+ 0002:000007b8       ??_C@_1BK@ENPBPIMG@?$AAT?$AAC?$AAP?$AA_?$AAS?$AAY?$AAN?$AA_?$AAS?$AAE?$AAN?$AAT@ 000000000000e5b8     TcpDxe:TcpMisc.obj
+ 0002:000007d8       ??_C@_1BK@NLMAENBG@?$AAT?$AAC?$AAP?$AA_?$AAS?$AAY?$AAN?$AA_?$AAR?$AAC?$AAV?$AAD@ 000000000000e5d8     TcpDxe:TcpMisc.obj
+ 0002:000007f8       ??_C@_1CA@OALDCBFH@?$AAT?$AAC?$AAP?$AA_?$AAE?$AAS?$AAT?$AAA?$AAB?$AAL?$AAI?$AAS?$AAH?$AAE?$AAD@ 000000000000e5f8     TcpDxe:TcpMisc.obj
+ 0002:00000818       ??_C@_1BO@KCLKOCDM@?$AAT?$AAC?$AAP?$AA_?$AAF?$AAI?$AAN?$AA_?$AAW?$AAA?$AAI?$AAT?$AA_?$AA1@ 000000000000e618     TcpDxe:TcpMisc.obj
+ 0002:00000838       ??_C@_1BO@LAAPENNC@?$AAT?$AAC?$AAP?$AA_?$AAF?$AAI?$AAN?$AA_?$AAW?$AAA?$AAI?$AAT?$AA_?$AA2@ 000000000000e638     TcpDxe:TcpMisc.obj
+ 0002:00000858       ??_C@_1BI@FBLLMAOM@?$AAT?$AAC?$AAP?$AA_?$AAC?$AAL?$AAO?$AAS?$AAI?$AAN?$AAG@ 000000000000e658     TcpDxe:TcpMisc.obj
+ 0002:00000870       ??_C@_1BM@HIDKGINB@?$AAT?$AAC?$AAP?$AA_?$AAT?$AAI?$AAM?$AAE?$AA_?$AAW?$AAA?$AAI?$AAT@ 000000000000e670     TcpDxe:TcpMisc.obj
+ 0002:00000890       ??_C@_1BO@DMHHAOEK@?$AAT?$AAC?$AAP?$AA_?$AAC?$AAL?$AAO?$AAS?$AAE?$AA_?$AAW?$AAA?$AAI?$AAT@ 000000000000e690     TcpDxe:TcpMisc.obj
+ 0002:000008b0       ??_C@_1BK@IKFBPDDN@?$AAT?$AAC?$AAP?$AA_?$AAL?$AAA?$AAS?$AAT?$AA_?$AAA?$AAC?$AAK@ 000000000000e6b0     TcpDxe:TcpMisc.obj
+ 0002:000008d0       ??_C@_0EI@HAJIBJBF@?$CITcb?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ?5?$CG?$CG?5?$CISeg?5?$CB@ 000000000000e6d0     TcpDxe:TcpMisc.obj
+ 0002:00000918       ??_C@_0CL@CBBAAAFC@d?3?2myedk2?2edk2?2NetworkPkg?2TcpDx@ 000000000000e718     TcpDxe:TcpMisc.obj
+ 0002:00000948       ??_C@_0CK@ICAGNFAL@?$CI?$CIBOOLEAN?$CJ?5?$CI?$CI?$CISeg?9?$DOFlag?$CJ?5?$CG?5?$CI0x0@ 000000000000e748     TcpDxe:TcpMisc.obj
+ 0002:00000978       ??_C@_0CB@BAGPCIIE@?$CIVersion?5?$DN?$DN?54?$CJ?5?$HM?$HM?5?$CIVersion?5?$DN?$DN?56@ 000000000000e778     TcpDxe:TcpMisc.obj
+ 0002:000009a0       ??_C@_0CG@KEIMGIID@?$CIAddr?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ?5?$CG?$CG?5?$CIPort@ 000000000000e7a0     TcpDxe:TcpMisc.obj
+ 0002:000009d0       ??_C@_0GO@GICKKKAD@?$CITcb?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ?5?$CG?$CG?5?$CI?5?$CITcb@ 000000000000e7d0     TcpDxe:TcpMisc.obj
+ 0002:00000a40       ??_C@_0CF@HOEIJDDO@TcpCloneTcb?3?5failed?5to?5clone?5a?5@ 000000000000e840     TcpDxe:TcpMisc.obj
+ 0002:00000a68       ??_C@_0BF@JBJKFPJP@Sock?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000e868     TcpDxe:TcpMisc.obj
+ 0002:00000a80       ??_C@_0BE@FHMKCEAK@Ip4?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000e880     TcpDxe:TcpMisc.obj
+ 0002:00000a98       ??_C@_0BE@FCBOEPIJ@Ip6?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000e898     TcpDxe:TcpMisc.obj
+ 0002:00000ab0       ??_C@_0DK@FDCAJGNL@Tcb?9?$DOState?5?$DM?5?$CIsizeof?5?$CImTcpState@ 000000000000e8b0     TcpDxe:TcpMisc.obj
+ 0002:00000af0       ??_C@_0DF@PAMCGNLL@State?5?$DM?5?$CIsizeof?5?$CImTcpStateName?$CJ@ 000000000000e8f0     TcpDxe:TcpMisc.obj
+ 0002:00000b28       ??_C@_0BK@DHILLADA@Tcb?5?$CI?$CFp?$CJ?5state?5?$CFs?5?9?9?$DO?5?$CFs?6@ 000000000000e928     TcpDxe:TcpMisc.obj
+ 0002:00000b48       ??_C@_0BF@FBEMMEEB@Head?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000e948     TcpDxe:TcpMisc.obj
+ 0002:00000b60       ??_C@_0EB@BEPCGDLM@TcpOnAppClose?3?5connection?5reset@ 000000000000e960     TcpDxe:TcpMisc.obj
+ 0002:00000bb0       ??_C@_0EC@JBPMOOFI@TcpOnAppConsume?3?5send?5a?5window?5@ 000000000000e9b0     TcpDxe:TcpMisc.obj
+ 0002:00000c00       ??_C@_0EG@ONPPMBKF@TcpOnAppConsume?3?5scheduled?5a?5de@ 000000000000ea00     TcpDxe:TcpMisc.obj
+ 0002:00000c50       ??_C@_0EC@OOJMHNAK@TcpOnAppAbort?3?5connection?5reset@ 000000000000ea50     TcpDxe:TcpMisc.obj
+ 0002:00000c98       ??_C@_0BG@COFFMKLF@Nhead?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000ea98     TcpDxe:TcpMisc.obj
+ 0002:00000cb0       mTcpStateName              000000000000eab0     TcpDxe:TcpMisc.obj
+ 0002:00000d08       ??_C@_0CL@OCJOEBOP@TcpSendIpPacket?3?5No?5appropriate@ 000000000000eb08     TcpDxe:TcpIo.obj
+ 0002:00000d38       ??_C@_0BL@KALFJMC@Version?5?$DN?$DN?5IpIo?9?$DOIpVersion@ 000000000000eb38     TcpDxe:TcpIo.obj
+ 0002:00000d58       ??_C@_0CJ@ENHKBADF@d?3?2myedk2?2edk2?2NetworkPkg?2TcpDx@ 000000000000eb58     TcpDxe:TcpIo.obj
+ 0002:00000d88       ??_C@_0CC@GHLGNDAG@TcpSendIpPacket?3?5return?5?$CFr?5erro@ 000000000000eb88     TcpDxe:TcpIo.obj
+ 0002:00000db0       ??_C@_0BH@BLJOPJCM@Ip?4Ip4?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000ebb0     TcpDxe:TcpDispatcher.obj
+ 0002:00000dc8       ??_C@_0DB@KGJHAOLI@d?3?2myedk2?2edk2?2NetworkPkg?2TcpDx@ 000000000000ebc8     TcpDxe:TcpDispatcher.obj
+ 0002:00000e00       ??_C@_0BD@BFPDEMKP@Ip?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000ec00     TcpDxe:TcpDispatcher.obj
+ 0002:00000e18       ??_C@_0DA@CBGOJNIJ@TcpBind?3?5no?5port?5can?5be?5allocat@ 000000000000ec18     TcpDxe:TcpDispatcher.obj
+ 0002:00000e48       ??_C@_0CL@EJKIODKL@TcpConfigurePcb?3?5failed?5to?5allo@ 000000000000ec48     TcpDxe:TcpDispatcher.obj
+ 0002:00000e80       ??_C@_0FG@LCOHCDFI@?$CICfgData?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ?5?$CG?$CG?5?$CIS@ 000000000000ec80     TcpDxe:TcpDispatcher.obj
+ 0002:00000ed8       ??_C@_0BD@BELHDLHH@Sk?9?$DOIpVersion?5?$DN?$DN?56@ 000000000000ecd8     TcpDxe:TcpDispatcher.obj
+ 0002:00000ef0       ??_C@_0CP@BMHLDHLK@TcpConfigurePcb?3?5Bind?5endpoint?5@ 000000000000ecf0     TcpDxe:TcpDispatcher.obj
+ 0002:00000f20       ??_C@_0EM@HCKADPHN@Tcb?9?$DOState?5?$DN?$DN?50?5?$CG?$CG?5IsListEmpty?5@ 000000000000ed20     TcpDxe:TcpDispatcher.obj
+ 0002:00000f70       ??_C@_0DA@CGCACGEK@?$CIData?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ?5?$CG?$CG?5?$CITcb?5@ 000000000000ed70     TcpDxe:TcpDispatcher.obj
+ 0002:00000fa0       ??_C@_0EN@KMMNJEPI@?$CIData?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ?5?$CG?$CG?5?$CITcb?5@ 000000000000eda0     TcpDxe:TcpDispatcher.obj
+ 0002:00000ff0       ??_C@_03LKLGDMJI@eng@      000000000000edf0     TcpDxe:ComponentName.obj
+ 0002:00000ff4       ??_C@_02LFNMGJAP@en@       000000000000edf4     TcpDxe:ComponentName.obj
+ 0002:00000ff8       ??_C@_06DALJLGPG@eng?$DLen@ 000000000000edf8     TcpDxe:ComponentName.obj
+ 0002:00001000       ??_C@_1DG@JOLAEAKF@?$AAT?$AAC?$AAP?$AA?5?$AAN?$AAe?$AAt?$AAw?$AAo?$AAr?$AAk?$AA?5?$AAS?$AAe?$AAr@ 000000000000ee00     TcpDxe:ComponentName.obj
+ 0002:00001038       ??_C@_19ELAAHEEL@?$AAT?$AAR?$AAU?$AAE@ 000000000000ee38     TcpDxe:ComponentName.obj
+ 0002:00001048       ??_C@_1M@HCOOECOK@?$AAF?$AAA?$AAL?$AAS?$AAE@ 000000000000ee48     TcpDxe:ComponentName.obj
+ 0002:00001060       ??_C@_1FO@IPPLECM@?$AAT?$AAC?$AAP?$AAv?$AA4?$AA?5?$AA?$CI?$AAS?$AAr?$AAc?$AAP?$AAo?$AAr?$AAt?$AA?$DN@ 000000000000ee60     TcpDxe:ComponentName.obj
+ 0002:000010c0       ??_C@_1CI@DMBONAAI@?$AAT?$AAC?$AAP?$AAv?$AA4?$AA?5?$AA?$CI?$AAN?$AAo?$AAt?$AA?5?$AAs?$AAt?$AAa?$AAr@ 000000000000eec0     TcpDxe:ComponentName.obj
+ 0002:000010f0       ??_C@_1FM@NLJJGDBI@?$AAT?$AAC?$AAP?$AAv?$AA6?$AA?$CI?$AAS?$AAr?$AAc?$AAP?$AAo?$AAr?$AAt?$AA?$DN?$AA?$CF@ 000000000000eef0     TcpDxe:ComponentName.obj
+ 0002:00001150       ??_C@_1CG@ODHDHMD@?$AAT?$AAC?$AAP?$AAv?$AA6?$AA?$CI?$AAN?$AAo?$AAt?$AA?5?$AAs?$AAt?$AAa?$AAr?$AAt@ 000000000000ef50     TcpDxe:ComponentName.obj
+ 0002:00001180       ??_C@_0FC@HKDEHFFN@TcpConnectTimeout?3?5connection?5c@ 000000000000ef80     TcpDxe:TcpTimer.obj
+ 0002:000011e0       ??_C@_0EL@GNJPLHDH@TcpConnectTimeout?3?5send?5reset?5b@ 000000000000efe0     TcpDxe:TcpTimer.obj
+ 0002:00001230       ??_C@_0DD@PCAJGKDJ@TcpRexmitTimeout?3?5transmission?5@ 000000000000f030     TcpDxe:TcpTimer.obj
+ 0002:00001270       ??_C@_0EK@HDLEKPHN@TcpRexmitTimeout?3?5connection?5cl@ 000000000000f070     TcpDxe:TcpTimer.obj
+ 0002:000012c0       ??_C@_0CI@JPMLJJAP@?$CI?$CITcb?9?$DOEnabledTimer?$CJ?5?$CG?5?$CI1?5?$DM?$DM?5?$CI1@ 000000000000f0c0     TcpDxe:TcpTimer.obj
+ 0002:000012e8       ??_C@_0CM@OHGFAKHO@d?3?2myedk2?2edk2?2NetworkPkg?2TcpDx@ 000000000000f0e8     TcpDxe:TcpTimer.obj
+ 0002:00001320       ??_C@_0FD@ONCPLGFH@TcpFinwait2Timeout?3?5connection?5@ 000000000000f120     TcpDxe:TcpTimer.obj
+ 0002:00001380       ??_C@_0EP@BJKHABKF@Tcp2MSLTimeout?3?5connection?5clos@ 000000000000f180     TcpDxe:TcpTimer.obj
+ 0002:000013d0       mTcpTimerHandler           000000000000f1d0     TcpDxe:TcpTimer.obj
+ 0002:00001400       ??_C@_0EI@JINEIAIH@?$CISockBuffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ?5?$CG?$CG@ 000000000000f200     TcpDxe:SockImpl.obj
+ 0002:00001448       ??_C@_0CM@MKLJMBNE@d?3?2myedk2?2edk2?2NetworkPkg?2TcpDx@ 000000000000f248     TcpDxe:SockImpl.obj
+ 0002:00001478       ??_C@_0BM@BAENILHI@RcvBufEntry?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000f278     TcpDxe:SockImpl.obj
+ 0002:00001498       ??_C@_0CA@GKLNBCKH@RxData?9?$DODataLength?5?$DO?$DN?5RcvdBytes@ 000000000000f298     TcpDxe:SockImpl.obj
+ 0002:000014b8       ??_C@_0DF@COAAPGBA@?$CISock?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ?5?$CG?$CG?5?$CISock@ 000000000000f2b8     TcpDxe:SockImpl.obj
+ 0002:000014f0       ??_C@_0DG@OLLDCMEP@SockKProcessSndData?3?5Failed?5to?5@ 000000000000f2f0     TcpDxe:SockImpl.obj
+ 0002:00001528       ??_C@_0DN@FAEEONGK@?$CISock?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ?5?$CG?$CG?5?$CIPend@ 000000000000f328     TcpDxe:SockImpl.obj
+ 0002:00001568       ??_C@_0CG@NPEDHFDK@Sock?9?$DOConnectionToken?5?$CB?$DN?5?$CI?$CIvoid@ 000000000000f368     TcpDxe:SockImpl.obj
+ 0002:00001590       ??_C@_0EL@DFFNMNI@?$CIParent?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ?5?$CG?$CG?5?$CI?$CIP@ 000000000000f390     TcpDxe:SockImpl.obj
+ 0002:000015e0       ??_C@_0DI@ILDOHNHM@SockWakeListenToken?3?5accept?5a?5s@ 000000000000f3e0     TcpDxe:SockImpl.obj
+ 0002:00001618       ??_C@_0CK@JNDFFOGB@Sock?9?$DORcvBuffer?4DataQueue?5?$CB?$DN?5?$CI?$CI@ 000000000000f418     TcpDxe:SockImpl.obj
+ 0002:00001648       ??_C@_0O@PMDBAPOH@RcvdBytes?5?$DO?50@ 000000000000f448     TcpDxe:SockImpl.obj
+ 0002:00001658       ??_C@_0DK@JFOJFMLL@IsListEmpty?5?$CISpecifiedTokenList@ 000000000000f458     TcpDxe:SockImpl.obj
+ 0002:000016a0       ??_C@_0EP@CPLBLBEL@?$CISockInitData?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ?5@ 000000000000f4a0     TcpDxe:SockImpl.obj
+ 0002:000016f0       ??_C@_0CB@ILIIBGPF@SockInitData?9?$DOType?5?$DN?$DN?5SockStrea@ 000000000000f4f0     TcpDxe:SockImpl.obj
+ 0002:00001720       ??_C@_0EM@OCAFLBOG@?$CISockInitData?9?$DOProtoData?5?$CB?$DN?5?$CI?$CIv@ 000000000000f520     TcpDxe:SockImpl.obj
+ 0002:00001770       ??_C@_0FL@PEJBEBIL@SockCreate?3?5Socket?5parent?5has?5r@ 000000000000f570     TcpDxe:SockImpl.obj
+ 0002:000017d0       ??_C@_0DA@NLLIPIHL@SockCreate?3?5No?5resource?5to?5crea@ 000000000000f5d0     TcpDxe:SockImpl.obj
+ 0002:00001800       ??_C@_0DO@KMNGAMAA@SockCreate?3?5No?5resource?5to?5allo@ 000000000000f600     TcpDxe:SockImpl.obj
+ 0002:00001840       ??_C@_0DO@JPKGFAOH@SockCreate?3?5No?5resource?5to?5allo@ 000000000000f640     TcpDxe:SockImpl.obj
+ 0002:00001880       ??_C@_0DL@MFINPJKO@SockCreate?3?5Install?5TCP?5protoco@ 000000000000f680     TcpDxe:SockImpl.obj
+ 0002:000018c0       ??_C@_0BE@EJIINIMH@Parent?9?$DOBackLog?5?$DO?50@ 000000000000f6c0     TcpDxe:SockImpl.obj
+ 0002:000018d8       ??_C@_0BH@OFJIDOHE@?$CI?$CIParent?$CJ?9?$DOState?5?$DN?$DN?51?$CJ@ 000000000000f6d8     TcpDxe:SockImpl.obj
+ 0002:000018f0       ??_C@_0EG@NFJFAPAN@SockCreate?3?5Create?5a?5new?5socket@ 000000000000f6f0     TcpDxe:SockImpl.obj
+ 0002:00001940       ??_C@_0EH@FMEDLCDA@SockDestroy?3?5Delete?5a?5unaccepte@ 000000000000f740     TcpDxe:SockImpl.obj
+ 0002:00001988       ??_C@_0DA@HJKMBOFG@SockClone?3?5no?5resource?5to?5creat@ 000000000000f788     TcpDxe:SockImpl.obj
+ 0002:000019b8       ??_C@_0BB@OLLKPCGG@2?5?$DN?$DN?5Sock?9?$DOState@ 000000000000f7b8     TcpDxe:SockImpl.obj
+ 0002:000019d0       ??_C@_0CN@EPFNEOFN@?$CBIsListEmpty?5?$CI?$CGSock?9?$DOProcessing@ 000000000000f7d0     TcpDxe:SockImpl.obj
+ 0002:00001a00       ??_C@_0CO@MLMDPHLK@Count?5?$DM?$DN?5?$CISock?9?$DOSndBuffer?4DataQ@ 000000000000f800     TcpDxe:SockImpl.obj
+ 0002:00001a30       ??_C@_0DD@MOPLGMFP@?$CISock?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ?5?$CG?$CG?5SockS@ 000000000000f830     TcpDxe:SockImpl.obj
+ 0002:00001a70       ??_C@_0GI@LFLFCPBI@?$CISock?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ?5?$CG?$CG?5?$CISock@ 000000000000f870     TcpDxe:SockImpl.obj
+ 0002:00001ad8       ??_C@_0DH@DFEPEAAM@Sock?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?5?$CG?$CG?5?$CI?$CI0?5?$DN?$DN?5@ 000000000000f8d8     TcpDxe:SockImpl.obj
+ 0002:00001b10       ??_C@_0CO@PJLFDEHL@0?5?$DN?$DN?5?$CI?$CI?$CISock?$CJ?9?$DORcvBuffer?4DataQu@ 000000000000f910     TcpDxe:SockImpl.obj
+ 0002:00001b40       ??_C@_0DD@KIKIBFOM@?$CITcb?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ?5?$CG?$CG?5?$CITcb?9?$DO@ 000000000000f940     TcpDxe:TcpOption.obj
+ 0002:00001b78       ??_C@_0CN@EKEJPLAC@d?3?2myedk2?2edk2?2NetworkPkg?2TcpDx@ 000000000000f978     TcpDxe:TcpOption.obj
+ 0002:00001bb0       ??_C@_0EP@IGPEGGPD@?$CITcb?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ?5?$CG?$CG?5?$CINbuf?5@ 000000000000f9b0     TcpDxe:TcpOption.obj
+ 0002:00001c00       ??_C@_0BF@OBJIPFIC@Data?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000fa00     TcpDxe:TcpOption.obj
+ 0002:00001c18       ??_C@_0DC@EEELABNP@?$CITcp?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ?5?$CG?$CG?5?$CIOptio@ 000000000000fa18     TcpDxe:TcpOption.obj
+ 0002:00001c50       ??_C@_0BD@KINAEDKH@Sk?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000fa50     TcpDxe:TcpOutput.obj
+ 0002:00001c68       ??_C@_0CN@DDIEJOON@d?3?2myedk2?2edk2?2NetworkPkg?2TcpDx@ 000000000000fa68     TcpDxe:TcpOutput.obj
+ 0002:00001ca0       ??_C@_0EK@GGBPDEDG@?$CI?$CIINT32?$CJ?5?$CI?$CITcb?9?$DOSndNxt?$CJ?5?9?5?$CI?$CI?$CITC@ 000000000000faa0     TcpDxe:TcpOutput.obj
+ 0002:00001cf0       ??_C@_0DC@FLNFOIDB@TcpDataToSend?3?5enter?5persistent@ 000000000000faf0     TcpDxe:TcpOutput.obj
+ 0002:00001d28       ??_C@_0DG@BCKENACD@?$CINbuf?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ?5?$CG?$CG?5?$CINbuf@ 000000000000fb28     TcpDxe:TcpOutput.obj
+ 0002:00001d60       ??_C@_0BO@JOEHPCF@?$CILen?5?$CF?54?5?$DN?$DN?50?$CJ?5?$CG?$CG?5?$CILen?5?$DM?$DN?540?$CJ@ 000000000000fb60     TcpDxe:TcpOutput.obj
+ 0002:00001d80       ??_C@_0EN@CIOEAHHL@?$CITcb?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ?5?$CG?$CG?5?$CI?$CIINT3@ 000000000000fb80     TcpDxe:TcpOutput.obj
+ 0002:00001dd0       ??_C@_0N@NJKHHBAK@CopyLen?5?$DO?$DN?50@ 000000000000fbd0     TcpDxe:TcpOutput.obj
+ 0002:00001de0       ??_C@_0DL@IAMMLPHA@TcpGetSegmentSock?3?5failed?5to?5al@ 000000000000fbe0     TcpDxe:TcpOutput.obj
+ 0002:00001e20       ??_C@_0FA@DOOPKKDA@TcpRetransmit?3?5retransmission?5w@ 000000000000fc20     TcpDxe:TcpOutput.obj
+ 0002:00001e70       ??_C@_0FC@LJBCDKLC@TcpRetransmit?3?5retransmission?5c@ 000000000000fc70     TcpDxe:TcpOutput.obj
+ 0002:00001ec8       ??_C@_0BK@EFAMENHB@Nbuf?9?$DOTcp?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000fcc8     TcpDxe:TcpOutput.obj
+ 0002:00001ef0       ??_C@_0EI@DGMCPGPI@?$CITcb?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ?5?$CG?$CG?5?$CITcb?9?$DO@ 000000000000fcf0     TcpDxe:TcpOutput.obj
+ 0002:00001f40       ??_C@_0EE@MBAMCMNL@?$CITcb?9?$DOState?$CJ?5?$DM?5?$CI?$CIsizeof?5?$CImTcpOu@ 000000000000fd40     TcpDxe:TcpOutput.obj
+ 0002:00001f88       ??_C@_0DD@POJLAJIC@TcpToSendData?3?5failed?5to?5get?5a?5@ 000000000000fd88     TcpDxe:TcpOutput.obj
+ 0002:00001fc0       ??_C@_0DI@DJJEIGF@TcpToSendData?3?5send?5FIN?5to?5peer@ 000000000000fdc0     TcpDxe:TcpOutput.obj
+ 0002:00001ff8       ??_C@_0DE@HEKBBOGD@TcpToSendData?3?5discard?5a?5broken@ 000000000000fdf8     TcpDxe:TcpOutput.obj
+ 0002:00002030       ??_C@_0EA@HJEMBCMB@TcpToSendData?3?5created?5a?5empty?5@ 000000000000fe30     TcpDxe:TcpOutput.obj
+ 0002:00002070       ??_C@_0DH@OHIANPHK@TcpToSendData?3?5set?5RTT?5measure?5@ 000000000000fe70     TcpDxe:TcpOutput.obj
+ 0002:000020a8       ??_C@_0DC@NGJBHHGA@TcpToSendAck?3?5scheduled?5a?5delay@ 000000000000fea8     TcpDxe:TcpOutput.obj
+ 0002:000020e0       ??_C@_0GL@IFMHLCLE@?$CI?$CINbuf?$CJ?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ?5?$CG?$CG?5?$CI?$CIN@ 000000000000fee0     TcpDxe:TcpOutput.obj
+ 0002:00002150       mTcpOutFlag                000000000000ff50     TcpDxe:TcpOutput.obj
+ 0002:00002160       ??_C@_0EL@OIHMCNAI@TcpFastRecover?3?5enter?5fast?5retr@ 000000000000ff60     TcpDxe:TcpInput.obj
+ 0002:000021b0       ??_C@_0EB@HDIEAPBA@TcpFastRecover?3?5received?5anothe@ 000000000000ffb0     TcpDxe:TcpInput.obj
+ 0002:00002200       ??_C@_0EI@COLCCDBH@TcpFastRecover?3?5received?5a?5full@ 0000000000010000     TcpDxe:TcpInput.obj
+ 0002:00002248       ??_C@_0DH@PLMMJIMD@TcpFastRecover?3?5received?5a?5part@ 0000000000010048     TcpDxe:TcpInput.obj
+ 0002:00002280       ??_C@_0DI@IMPKFFOM@TcpFastLossRecover?3?5received?5a?5@ 0000000000010080     TcpDxe:TcpInput.obj
+ 0002:000022b8       ??_C@_0DL@KEBLGCNJ@TcpFastLossRecover?3?5received?5a?5@ 00000000000100b8     TcpDxe:TcpInput.obj
+ 0002:00002300       ??_C@_0EI@HKNFAOJL@TcpComputeRtt?3?5new?5RTT?5for?5TCB?5@ 0000000000010100     TcpDxe:TcpInput.obj
+ 0002:00002348       ??_C@_0CM@DPLPMJBB@d?3?2myedk2?2edk2?2NetworkPkg?2TcpDx@ 0000000000010148     TcpDxe:TcpInput.obj
+ 0002:00002378       ??_C@_0BK@EAJKACH@Nbuf?9?$DOTcp?5?$DN?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000010178     TcpDxe:TcpInput.obj
+ 0002:000023a0       ??_C@_0EP@EAMFMCMP@TcpDeliverData?3?5data?5received?5a@ 00000000000101a0     TcpDxe:TcpInput.obj
+ 0002:000023f0       ??_C@_0DE@EKOMNHBO@TcpDeliverData?3?5processing?5FIN?5@ 00000000000101f0     TcpDxe:TcpInput.obj
+ 0002:00002430       ??_C@_0EL@DBPCOPCI@Connection?5closed?5immediately?5b@ 0000000000010230     TcpDxe:TcpInput.obj
+ 0002:00002480       ??_C@_0CH@KDGNBIEG@TcpInput?3?5received?5a?5malformed?5@ 0000000000010280     TcpDxe:TcpInput.obj
+ 0002:000024a8       ??_C@_0CM@MCJMMPBG@TcpInput?3?5received?5a?5checksum?5e@ 00000000000102a8     TcpDxe:TcpInput.obj
+ 0002:000024d8       ??_C@_0CL@NFDNBPLI@TcpInput?3?5send?5reset?5because?5no@ 00000000000102d8     TcpDxe:TcpInput.obj
+ 0002:00002510       ??_C@_0EB@NGLHCAL@TcpInput?3?5reset?5the?5peer?5becaus@ 0000000000010310     TcpDxe:TcpInput.obj
+ 0002:00002558       ??_C@_0DL@HIGIJJFG@TcpInput?3?5discard?5a?5reset?5segme@ 0000000000010358     TcpDxe:TcpInput.obj
+ 0002:000025a0       ??_C@_0EK@FDBCBHLG@TcpInput?3?5send?5reset?5because?5of@ 00000000000103a0     TcpDxe:TcpInput.obj
+ 0002:000025f0       ??_C@_0EI@NHICPLGK@TcpInput?3?5discard?5a?5segment?5bec@ 00000000000103f0     TcpDxe:TcpInput.obj
+ 0002:00002638       ??_C@_0DC@PKFGNGH@TcpInput?3?5create?5a?5child?5for?5TC@ 0000000000010438     TcpDxe:TcpInput.obj
+ 0002:00002670       ??_C@_0CP@OLCBPKPL@TcpInput?3?5discard?5a?5broken?5segm@ 0000000000010470     TcpDxe:TcpInput.obj
+ 0002:000026a0       ??_C@_0EL@EIANFNHO@TcpInput?3?5send?5reset?5because?5of@ 00000000000104a0     TcpDxe:TcpInput.obj
+ 0002:000026f0       ??_C@_0DL@JJCDFPPD@TcpInput?3?5connection?5reset?5by?5p@ 00000000000104f0     TcpDxe:TcpInput.obj
+ 0002:00002730       ??_C@_0EM@NPDFBOKP@TcpInput?3?5discard?5a?5reset?5segme@ 0000000000010530     TcpDxe:TcpInput.obj
+ 0002:00002780       ??_C@_0DJ@CLCGNILB@TcpInput?3?5connection?5establishe@ 0000000000010580     TcpDxe:TcpInput.obj
+ 0002:000027c0       ??_C@_0BM@PBBLGGK@Tcb?9?$DOSndNxt?5?$DN?$DN?5Tcb?9?$DOIss?5?$CL?51@ 00000000000105c0     TcpDxe:TcpInput.obj
+ 0002:000027e0       ??_C@_0DE@HFEAJPAO@TcpInput?3?5simultaneous?5open?5for@ 00000000000105e0     TcpDxe:TcpInput.obj
+ 0002:00002820       ??_C@_0EB@PEGFNLKM@TcpInput?3?5sequence?5acceptance?5t@ 0000000000010620     TcpDxe:TcpInput.obj
+ 0002:00002868       ??_C@_0CH@LPGMAFBP@TcpInput?3?5connection?5reset?5for?5@ 0000000000010668     TcpDxe:TcpInput.obj
+ 0002:00002890       ??_C@_0EC@FOGKOBOK@TcpInput?3?5connection?5reset?5beca@ 0000000000010690     TcpDxe:TcpInput.obj
+ 0002:000028e0       ??_C@_0EC@IPOAEBBM@TcpInput?3?5segment?5discard?5becau@ 00000000000106e0     TcpDxe:TcpInput.obj
+ 0002:00002928       ??_C@_0DJ@OGLBCCLE@TcpInput?3?5connection?5establishe@ 0000000000010728     TcpDxe:TcpInput.obj
+ 0002:00002970       ??_C@_0EC@ICDNHGCN@TcpInput?3?5send?5reset?5because?5of@ 0000000000010770     TcpDxe:TcpInput.obj
+ 0002:000029b8       ??_C@_0DL@GCAMCCOC@TcpInput?3?5ignore?5the?5out?9of?9dat@ 00000000000107b8     TcpDxe:TcpInput.obj
+ 0002:000029f8       ??_C@_0DP@CCOLDCLO@TcpInput?3?5discard?5segment?5for?5f@ 00000000000107f8     TcpDxe:TcpInput.obj
+ 0002:00002a38       ??_C@_0BH@EBHNKDEG@Tcb?9?$DOCongestState?5?$DN?$DN?53@ 0000000000010838     TcpDxe:TcpInput.obj
+ 0002:00002a50       ??_C@_0DI@MNAPMKHC@TcpInput?3?5peer?5shrinks?5the?5wind@ 0000000000010850     TcpDxe:TcpInput.obj
+ 0002:00002a90       ??_C@_0EE@LKMHLLLJ@TcpInput?3?5peer?5advise?5negative?5@ 0000000000010890     TcpDxe:TcpInput.obj
+ 0002:00002ae0       ??_C@_0EI@JNOLIKAK@TcpInput?3?5SndNxt?5is?5out?5of?5wind@ 00000000000108e0     TcpDxe:TcpInput.obj
+ 0002:00002b28       ??_C@_0DL@GBBFMMHP@TcpInput?3?5local?5FIN?5is?5ACKed?5by@ 0000000000010928     TcpDxe:TcpInput.obj
+ 0002:00002b68       ??_C@_0DP@LOFLCKON@TcpInput?3?5received?5urgent?5data?5@ 0000000000010968     TcpDxe:TcpInput.obj
+ 0002:00002bb0       ??_C@_0EG@FDPJIBIA@TcpInput?3?5connection?5reset?5beca@ 00000000000109b0     TcpDxe:TcpInput.obj
+ 0002:00002bf8       ??_C@_0BM@EEAAIEFJ@TcpInput?3?5Discard?5a?5packet?6@ 00000000000109f8     TcpDxe:TcpInput.obj
+ 0002:00002c18       ??_C@_0BI@CADIBEOM@Tcb?9?$DOSk?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000010a18     TcpDxe:TcpInput.obj
+ 0002:00002c30       ??_C@_0ED@MKGCMJG@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFF@ 0000000000010a30     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0002:00002c80       ??_C@_0ED@JAIIHABO@d?3?2myedk2?2edk2?2MdePkg?2Library?2B@ 0000000000010a80     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0002:00002cc8       ??_C@_0DO@MAOBOFEG@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFF@ 0000000000010ac8     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0002:00002d08       ??_C@_0BH@IACGKAP@Buffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000010b08     BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0002:00002d20       ??_C@_0ED@CECKBBNJ@d?3?2myedk2?2edk2?2MdePkg?2Library?2B@ 0000000000010b20     BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0002:00002d68       ??_C@_0DG@EEENIGGL@Length?5?$DM?$DN?5?$CI0xFFFFFFFFFFFFFFFFUL@ 0000000000010b68     BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0002:00002da0       ??_C@_0CC@JOEHDGKB@DestinationBuffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?5@ 0000000000010ba0     BaseMemoryLibRepStr:CompareMemWrapper.obj
+ 0002:00002dd0       ??_C@_0EG@FCOMBDPM@d?3?2myedk2?2edk2?2MdePkg?2Library?2B@ 0000000000010bd0     BaseMemoryLibRepStr:CompareMemWrapper.obj
+ 0002:00002e18       ??_C@_0BN@MDMCNBCC@SourceBuffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000010c18     BaseMemoryLibRepStr:CompareMemWrapper.obj
+ 0002:00002e38       ??_C@_0BF@NJNGJMPC@List?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000010c38     BaseLib:LinkedList.obj
+ 0002:00002e50       ??_C@_0DD@DMMJEGIP@d?3?2myedk2?2edk2?2MdePkg?2Library?2B@ 0000000000010c50     BaseLib:LinkedList.obj
+ 0002:00002e88       ??_C@_0CC@KDLPLAED@List?9?$DOForwardLink?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?5@ 0000000000010c88     BaseLib:LinkedList.obj
+ 0002:00002eb0       ??_C@_0BP@IJJCCMAK@List?9?$DOBackLink?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000010cb0     BaseLib:LinkedList.obj
+ 0002:00002ed0       ??_C@_0BJ@NJABNCDK@ListHead?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000010cd0     BaseLib:LinkedList.obj
+ 0002:00002ef0       ??_C@_0CG@LGIALJFK@InternalBaseLibIsListValid?5?$CILis@ 0000000000010cf0     BaseLib:LinkedList.obj
+ 0002:00002f18       ??_C@_0CC@JLDICICM@InternalBaseLibIsListValid?5?$CILis@ 0000000000010d18     BaseLib:LinkedList.obj
+ 0002:00002f40       ??_C@_0BF@NMBJJECB@?$CBIsListEmpty?5?$CIEntry?$CJ@ 0000000000010d40     BaseLib:LinkedList.obj
+ 0002:00002f58       ??_C@_0CI@BGLNHBLM@?$CI?$CI?$CIUINTN?$CJ?5?$CIStartOfBuffer?$CJ?$CJ?5?$CG?50x@ 0000000000010d58     BasePrintLib:PrintLib.obj
+ 0002:00002f80       ??_C@_0DG@INKIDCMN@d?3?2myedk2?2edk2?2MdePkg?2Library?2B@ 0000000000010d80     BasePrintLib:PrintLib.obj
+ 0002:00002fb8       ??_C@_0CH@KJLBGOBB@?$CI?$CI?$CIUINTN?$CJ?5?$CIFormatString?$CJ?$CJ?5?$CG?50x0@ 0000000000010db8     BasePrintLib:PrintLib.obj
+ 0002:00002fe0       ??_C@_0DO@DLJLNPNA@d?3?2myedk2?2edk2?2MdePkg?2Library?2B@ 0000000000010de0     BasePrintLib:PrintLibInternal.obj
+ 0002:00003020       ??_C@_0BJ@CNKJJNE@?$CIBuffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 0000000000010e20     BasePrintLib:PrintLibInternal.obj
+ 0002:00003040       ??_C@_0EB@HDGIDCIO@?$CIBufferSize?5?$DM?$DN?5?$CI_gPcd_FixedAtBu@ 0000000000010e40     BasePrintLib:PrintLibInternal.obj
+ 0002:00003088       ??_C@_0BJ@PPAKKDJG@?$CIFormat?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 0000000000010e88     BasePrintLib:PrintLibInternal.obj
+ 0002:000030b0       ??_C@_0ED@LPDDCECB@?$CIBufferSize?5?$DM?$DN?5?$CI_gPcd_FixedAtBu@ 0000000000010eb0     BasePrintLib:PrintLibInternal.obj
+ 0002:00003100       ??_C@_0IM@BFJJFLGB@?$CIStrnLenS?5?$CI?$CICHAR16?5?$CK?$CJFormat?0?5?$CI_@ 0000000000010f00     BasePrintLib:PrintLibInternal.obj
+ 0002:00003190       ??_C@_0ID@PLGJGION@?$CIAsciiStrnLenS?5?$CIFormat?0?5?$CI_gPcd_@ 0000000000010f90     BasePrintLib:PrintLibInternal.obj
+ 0002:00003218       ??_C@_0O@MLOLIMFM@?$DMnull?5string?$DO@ 0000000000011018     BasePrintLib:PrintLibInternal.obj
+ 0002:00003228       ??_C@_0M@BJJDNPHK@?$DMnull?5guid?$DO@ 0000000000011028     BasePrintLib:PrintLibInternal.obj
+ 0002:00003238       ??_C@_0DB@PMLHLBMO@?$CF08x?9?$CF04x?9?$CF04x?9?$CF02x?$CF02x?9?$CF02x?$CF02@ 0000000000011038     BasePrintLib:PrintLibInternal.obj
+ 0002:00003270       ??_C@_0M@LHGBCIKM@?$DMnull?5time?$DO@ 0000000000011070     BasePrintLib:PrintLibInternal.obj
+ 0002:00003280       ??_C@_0BK@FCPKCIDD@?$CF02d?1?$CF02d?1?$CF04d?5?5?$CF02d?3?$CF02d@ 0000000000011080     BasePrintLib:PrintLibInternal.obj
+ 0002:0000329c       ??_C@_04JIMNDDED@?$CF08X@  000000000001109c     BasePrintLib:PrintLibInternal.obj
+ 0002:000032a4       ??_C@_02PCIJFNDE@?$AN?6@   00000000000110a4     BasePrintLib:PrintLibInternal.obj
+ 0002:000032a8       ??_C@_01LIIJDEN@?$AN@      00000000000110a8     BasePrintLib:PrintLibInternal.obj
+ 0002:000032b0       mWarningString             00000000000110b0     BasePrintLib:PrintLibInternal.obj
+ 0002:00003350       mErrorString               0000000000011150     BasePrintLib:PrintLibInternal.obj
+ 0002:00003610       mHexStr                    0000000000011410     BasePrintLib:PrintLibInternal.obj
+ 0002:00003620       ??_C@_0BH@LKMBFCBF@Format?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000011420     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:00003640       ??_C@_0EA@MCEJFCHO@d?3?2myedk2?2edk2?2MdePkg?2Library?2B@ 0000000000011440     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:00003680       ??_C@_0BI@NOCKJDBJ@ASSERT?5?$FL?$CFa?$FN?5?$CFa?$CI?$CFd?$CJ?3?5?$CFa?6@ 0000000000011480     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:00003698       ??_C@_0BN@COECPDCC@gImageHandle?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000011498     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000036c0       ??_C@_0FC@HJEJKBBP@d?3?2myedk2?2edk2?2MdePkg?2Library?2U@ 00000000000114c0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00003718       ??_C@_0BE@DGNHAHIL@gST?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000011518     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00003730       ??_C@_0BE@BDFJLGLN@gBS?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000011530     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00003750       ??_C@_0EM@BLKCBDHP@d?3?2myedk2?2edk2?2MdePkg?2Library?2U@ 0000000000011550     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0002:000037a0       ??_C@_0DO@GEEICOOO@AllocationSize?5?$DM?$DN?5?$CI0xFFFFFFFFFF@ 00000000000115a0     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0002:000037e0       ??_C@_0BE@OBDFIHND@gRT?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000115e0     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:00003800       ??_C@_0FI@ELFALICJ@d?3?2myedk2?2edk2?2MdePkg?2Library?2U@ 0000000000011600     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:00003860       ??_C@_0FG@PKIHNGDJ@d?3?2myedk2?2edk2?2MdePkg?2Library?2U@ 0000000000011660     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:000038b8       ??_C@_0DC@CNNBPJA@mDevicePathLibDevicePathUtiliti@ 00000000000116b8     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:000038f0       ??_C@_0BF@CBLMFKOC@Node?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000116f0     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:00003910       ??_C@_0EH@ENCEEKKL@?$CILength?5?$DO?$DN?5sizeof?5?$CIEFI_DEVICE_P@ 0000000000011710     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:00003958       ??_C@_0DA@MHLDPJPP@d?3?2myedk2?2edk2?2MdePkg?2Library?2U@ 0000000000011758     UefiLib:UefiLib.obj
+ 0002:00003988       ??_C@_0BN@HHGHCLME@ProtocolGuid?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000011788     UefiLib:UefiLib.obj
+ 0002:000039a8       ??_C@_0BF@JGGLMCFN@Lock?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000117a8     UefiLib:UefiLib.obj
+ 0002:000039c0       ??_C@_0CD@PGOFFOAH@Lock?9?$DOLock?5?$CB?$DN?5EfiLockUninitiali@ 00000000000117c0     UefiLib:UefiLib.obj
+ 0002:000039e8       ??_C@_0BO@FHNOFLFJ@Lock?9?$DOLock?5?$DN?$DN?5EfiLockAcquired@ 00000000000117e8     UefiLib:UefiLib.obj
+ 0002:00003a08       ??_C@_0BO@MHFMIIAE@DriverBinding?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000011808     UefiLib:UefiDriverModel.obj
+ 0002:00003a28       ??_C@_0DI@BANHGNLM@d?3?2myedk2?2edk2?2MdePkg?2Library?2U@ 0000000000011828     UefiLib:UefiDriverModel.obj
+ 0002:00003a60       ??_C@_0DF@FLOOCGEB@d?3?2myedk2?2edk2?2NetworkPkg?2Libra@ 0000000000011860     DxeDpcLib:DpcLib.obj
+ 0002:00003a98       ??_C@_0DI@FNJBLHID@d?3?2myedk2?2edk2?2NetworkPkg?2Libra@ 0000000000011898     DxeNetLib:DxeNetLib.obj
+ 0002:00003ad0       ??_C@_0N@NMJPNKHJ@NetMask?5?$CB?$DN?50@ 00000000000118d0     DxeNetLib:DxeNetLib.obj
+ 0002:00003ae0       ??_C@_0CI@KOOBFNBF@?$CIMaskLength?5?$DO?$DN?50?$CJ?5?$CG?$CG?5?$CIMaskLengt@ 00000000000118e0     DxeNetLib:DxeNetLib.obj
+ 0002:00003b10       ??_C@_0EG@FMMHPKDI@?$CIServiceBindingGuid?5?$CB?$DN?5?$CI?$CIvoid?5?$CK@ 0000000000011910     DxeNetLib:DxeNetLib.obj
+ 0002:00003b58       ??_C@_0CD@PCCGAHJM@ServiceBindingGuid?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ@ 0000000000011958     DxeNetLib:DxeNetLib.obj
+ 0002:00003b80       ??_C@_0EM@LGFDJDIA@Node?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?5?$CG?$CG?5LocalIp@ 0000000000011980     DxeNetLib:DxeNetLib.obj
+ 0002:00003bd0       gIp4AllMasks               00000000000119d0     DxeNetLib:DxeNetLib.obj
+ 0002:00003c58       ??_C@_0BA@MDHFKOHH@BlockOpNum?5?$DO?$DN?51@ 0000000000011a58     DxeNetLib:NetBuffer.obj
+ 0002:00003c68       ??_C@_0DI@EDLIOPOO@d?3?2myedk2?2edk2?2NetworkPkg?2Libra@ 0000000000011a68     DxeNetLib:NetBuffer.obj
+ 0002:00003ca0       ??_C@_07DJKBCKNJ@Len?5?$DO?50@ 0000000000011aa0     DxeNetLib:NetBuffer.obj
+ 0002:00003ca8       ??_C@_0BH@HKOFEGGJ@Vector?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000011aa8     DxeNetLib:NetBuffer.obj
+ 0002:00003cc0       ??_C@_0GP@BJHFFKHJ@?$CI?$CIVector?$CJ?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ?5?$CG?$CG?5?$CI@ 0000000000011ac0     DxeNetLib:NetBuffer.obj
+ 0002:00003d30       ??_C@_0BD@DIPGLBBO@Vector?9?$DORefCnt?5?$DO?50@ 0000000000011b30     DxeNetLib:NetBuffer.obj
+ 0002:00003d48       ??_C@_0BF@LJMLDKHP@Nbuf?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000011b48     DxeNetLib:NetBuffer.obj
+ 0002:00003d60       ??_C@_0BB@DOGOGLPG@Nbuf?9?$DORefCnt?5?$DO?50@ 0000000000011b60     DxeNetLib:NetBuffer.obj
+ 0002:00003d78       ??_C@_0BD@CJPEEIBJ@IsListEmpty?5?$CIHead?$CJ@ 0000000000011b78     DxeNetLib:NetBuffer.obj
+ 0002:00003d90       ??_C@_0HL@FGMBHKJG@?$CI?$CINbuf?9?$DOVector?$CJ?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000011b90     DxeNetLib:NetBuffer.obj
+ 0002:00003e10       ??_C@_0BJ@KIFBBHL@Index?5?$DM?5Nbuf?9?$DOBlockOpNum@ 0000000000011c10     DxeNetLib:NetBuffer.obj
+ 0002:00003e30       ??_C@_0EL@JHACLFKC@?$CIExtFragment?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ?5?$CG@ 0000000000011c30     DxeNetLib:NetBuffer.obj
+ 0002:00003e80       ??_C@_0DC@MGLKJFKO@?$CINbuf?9?$DOBlockOpNum?5?$DN?$DN?51?$CJ?5?$CG?$CG?5?$CINbu@ 0000000000011c80     DxeNetLib:NetBuffer.obj
+ 0002:00003ec0       ??_C@_0ED@NCEEIHFB@?$CINbuf?9?$DOVector?9?$DOFree?5?$DN?$DN?5?$CI?$CIvoid?5?$CK@ 0000000000011cc0     DxeNetLib:NetBuffer.obj
+ 0002:00003f08       ??_C@_0DE@FGAADEGF@Nbuf?9?$DOBlockOp?$FL0?$FN?4Tail?5?$DM?$DN?5Nbuf?9?$DO@ 0000000000011d08     DxeNetLib:NetBuffer.obj
+ 0002:00003f40       ??_C@_0DE@CILPCCFL@?$CIBlockOp?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ?5?$CG?$CG?5?$CIB@ 0000000000011d40     DxeNetLib:NetBuffer.obj
+ 0002:00003f74       ??_C@_04IFLCJLKB@Dest@     0000000000011d74     DxeNetLib:NetBuffer.obj
+ 0002:00003f80       ??_C@_0BI@FINLCMGD@NbufQue?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000011d80     DxeNetLib:NetBuffer.obj
+ 0002:00003fa0       ??_C@_0HB@ILKEBNKK@?$CI?$CINbufQue?$CJ?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ?5?$CG?$CG?5@ 0000000000011da0     DxeNetLib:NetBuffer.obj
+ 0002:00004018       ??_C@_0BF@CPBCKIGP@Dest?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000011e18     DxeNetLib:NetBuffer.obj
+ 0002:00004030       ??_C@_0BF@NHCICEBK@IpIo?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000011e30     DxeIpIoLib:DxeIpIoLib.obj
+ 0002:00004048       ??_C@_0DK@DMHKHGLP@d?3?2myedk2?2edk2?2NetworkPkg?2Libra@ 0000000000011e48     DxeIpIoLib:DxeIpIoLib.obj
+ 0002:00004088       ??_C@_0BE@EMIILCJN@Pkt?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000011e88     DxeIpIoLib:DxeIpIoLib.obj
+ 0002:000040a0       ??_C@_0BI@CLHALNPD@Session?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000011ea0     DxeIpIoLib:DxeIpIoLib.obj
+ 0002:000040b8       ??_C@_0BF@FJHJDOEI@IpIo?9?$DOIpVersion?5?$DN?$DN?54@ 0000000000011eb8     DxeIpIoLib:DxeIpIoLib.obj
+ 0002:000040d0       ??_C@_0BF@GLEPFMMK@IpIo?9?$DOIpVersion?5?$DN?$DN?56@ 0000000000011ed0     DxeIpIoLib:DxeIpIoLib.obj
+ 0002:000040e8       ??_C@_0BN@KNIIEBKA@RecycleEvent?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000011ee8     DxeIpIoLib:DxeIpIoLib.obj
+ 0002:00004108       ??_C@_0BH@GJHHIFJN@RxData?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000011f08     DxeIpIoLib:DxeIpIoLib.obj
+ 0002:00004120       ??_C@_0CJ@GPHCHMBF@RxData?9?$DOIp4RxData?4Header?5?$CB?$DN?5?$CI?$CIv@ 0000000000011f20     DxeIpIoLib:DxeIpIoLib.obj
+ 0002:00004150       ??_C@_0CF@MGNJBJGP@RxData?9?$DOIp4RxData?4FragmentCount@ 0000000000011f50     DxeIpIoLib:DxeIpIoLib.obj
+ 0002:00004178       ??_C@_0CJ@HCLNKNLH@RxData?9?$DOIp6RxData?4Header?5?$CB?$DN?5?$CI?$CIv@ 0000000000011f78     DxeIpIoLib:DxeIpIoLib.obj
+ 0002:000041a8       ??_C@_0CF@BLMBCPON@RxData?9?$DOIp6RxData?4FragmentCount@ 0000000000011fa8     DxeIpIoLib:DxeIpIoLib.obj
+ 0002:000041d0       ??_C@_0CL@JMFBKFN@?$CBOpenData?9?$DOIpConfigData?4Ip4CfgD@ 0000000000011fd0     DxeIpIoLib:DxeIpIoLib.obj
+ 0002:00004200       ??_C@_0CE@LEAHDONK@IsListEmpty?5?$CI?$CGIpIo?9?$DOPendingSndL@ 0000000000012000     DxeIpIoLib:DxeIpIoLib.obj
+ 0002:00004228       ??_C@_0DB@BMGANDMP@?$CIIpIo?9?$DOIpVersion?5?$DN?$DN?54?$CJ?5?$HM?$HM?5?$CIIpIo@ 0000000000012028     DxeIpIoLib:DxeIpIoLib.obj
+ 0002:00004260       ??_C@_0BH@NIPIOMK@IpInfo?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000012060     DxeIpIoLib:DxeIpIoLib.obj
+ 0002:00004278       ??_C@_0BD@LFDBDGM@IpInfo?9?$DORefCnt?5?$DO?50@ 0000000000012078     DxeIpIoLib:DxeIpIoLib.obj
+ 0002:00004290       ??_C@_0P@KHLDMCPF@IcmpError?5?$DM?$DN?59@ 0000000000012090     DxeIpIoLib:DxeIpIoLib.obj
+ 0002:000042a0       ??_C@_0BC@FEDIJHFF@?$CI?$CIBOOLEAN?$CJ?$CI0?$DN?$DN1?$CJ?$CJ@ 00000000000120a0     DxeIpIoLib:DxeIpIoLib.obj
+ 0002:000042b8       ??_C@_0DI@DAGDPLPG@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFF@ 00000000000120b8     BaseMemoryLibRepStr:SetMemWrapper.obj
+ 0002:000042f0       ??_C@_0EC@NJPJFNGD@d?3?2myedk2?2edk2?2MdePkg?2Library?2B@ 00000000000120f0     BaseMemoryLibRepStr:SetMemWrapper.obj
+ 0002:00004338       ??_C@_0DC@DDBICJIK@d?3?2myedk2?2edk2?2MdePkg?2Library?2B@ 0000000000012138     BaseLib:Unaligned.obj
+ 0002:00004370       ??_C@_0N@KGHEHMDL@Divisor?5?$CB?$DN?50@ 0000000000012170     BaseLib:DivU64x32Remainder.obj
+ 0002:00004380       ??_C@_0DL@JEBMKBEC@d?3?2myedk2?2edk2?2MdePkg?2Library?2B@ 0000000000012180     BaseLib:DivU64x32Remainder.obj
+ 0002:000043c0       ??_C@_0CC@GFNLNIOC@?$CI?$CIUINTN?$CJString?5?$CG?50x00000001?$CJ?5?$DN?$DN@ 00000000000121c0     BaseLib:SafeString.obj
+ 0002:000043e8       ??_C@_0DD@OKIGPFG@d?3?2myedk2?2edk2?2MdePkg?2Library?2B@ 00000000000121e8     BaseLib:SafeString.obj
+ 0002:00004420       ??_C@_0BH@MAAHKCPC@String?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000012220     BaseLib:String.obj
+ 0002:00004438       ??_C@_0CP@DJBLNMJI@d?3?2myedk2?2edk2?2MdePkg?2Library?2B@ 0000000000012238     BaseLib:String.obj
+ 0002:00004468       ??_C@_0DK@EOJCOAME@Length?5?$DM?5_gPcd_FixedAtBuild_Pcd@ 0000000000012268     BaseLib:String.obj
+ 0002:000044a8       ??_C@_0DI@MDIKFADO@Length?5?$DM?5_gPcd_FixedAtBuild_Pcd@ 00000000000122a8     BaseLib:String.obj
+ 0002:000044e0       ??_C@_0BL@IKFBNFIL@AsciiStrSize?5?$CIFirstString?$CJ@ 00000000000122e0     BaseLib:String.obj
+ 0002:00004500       ??_C@_0BM@EDNOKLLE@AsciiStrSize?5?$CISecondString?$CJ@ 0000000000012300     BaseLib:String.obj
+ 0002:00004520       ??_C@_0DJ@JJHGIFMP@Length?5?$DM?$DN?5_gPcd_FixedAtBuild_Pc@ 0000000000012320     BaseLib:String.obj
+ 0002:000045b0       __volatile_metadata        00000000000123b0     <linker-defined>
+ 0003:00000000       gEfiLoadedImageProtocolGuid 0000000000012500     TcpDxe:AutoGen.obj
+ 0003:00000010       gEfiComponentName2ProtocolGuid 0000000000012510     TcpDxe:AutoGen.obj
+ 0003:00000020       gEfiDevicePathProtocolGuid 0000000000012520     TcpDxe:AutoGen.obj
+ 0003:00000030       gEfiIp4Config2ProtocolGuid 0000000000012530     TcpDxe:AutoGen.obj
+ 0003:00000040       gEfiDevicePathUtilitiesProtocolGuid 0000000000012540     TcpDxe:AutoGen.obj
+ 0003:00000050       gEfiIp4ServiceBindingProtocolGuid 0000000000012550     TcpDxe:AutoGen.obj
+ 0003:00000060       gEfiIp6ServiceBindingProtocolGuid 0000000000012560     TcpDxe:AutoGen.obj
+ 0003:00000070       gEfiIp4ProtocolGuid        0000000000012570     TcpDxe:AutoGen.obj
+ 0003:00000080       gEfiDriverBindingProtocolGuid 0000000000012580     TcpDxe:AutoGen.obj
+ 0003:00000090       gEfiIp6ProtocolGuid        0000000000012590     TcpDxe:AutoGen.obj
+ 0003:000000a0       gEfiTcp4ServiceBindingProtocolGuid 00000000000125a0     TcpDxe:AutoGen.obj
+ 0003:000000b0       gEfiComponentNameProtocolGuid 00000000000125b0     TcpDxe:AutoGen.obj
+ 0003:000000c0       gEfiDpcProtocolGuid        00000000000125c0     TcpDxe:AutoGen.obj
+ 0003:000000d0       gEfiTcp6ServiceBindingProtocolGuid 00000000000125d0     TcpDxe:AutoGen.obj
+ 0003:000000e0       gEfiTcp6ProtocolGuid       00000000000125e0     TcpDxe:AutoGen.obj
+ 0003:000000f0       gEfiTcp4ProtocolGuid       00000000000125f0     TcpDxe:AutoGen.obj
+ 0003:00000100       gTcp6DriverBinding         0000000000012600     TcpDxe:TcpDriver.obj
+ 0003:00000130       gTcp6ProtocolTemplate      0000000000012630     TcpDxe:TcpDriver.obj
+ 0003:00000178       gTcpServiceBinding         0000000000012678     TcpDxe:TcpDriver.obj
+ 0003:00000190       mTcpDefaultSockData        0000000000012690     TcpDxe:TcpDriver.obj
+ 0003:000001f0       gTcp4ProtocolTemplate      00000000000126f0     TcpDxe:TcpDriver.obj
+ 0003:00000240       gTcp4DriverBinding         0000000000012740     TcpDxe:TcpDriver.obj
+ 0003:00000270       mTcpGlobalIss              0000000000012770     TcpDxe:TcpMisc.obj
+ 0003:00000278       mTcpRunQue                 0000000000012778     TcpDxe:TcpMisc.obj
+ 0003:00000288       mTcpListenQue              0000000000012788     TcpDxe:TcpMisc.obj
+ 0003:00000298       gTcpComponentName          0000000000012798     TcpDxe:ComponentName.obj
+ 0003:000002b0       gTcpComponentName2         00000000000127b0     TcpDxe:ComponentName.obj
+ 0003:000002c8       mTcpDriverNameTable        00000000000127c8     TcpDxe:ComponentName.obj
+ 0003:000002e8       mTcpTick                   00000000000127e8     TcpDxe:TcpTimer.obj
+ 0003:000002f0       mIp4IoDefaultIpConfigData  00000000000127f0     DxeIpIoLib:DxeIpIoLib.obj
+ 0003:00000310       mIp6IoDefaultIpConfigData  0000000000012810     DxeIpIoLib:DxeIpIoLib.obj
+ 0003:00000348       mIcmpErrMap                0000000000012848     DxeIpIoLib:DxeIpIoLib.obj
+ 0003:00000360       mActiveIpIoList            0000000000012860     DxeIpIoLib:DxeIpIoLib.obj
+ 0003:00000370       mIcmp6ErrMap               0000000000012870     DxeIpIoLib:DxeIpIoLib.obj
+ 0003:00000388       mTcpTimer                  0000000000012888     TcpDxe:TcpDriver.obj
+ 0003:00000398       gTcpControllerNameTable    0000000000012898     TcpDxe:ComponentName.obj
+ 0003:000003a0       gST                        00000000000128a0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:000003a8       gBS                        00000000000128a8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:000003b0       gImageHandle               00000000000128b0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:000003b8       gRT                        00000000000128b8     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0003:000003c0       mDevicePathLibDevicePathUtilities 00000000000128c0     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0003:000003c8       mZeroIp4Addr               00000000000128c8     DxeNetLib:DxeNetLib.obj
+ 0003:000003cc       gParity                    00000000000128cc     PcAtSerialPortLib:SerialPortLib.obj
+ 0003:000003cd       gBreakSet                  00000000000128cd     PcAtSerialPortLib:SerialPortLib.obj
+ 0003:000003d0       mDpc                       00000000000128d0     <common>
+ 0003:000003d8       mTcp6RandomPort            00000000000128d8     <common>
+ 0003:000003da       mTcp4RandomPort            00000000000128da     <common>
+
+ entry point at        0001:0000035c
+
+ Static symbols
+
+ 0001:0000001a       InternalMemCopyMem.0       00000000000002da     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000002a       @CopyBackward              00000000000002ea     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000033       @CopyBytes                 00000000000002f3     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000014e       TdVmCall.no_return_data    000000000000040e     BaseLib:TdVmcall.obj
+ 0001:000001cb       TdCall.exit                000000000000048b     BaseLib:TdCall.obj
+ 0005:00000000       $unwind$_DriverUnloadHandler 0000000000013220     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0005:00000010       $unwind$InternalBaseLibIsListValid 0000000000013230     BaseLib:LinkedList.obj
+ 0005:00000010       $unwind$IsListEmpty        0000000000013230     BaseLib:LinkedList.obj
+ 0005:00000010       $unwind$RemoveEntryList    0000000000013230     BaseLib:LinkedList.obj
+ 0005:00000010       $unwind$StrnLenS           0000000000013230     BaseLib:SafeString.obj
+ 0005:00000010       $unwind$_ModuleEntryPoint  0000000000013230     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0005:00000010       $unwind$EfiAcquireLockOrFail 0000000000013230     UefiLib:UefiLib.obj
+ 0005:00000010       $unwind$EfiReleaseLock     0000000000013230     UefiLib:UefiLib.obj
+ 0005:00000010       $unwind$AllocateZeroPool   0000000000013230     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:00000010       $unwind$IpIoTransmitHandlerDpc 0000000000013230     DxeIpIoLib:DxeIpIoLib.obj
+ 0005:00000010       $unwind$NetIp6IsValidUnicast 0000000000013230     DxeNetLib:DxeNetLib.obj
+ 0005:00000010       $unwind$NetbufFree         0000000000013230     DxeNetLib:NetBuffer.obj
+ 0005:00000010       $unwind$NetbufQueFlush     0000000000013230     DxeNetLib:NetBuffer.obj
+ 0005:00000010       $unwind$NetbufQueFree      0000000000013230     DxeNetLib:NetBuffer.obj
+ 0005:00000010       $unwind$SockDestroy        0000000000013230     TcpDxe:SockImpl.obj
+ 0005:00000010       $unwind$Tcp4Poll           0000000000013230     TcpDxe:TcpMain.obj
+ 0005:00000010       $unwind$Tcp6Poll           0000000000013230     TcpDxe:TcpMain.obj
+ 0005:00000010       $unwind$TcpInitTcbLocal    0000000000013230     TcpDxe:TcpMisc.obj
+ 0005:00000010       $unwind$TcpIsIpZero        0000000000013230     TcpDxe:TcpMisc.obj
+ 0005:00000010       $unwind$TcpVerifySegment   0000000000013230     TcpDxe:TcpOutput.obj
+ 0005:00000010       $unwind$Tcp2MSLTimeout     0000000000013230     TcpDxe:TcpTimer.obj
+ 0005:00000010       $unwind$TcpClose           0000000000013230     TcpDxe:TcpTimer.obj
+ 0005:00000010       $unwind$TcpConnectTimeout  0000000000013230     TcpDxe:TcpTimer.obj
+ 0005:00000010       $unwind$TcpFinwait2Timeout 0000000000013230     TcpDxe:TcpTimer.obj
+ 0005:00000010       $unwind$TcpKeepaliveTimeout 0000000000013230     TcpDxe:TcpTimer.obj
+ 0005:00000010       $unwind$TcpProbeTimeout    0000000000013230     TcpDxe:TcpTimer.obj
+ 0005:00000010       $unwind$TcpRexmitTimeout   0000000000013230     TcpDxe:TcpTimer.obj
+ 0005:00000018       $unwind$AsciiStrnCmp       0000000000013238     BaseLib:String.obj
+ 0005:00000018       $unwind$StrLen             0000000000013238     BaseLib:String.obj
+ 0005:00000018       $unwind$BasePrintLibValueToString 0000000000013238     BasePrintLib:PrintLibInternal.obj
+ 0005:00000018       $unwind$FreeUnicodeStringTable 0000000000013238     UefiLib:UefiLib.obj
+ 0005:00000018       $unwind$IsLanguageSupported 0000000000013238     UefiLib:UefiLib.obj
+ 0005:00000018       $unwind$IpIoDestroy        0000000000013238     DxeIpIoLib:DxeIpIoLib.obj
+ 0005:00000018       $unwind$IpIoDestroySndEntry 0000000000013238     DxeIpIoLib:DxeIpIoLib.obj
+ 0005:00000018       $unwind$IpIoGetIcmpErrStatus 0000000000013238     DxeIpIoLib:DxeIpIoLib.obj
+ 0005:00000018       $unwind$NetIp4IsUnicast    0000000000013238     DxeNetLib:DxeNetLib.obj
+ 0005:00000018       $unwind$NetblockTrim       0000000000013238     DxeNetLib:NetBuffer.obj
+ 0005:00000018       $unwind$NetbufAlloc        0000000000013238     DxeNetLib:NetBuffer.obj
+ 0005:00000018       $unwind$NetbufAllocStruct  0000000000013238     DxeNetLib:NetBuffer.obj
+ 0005:00000018       $unwind$NetbufGetByte      0000000000013238     DxeNetLib:NetBuffer.obj
+ 0005:00000018       $unwind$NetbufReserve      0000000000013238     DxeNetLib:NetBuffer.obj
+ 0005:00000018       $unwind$ProcessLibraryConstructorList 0000000000013238     TcpDxe:AutoGen.obj
+ 0005:00000018       $unwind$SockConnFlush      0000000000013238     TcpDxe:SockImpl.obj
+ 0005:00000018       $unwind$SockFlushPendingToken 0000000000013238     TcpDxe:SockImpl.obj
+ 0005:00000018       $unwind$SockWakeListenToken 0000000000013238     TcpDxe:SockImpl.obj
+ 0005:00000018       $unwind$SockConfigure      0000000000013238     TcpDxe:SockInterface.obj
+ 0005:00000018       $unwind$SockConnect        0000000000013238     TcpDxe:SockInterface.obj
+ 0005:00000018       $unwind$SockFlush          0000000000013238     TcpDxe:SockInterface.obj
+ 0005:00000018       $unwind$TcpDestroyChildEntryInHandleBuffer 0000000000013238     TcpDxe:TcpDriver.obj
+ 0005:00000018       $unwind$TcpDestroySocketCallback 0000000000013238     TcpDxe:TcpDriver.obj
+ 0005:00000018       $unwind$TcpCloneTcb        0000000000013238     TcpDxe:TcpMisc.obj
+ 0005:00000018       $unwind$TcpRetransmit      0000000000013238     TcpDxe:TcpOutput.obj
+ 0005:00000028       $unwind$ProcessModuleEntryPointList 0000000000013248     TcpDxe:AutoGen.obj
+ 0005:00000034       $unwind$FreePool           0000000000013254     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:00000034       $unwind$InternalAllocatePool 0000000000013254     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:00000034       $unwind$Tcp4DriverBindingStart 0000000000013254     TcpDxe:TcpDriver.obj
+ 0005:00000034       $unwind$Tcp6DriverBindingStart 0000000000013254     TcpDxe:TcpDriver.obj
+ 0005:00000034       $unwind$TcpDestroyTimer    0000000000013254     TcpDxe:TcpDriver.obj
+ 0005:00000034       $unwind$TcpGetUint32       0000000000013254     TcpDxe:TcpOption.obj
+ 0005:00000034       $unwind$TcpPutUint32       0000000000013254     TcpDxe:TcpOption.obj
+ 0005:00000034       $unwind$TcpSetKeepaliveTimer 0000000000013254     TcpDxe:TcpTimer.obj
+ 0005:0000003c       $unwind$TcpCreateService   000000000001325c     TcpDxe:TcpDriver.obj
+ 0005:00000058       $unwind$TcpConfigurePcb    0000000000013278     TcpDxe:TcpDispatcher.obj
+ 0005:00000058       $unwind$TcpDestroyService  0000000000013278     TcpDxe:TcpDriver.obj
+ 0005:00000074       $unwind$NetPseudoHeadChecksum 0000000000013294     DxeNetLib:NetBuffer.obj
+ 0005:00000074       $unwind$Tcp4DriverBindingSupported 0000000000013294     TcpDxe:TcpDriver.obj
+ 0005:00000074       $unwind$Tcp6DriverBindingSupported 0000000000013294     TcpDxe:TcpDriver.obj
+ 0005:00000074       $unwind$TcpSetState        0000000000013294     TcpDxe:TcpMisc.obj
+ 0005:00000080       $unwind$TcpComponentNameGetDriverName 00000000000132a0     TcpDxe:ComponentName.obj
+ 0005:00000080       $unwind$Tcp4DriverBindingStop 00000000000132a0     TcpDxe:TcpDriver.obj
+ 0005:00000080       $unwind$Tcp6DriverBindingStop 00000000000132a0     TcpDxe:TcpDriver.obj
+ 0005:00000080       $unwind$TcpComputeRtt      00000000000132a0     TcpDxe:TcpInput.obj
+ 0005:00000088       $unwind$SockDestroyChild   00000000000132a8     TcpDxe:SockInterface.obj
+ 0005:00000088       $unwind$TcpAttachPcb       00000000000132a8     TcpDxe:TcpDispatcher.obj
+ 0005:00000088       $unwind$TcpCreateSocketCallback 00000000000132a8     TcpDxe:TcpDriver.obj
+ 0005:0000009c       $unwind$IpIoIcmpv4Handler  00000000000132bc     DxeIpIoLib:DxeIpIoLib.obj
+ 0005:0000009c       $unwind$IpIoIcmpv6Handler  00000000000132bc     DxeIpIoLib:DxeIpIoLib.obj
+ 0005:0000009c       $unwind$TcpServiceBindingCreateChild 00000000000132bc     TcpDxe:TcpDriver.obj
+ 0005:0000009c       $unwind$TcpResetConnection 00000000000132bc     TcpDxe:TcpMisc.obj
+ 0005:000000b0       $unwind$TcpServiceBindingDestroyChild 00000000000132d0     TcpDxe:TcpDriver.obj
+ 0005:000000bc       $unwind$Tcp4GetModeData    00000000000132dc     TcpDxe:TcpMain.obj
+ 0005:000000bc       $unwind$Tcp6GetModeData    00000000000132dc     TcpDxe:TcpMain.obj
+ 0005:000000d0       $unwind$Tcp4Configure      00000000000132f0     TcpDxe:TcpMain.obj
+ 0005:000000e0       $unwind$NetLibDestroyServiceChild 0000000000013300     DxeNetLib:DxeNetLib.obj
+ 0005:000000e0       $unwind$Tcp4Routes         0000000000013300     TcpDxe:TcpMain.obj
+ 0005:000000f4       $unwind$InsertHeadList     0000000000013314     BaseLib:LinkedList.obj
+ 0005:000000f4       $unwind$InsertTailList     0000000000013314     BaseLib:LinkedList.obj
+ 0005:000000f4       $unwind$AsciiStrLen        0000000000013314     BaseLib:String.obj
+ 0005:000000f4       $unwind$ZeroMem            0000000000013314     BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0005:000000f4       $unwind$SetDevicePathNodeLength 0000000000013314     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0005:000000f4       $unwind$InternalAllocateCopyPool 0000000000013314     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:000000f4       $unwind$IpIoDummyHandlerDpc 0000000000013314     DxeIpIoLib:DxeIpIoLib.obj
+ 0005:000000f4       $unwind$NetbufFreeVector   0000000000013314     DxeNetLib:NetBuffer.obj
+ 0005:000000f4       $unwind$NetbufQueAlloc     0000000000013314     DxeNetLib:NetBuffer.obj
+ 0005:000000f4       $unwind$NetbufQueAppend    0000000000013314     DxeNetLib:NetBuffer.obj
+ 0005:000000f4       $unwind$SockGetFreeSpace   0000000000013314     TcpDxe:SockImpl.obj
+ 0005:000000f4       $unwind$TcpFlushPcb        0000000000013314     TcpDxe:TcpDispatcher.obj
+ 0005:000000f4       $unwind$TcpTrimSegment     0000000000013314     TcpDxe:TcpInput.obj
+ 0005:000000f4       $unwind$Tcp4Accept         0000000000013314     TcpDxe:TcpMain.obj
+ 0005:000000f4       $unwind$Tcp4Cancel         0000000000013314     TcpDxe:TcpMain.obj
+ 0005:000000f4       $unwind$Tcp4Close          0000000000013314     TcpDxe:TcpMain.obj
+ 0005:000000f4       $unwind$Tcp4Connect        0000000000013314     TcpDxe:TcpMain.obj
+ 0005:000000f4       $unwind$Tcp4Receive        0000000000013314     TcpDxe:TcpMain.obj
+ 0005:000000f4       $unwind$Tcp4Transmit       0000000000013314     TcpDxe:TcpMain.obj
+ 0005:000000f4       $unwind$Tcp6Accept         0000000000013314     TcpDxe:TcpMain.obj
+ 0005:000000f4       $unwind$Tcp6Cancel         0000000000013314     TcpDxe:TcpMain.obj
+ 0005:000000f4       $unwind$Tcp6Close          0000000000013314     TcpDxe:TcpMain.obj
+ 0005:000000f4       $unwind$Tcp6Connect        0000000000013314     TcpDxe:TcpMain.obj
+ 0005:000000f4       $unwind$Tcp6Receive        0000000000013314     TcpDxe:TcpMain.obj
+ 0005:000000f4       $unwind$Tcp6Transmit       0000000000013314     TcpDxe:TcpMain.obj
+ 0005:000000f4       $unwind$TcpIsIpEqual       0000000000013314     TcpDxe:TcpMisc.obj
+ 0005:000000f4       $unwind$TcpComputeScale    0000000000013314     TcpDxe:TcpOption.obj
+ 0005:000000f4       $unwind$TcpGetMaxSndNxt    0000000000013314     TcpDxe:TcpOutput.obj
+ 0005:000000f4       $unwind$TcpSendAck         0000000000013314     TcpDxe:TcpOutput.obj
+ 0005:000000f4       $unwind$TcpSendZeroProbe   0000000000013314     TcpDxe:TcpOutput.obj
+ 0005:00000100       $unwind$Tcp6Configure      0000000000013320     TcpDxe:TcpMain.obj
+ 0005:00000118       $unwind$NetbufTrim         0000000000013338     DxeNetLib:NetBuffer.obj
+ 0005:00000118       $unwind$SockAccept         0000000000013338     TcpDxe:SockInterface.obj
+ 0005:00000118       $unwind$SockBufferToken    0000000000013338     TcpDxe:SockInterface.obj
+ 0005:00000118       $unwind$SockRcv            0000000000013338     TcpDxe:SockInterface.obj
+ 0005:00000118       $unwind$Tcp4GetMode        0000000000013338     TcpDxe:TcpDispatcher.obj
+ 0005:00000130       $unwind$SockCreateChild    0000000000013350     TcpDxe:SockInterface.obj
+ 0005:00000140       $unwind$NetbufCopy         0000000000013360     DxeNetLib:NetBuffer.obj
+ 0005:00000140       $unwind$NetbufQueTrim      0000000000013360     DxeNetLib:NetBuffer.obj
+ 0005:00000140       $unwind$SockCancelToken    0000000000013360     TcpDxe:SockImpl.obj
+ 0005:00000140       $unwind$SockProcessSndToken 0000000000013360     TcpDxe:SockImpl.obj
+ 0005:00000140       $unwind$SockSend           0000000000013360     TcpDxe:SockInterface.obj
+ 0005:00000140       $unwind$TcpChecksum        0000000000013360     TcpDxe:TcpMisc.obj
+ 0005:00000140       $unwind$TcpFindTcbByPeer   0000000000013360     TcpDxe:TcpMisc.obj
+ 0005:00000140       $unwind$TcpDataToSend      0000000000013360     TcpDxe:TcpOutput.obj
+ 0005:00000140       $unwind$TcpTickingDpc      0000000000013360     TcpDxe:TcpTimer.obj
+ 0005:00000158       $unwind$CompareMem         0000000000013378     BaseMemoryLibRepStr:CompareMemWrapper.obj
+ 0005:00000158       $unwind$CopyMem            0000000000013378     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0005:00000158       $unwind$IpIoCloseProtocolDestroyIpChild 0000000000013378     DxeIpIoLib:DxeIpIoLib.obj
+ 0005:00000158       $unwind$NetDestroyLinkList 0000000000013378     DxeNetLib:DxeNetLib.obj
+ 0005:00000158       $unwind$NetbufFreeList     0000000000013378     DxeNetLib:NetBuffer.obj
+ 0005:00000158       $unwind$NetbufSetBlock     0000000000013378     DxeNetLib:NetBuffer.obj
+ 0005:00000158       $unwind$SockCancel         0000000000013378     TcpDxe:SockInterface.obj
+ 0005:00000158       $unwind$SockClose          0000000000013378     TcpDxe:SockInterface.obj
+ 0005:00000158       $unwind$TcpAdjustSndQue    0000000000013378     TcpDxe:TcpInput.obj
+ 0005:00000158       $unwind$TcpFormatNetbuf    0000000000013378     TcpDxe:TcpMisc.obj
+ 0005:00000158       $unwind$TcpInitTcbPeer     0000000000013378     TcpDxe:TcpMisc.obj
+ 0005:00000158       $unwind$TcpInsertTcb       0000000000013378     TcpDxe:TcpMisc.obj
+ 0005:00000158       $unwind$TcpBuildOption     0000000000013378     TcpDxe:TcpOption.obj
+ 0005:00000158       $unwind$TcpRcvWinNow       0000000000013378     TcpDxe:TcpOutput.obj
+ 0005:0000016c       $unwind$TcpLocateTcb       000000000001338c     TcpDxe:TcpMisc.obj
+ 0005:00000188       $unwind$TcpGetRcvMss       00000000000133a8     TcpDxe:TcpMisc.obj
+ 0005:00000198       $unwind$TcpInstallDevicePath 00000000000133b8     TcpDxe:TcpMisc.obj
+ 0005:000001b8       $unwind$TcpSendIpPacket    00000000000133d8     TcpDxe:TcpIo.obj
+ 0005:000001d0       $unwind$Tcp6GetMode        00000000000133f0     TcpDxe:TcpDispatcher.obj
+ 0005:000001e4       $unwind$TcpBind            0000000000013404     TcpDxe:TcpDispatcher.obj
+ 0005:00000200       $unwind$EfiTestChildHandle 0000000000013420     UefiLib:UefiLib.obj
+ 0005:00000200       $unwind$IpIoOpen           0000000000013420     DxeIpIoLib:DxeIpIoLib.obj
+ 0005:00000200       $unwind$TcpDispatcher      0000000000013420     TcpDxe:TcpDispatcher.obj
+ 0005:00000210       $unwind$UpdateTcp4Name     0000000000013430     TcpDxe:ComponentName.obj
+ 0005:0000021c       $unwind$UpdateTcp6Name     000000000001343c     TcpDxe:ComponentName.obj
+ 0005:00000228       $unwind$TcpComponentNameGetControllerName 0000000000013448     TcpDxe:ComponentName.obj
+ 0005:0000023c       $unwind$SockProcessRcvToken 000000000001345c     TcpDxe:SockImpl.obj
+ 0005:00000258       $unwind$SockProcessTcpSndData 0000000000013478     TcpDxe:SockImpl.obj
+ 0005:00000268       $unwind$AddUnicodeString2  0000000000013488     UefiLib:UefiLib.obj
+ 0005:00000268       $unwind$NetbufFromExt      0000000000013488     DxeNetLib:NetBuffer.obj
+ 0005:00000268       $unwind$SockCreate         0000000000013488     TcpDxe:SockImpl.obj
+ 0005:00000268       $unwind$TcpQueueData       0000000000013488     TcpDxe:TcpInput.obj
+ 0005:00000284       $unwind$SockClone          00000000000134a4     TcpDxe:SockImpl.obj
+ 0005:00000290       $unwind$LookupUnicodeString2 00000000000134b0     UefiLib:UefiLib.obj
+ 0005:00000290       $unwind$SockDataSent       00000000000134b0     TcpDxe:SockImpl.obj
+ 0005:000002a8       $unwind$TcpSynBuildOption  00000000000134c8     TcpDxe:TcpOption.obj
+ 0005:000002c0       $unwind$TcpParseOption     00000000000134e0     TcpDxe:TcpOption.obj
+ 0005:000002d8       $unwind$TcpSendReset       00000000000134f8     TcpDxe:TcpOutput.obj
+ 0005:000002d8       $unwind$TcpTransmitSegment 00000000000134f8     TcpDxe:TcpOutput.obj
+ 0005:000002f4       $unwind$TcpGetSegmentSndQue 0000000000013514     TcpDxe:TcpOutput.obj
+ 0005:00000310       $unwind$TcpToSendData      0000000000013530     TcpDxe:TcpOutput.obj
+ 0005:00000328       $unwind$TcpDeliverData     0000000000013548     TcpDxe:TcpInput.obj
+ 0005:00000340       $unwind$TcpInput           0000000000013560     TcpDxe:TcpInput.obj
+ 0005:00000358       $unwind$TcpIcmpInput       0000000000013578     TcpDxe:TcpInput.obj
+ 0005:0000036c       $unwind$UnicodeSPrint      000000000001358c     BasePrintLib:PrintLib.obj
+ 0005:00000378       $unwind$AsciiSPrint        0000000000013598     BasePrintLib:PrintLib.obj
+ 0005:00000380       $unwind$BasePrintLibSPrintMarker 00000000000135a0     BasePrintLib:PrintLibInternal.obj
+ 0005:0000039c       $unwind$BasePrintLibSPrint 00000000000135bc     BasePrintLib:PrintLibInternal.obj
+ 0005:000003a4       $unwind$DebugPrint         00000000000135c4     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:000003ac       $unwind$DebugPrintMarker   00000000000135cc     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:000003c0       $unwind$DebugAssert        00000000000135e0     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:000003c8       $unwind$EfiLibInstallDriverBindingComponentName2 00000000000135e8     UefiLib:UefiDriverModel.obj
+ 0005:000003d8       $unwind$NetLibCreateIPv4DPathNode 00000000000135f8     DxeNetLib:DxeNetLib.obj
+ 0005:000003e8       $unwind$NetbufAllocSpace   0000000000013608     DxeNetLib:NetBuffer.obj
+ 0005:000003fc       $unwind$IpIoFindSender     000000000001361c     DxeIpIoLib:DxeIpIoLib.obj
+ 0005:000003fc       $unwind$NetbufQueCopy      000000000001361c     DxeNetLib:NetBuffer.obj
+ 0005:00000418       $unwind$NetIp6PseudoHeadChecksum 0000000000013638     DxeNetLib:NetBuffer.obj
+ 0005:00000424       $unwind$IpIoCreateIpChildOpenProtocol 0000000000013644     DxeIpIoLib:DxeIpIoLib.obj
+ 0005:0000043c       $unwind$IpIoCreateSndEntry 000000000001365c     DxeIpIoLib:DxeIpIoLib.obj
+ 0005:00000454       $unwind$IpIoListenHandlerDpc 0000000000013674     DxeIpIoLib:DxeIpIoLib.obj
+ 0005:0000046c       $unwind$IpIoCreate         000000000001368c     DxeIpIoLib:DxeIpIoLib.obj
+ 0005:00000480       $unwind$IpIoAddIp          00000000000136a0     DxeIpIoLib:DxeIpIoLib.obj
+ 0005:00000494       $unwind$IpIoConfigIp       00000000000136b4     DxeIpIoLib:DxeIpIoLib.obj
+ 0005:000004b0       $unwind$IpIoRemoveIp       00000000000136d0     DxeIpIoLib:DxeIpIoLib.obj

@@ -1,0 +1,1 @@
+  d:\myedk2\edk2\UefiCpuPkg\Library\VmgExitLibNull\VmgExitLibNull.c d:\myedk2\edk2\UefiCpuPkg\Library\VmgExitLibNull\VmTdExitNull.c

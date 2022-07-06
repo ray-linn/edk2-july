@@ -1,0 +1,7 @@
+
+
+!IF EXIST(d:\myedk2\edk2\Build\OvmfX64\DEBUG_VS2019\X64\OvmfPkg\TdxDxe\TdxDxe\OUTPUT\X64\ApRunLoop.nasm.trim.deps)
+!INCLUDE d:\myedk2\edk2\Build\OvmfX64\DEBUG_VS2019\X64\OvmfPkg\TdxDxe\TdxDxe\OUTPUT\X64\ApRunLoop.nasm.trim.deps
+!ENDIF
+
+               

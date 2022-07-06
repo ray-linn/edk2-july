@@ -1,0 +1,11 @@
+/Id:\myedk2\edk2\OvmfPkg\CpuHotplugSmm
+/Id:\myedk2\edk2\Build\OvmfX64\DEBUG_VS2019\X64\OvmfPkg\CpuHotplugSmm\CpuHotplugSmm\DEBUG
+/Id:\myedk2\edk2\MdePkg
+/Id:\myedk2\edk2\MdePkg\Include
+/Id:\myedk2\edk2\MdePkg\Test\UnitTest\Include
+/Id:\myedk2\edk2\MdePkg\Include\X64
+/Id:\myedk2\edk2\OvmfPkg
+/Id:\myedk2\edk2\OvmfPkg\Include
+/Id:\myedk2\edk2\OvmfPkg\Csm\Include
+/Id:\myedk2\edk2\UefiCpuPkg
+/Id:\myedk2\edk2\UefiCpuPkg\Include

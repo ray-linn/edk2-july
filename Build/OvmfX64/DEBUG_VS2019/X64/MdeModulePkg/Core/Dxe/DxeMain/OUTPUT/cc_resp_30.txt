@@ -1,0 +1,1 @@
+  d:\myedk2\edk2\MdeModulePkg\Core\Dxe\Misc\Stall.c d:\myedk2\edk2\MdeModulePkg\Core\Dxe\Misc\MemoryProtection.c d:\myedk2\edk2\MdeModulePkg\Core\Dxe\Misc\SetWatchdogTimer.c d:\myedk2\edk2\MdeModulePkg\Core\Dxe\Misc\InstallConfigurationTable.c d:\myedk2\edk2\MdeModulePkg\Core\Dxe\Misc\DebugImageInfo.c d:\myedk2\edk2\MdeModulePkg\Core\Dxe\Misc\MemoryAttributesTable.c

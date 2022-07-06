@@ -1,0 +1,344 @@
+ SmmLockBox
+
+ Timestamp is 62c3c256 (Tue Jul  5 12:47:18 2022)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000378H .text                   CODE
+ 0001:00000378 000036c2H .text$mn                CODE
+ 0002:00000000 00001dc0H .rdata                  DATA
+ 0002:00001dc0 00000020H .rdata$voltmd           DATA
+ 0002:00001de0 0000014cH .rdata$zzzdbg           DATA
+ 0003:00000000 00000100H .data                   DATA
+ 0003:00000100 00000210H .bss                    DATA
+ 0004:00000000 000001e0H .pdata                  DATA
+ 0005:00000000 00000190H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0001:00000000       InternalMemCopyMem         00000000000002c0     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000040       SetJump                    0000000000000300     BaseLib:SetJump.obj
+ 0001:00000110       InternalLongJump           00000000000003d0     BaseLib:LongJump.obj
+ 0001:000001c0       AsmLfence                  0000000000000480     BaseLib:Lfence.obj
+ 0001:000001d0       AsmCpuid                   0000000000000490     BaseLib:CpuId.obj
+ 0001:00000200       InternalMemSetMem          00000000000004c0     BaseMemoryLibRepStr:SetMem.obj
+ 0001:00000220       InternalMemZeroMem         00000000000004e0     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000240       InternalMemSetMem64        0000000000000500     BaseMemoryLibRepStr:SetMem64.obj
+ 0001:00000260       InternalMemSetMem32        0000000000000520     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:00000280       CpuPause                   0000000000000540     BaseLib:CpuPause.obj
+ 0001:00000290       TdVmCall                   0000000000000550     BaseLib:TdVmcall.obj
+ 0001:00000320       TdCall                     00000000000005e0     BaseLib:TdCall.obj
+ 0001:00000378       _ModuleEntryPoint          0000000000000638 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:000003a4       ProcessLibraryConstructorList 0000000000000664 f   SmmLockBox:AutoGen.obj
+ 0001:0000083c       ProcessLibraryDestructorList 0000000000000afc f   SmmLockBox:AutoGen.obj
+ 0001:00000a1c       ProcessModuleEntryPointList 0000000000000cdc f   SmmLockBox:AutoGen.obj
+ 0001:00000ad8       SmmLockBoxRestore          0000000000000d98 f   SmmLockBox:SmmLockBox.obj
+ 0001:00000b84       SmmLockBoxHandler          0000000000000e44 f   SmmLockBox:SmmLockBox.obj
+ 0001:00000e4c       SmmReadyToLockEventNotify  000000000000110c f   SmmLockBox:SmmLockBox.obj
+ 0001:00000e58       SmmLockBoxEntryPoint       0000000000001118 f   SmmLockBox:SmmLockBox.obj
+ 0001:00000f74       CopyMem                    0000000000001234 f   BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0001:00001010       InternalAssertJumpBuffer   00000000000012d0 f   BaseLib:SetJump.obj
+ 0001:00001048       DebugPrint                 0000000000001308 f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:0000106c       DebugPrintMarker           000000000000132c f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:0000111c       DebugAssert                00000000000013dc f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:00001194       BufferInSmram              0000000000001454 f   SmmMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000011d8       InternalAllocatePool       0000000000001498 f   SmmMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00001208       InternalAllocateCopyPool   00000000000014c8 f   SmmMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00001280       FreePool                   0000000000001540 f   SmmMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000012e4       EfiGetSystemConfigurationTable 00000000000015a4 f   UefiLib:UefiLib.obj
+ 0001:000013a8       GetHobList                 0000000000001668 f   DxeHobLib:HobLib.obj
+ 0001:0000142c       InternalGetSmmLockBoxContext 00000000000016ec f   SmmLockBoxSmmLib:SmmLockBoxMmLib.obj
+ 0001:000014a4       SmmLockBoxSmmReadyToLockNotify 0000000000001764 f   SmmLockBoxSmmLib:SmmLockBoxMmLib.obj
+ 0001:000014b0       SmmLockBoxS3EntryCallBack  0000000000001770 f   SmmLockBoxSmmLib:SmmLockBoxMmLib.obj
+ 0001:000014bc       SmmLockBoxSmmEndOfDxeNotify 000000000000177c f   SmmLockBoxSmmLib:SmmLockBoxMmLib.obj
+ 0001:00001548       SmmLockBoxEndOfS3ResumeNotify 0000000000001808 f   SmmLockBoxSmmLib:SmmLockBoxMmLib.obj
+ 0001:00001554       SmmLockBoxMmConstructor    0000000000001814 f   SmmLockBoxSmmLib:SmmLockBoxMmLib.obj
+ 0001:0000176c       InternalGetLockBoxQueue    0000000000001a2c f   SmmLockBoxSmmLib:SmmLockBoxMmLib.obj
+ 0001:000017a0       InternalFindLockBoxByGuid  0000000000001a60 f   SmmLockBoxSmmLib:SmmLockBoxMmLib.obj
+ 0001:00001818       SaveLockBox                0000000000001ad8 f   SmmLockBoxSmmLib:SmmLockBoxMmLib.obj
+ 0001:00001a4c       SetLockBoxAttributes       0000000000001d0c f   SmmLockBoxSmmLib:SmmLockBoxMmLib.obj
+ 0001:00001b8c       UpdateLockBox              0000000000001e4c f   SmmLockBoxSmmLib:SmmLockBoxMmLib.obj
+ 0001:00001db8       RestoreLockBox             0000000000002078 f   SmmLockBoxSmmLib:SmmLockBoxMmLib.obj
+ 0001:00001edc       SmmIsBufferOutsideSmmValid 000000000000219c f   SmmMemLib:SmmMemLib.obj
+ 0001:00002114       SmmLibInternalEndOfDxeNotify 00000000000023d4 f   SmmMemLib:SmmMemLib.obj
+ 0001:0000249c       SmmLibInternalReadyToLockNotify 000000000000275c f   SmmMemLib:SmmMemLib.obj
+ 0001:000024a8       SmmMemLibConstructor       0000000000002768 f   SmmMemLib:SmmMemLib.obj
+ 0001:00002744       ZeroMem                    0000000000002a04 f   BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0001:000027b4       CompareGuid                0000000000002a74 f   BaseMemoryLibRepStr:MemLibGuid.obj
+ 0001:00002878       AsciiStrLen                0000000000002b38 f   BaseLib:String.obj
+ 0001:000028e4       InternalBaseLibIsListValid 0000000000002ba4 f   BaseLib:LinkedList.obj
+ 0001:00002950       InsertTailList             0000000000002c10 f   BaseLib:LinkedList.obj
+ 0001:000029a4       LShiftU64                  0000000000002c64 f   BaseLib:LShiftU64.obj
+ 0001:000029e8       StrnLenS                   0000000000002ca8 f   BaseLib:SafeString.obj
+ 0001:00002a40       AsciiSPrint                0000000000002d00 f   BasePrintLib:PrintLib.obj
+ 0001:00002a6c       BasePrintLibFillBuffer     0000000000002d2c f   BasePrintLib:PrintLibInternal.obj
+ 0001:00002aa0       BasePrintLibValueToString  0000000000002d60 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00002b0c       BasePrintLibSPrintMarker   0000000000002dcc f   BasePrintLib:PrintLibInternal.obj
+ 0001:00003a18       BasePrintLibSPrint         0000000000003cd8 f   BasePrintLib:PrintLibInternal.obj
+ 0002:00000000       ??_C@_0CB@DMEJJJHA@?6ASSERT_EFI_ERROR?5?$CIStatus?5?$DN?5?$CFr?$CJ@ 0000000000003d00     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0002:00000028       ??_C@_0CH@BBNBJKHK@?$CB?$CI?$CI?$CIINTN?$CJ?$CIRETURN_STATUS?$CJ?$CIStatus@ 0000000000003d28     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0002:00000050       ??_C@_0L@KCPCDFG@SmmLockBox@ 0000000000003d50     SmmLockBox:AutoGen.obj
+ 0002:00000060       ??_C@_0HD@FLNBEMNM@d?3?2myedk2?2edk2?2Build?2OvmfX64?2DE@ 0000000000003d60     SmmLockBox:AutoGen.obj
+ 0002:000000d8       ??_C@_0BC@FEDIJHFF@?$CI?$CIBOOLEAN?$CJ?$CI0?$DN?$DN1?$CJ?$CJ@ 0000000000003dd8     SmmLockBox:AutoGen.obj
+ 0002:000000ec       _gPcd_FixedAtBuild_PcdControlFlowEnforcementPropertyMask 0000000000003dec     SmmLockBox:AutoGen.obj
+ 0002:000000f0       ??_C@_0BE@GOHEIDFL@SmmLockBox?5Locked?$CB?6@ 0000000000003df0     SmmLockBox:SmmLockBox.obj
+ 0002:00000108       ??_C@_0DG@BMEJGBGG@SmmLockBox?5Save?5address?5in?5SMRA@ 0000000000003e08     SmmLockBox:SmmLockBox.obj
+ 0002:00000140       ??_C@_0DI@GKEHCBGD@SmmLockBox?5Update?5address?5in?5SM@ 0000000000003e40     SmmLockBox:SmmLockBox.obj
+ 0002:00000178       ??_C@_0DJ@FPPGOMKG@SmmLockBox?5Restore?5address?5in?5S@ 0000000000003e78     SmmLockBox:SmmLockBox.obj
+ 0002:000001b8       ??_C@_0CE@FHCHOKD@SmmLockBox?5SmmLockBoxHandler?5En@ 0000000000003eb8     SmmLockBox:SmmLockBox.obj
+ 0002:000001e0       ??_C@_0CJ@BFBGNODK@SmmLockBox?5Command?5Buffer?5Size?5@ 0000000000003ee0     SmmLockBox:SmmLockBox.obj
+ 0002:00000210       ??_C@_0DB@MOPIDGAA@SmmLockBox?5Command?5Buffer?5in?5SM@ 0000000000003f10     SmmLockBox:SmmLockBox.obj
+ 0002:00000248       ??_C@_0CI@HCONMOHK@SmmLockBox?5LockBoxParameterHead@ 0000000000003f48     SmmLockBox:SmmLockBox.obj
+ 0002:00000270       ??_C@_0BJ@JENOPLDM@SmmLockBox?5Command?5?9?5?$CFx?6@ 0000000000003f70     SmmLockBox:SmmLockBox.obj
+ 0002:00000290       ??_C@_0DC@IMIDHMAJ@SmmLockBox?5Command?5Buffer?5Size?5@ 0000000000003f90     SmmLockBox:SmmLockBox.obj
+ 0002:000002c8       ??_C@_0DE@DKMLKCCF@SmmLockBox?5Command?5Buffer?5Size?5@ 0000000000003fc8     SmmLockBox:SmmLockBox.obj
+ 0002:00000300       ??_C@_0DF@PANDACEK@SmmLockBox?5Command?5Buffer?5Size?5@ 0000000000004000     SmmLockBox:SmmLockBox.obj
+ 0002:00000338       ??_C@_0DM@DKECOJME@SmmLockBox?5Command?5Buffer?5Size?5@ 0000000000004038     SmmLockBox:SmmLockBox.obj
+ 0002:00000378       ??_C@_0BN@HOPAGLOB@SmmLockBox?5Command?5invalid?$CB?6@ 0000000000004078     SmmLockBox:SmmLockBox.obj
+ 0002:00000398       ??_C@_0CD@CFCNIOAA@SmmLockBox?5SmmLockBoxHandler?5Ex@ 0000000000004098     SmmLockBox:SmmLockBox.obj
+ 0002:000003c0       ??_C@_0EG@IOONIFAM@d?3?2myedk2?2edk2?2MdeModulePkg?2Uni@ 00000000000040c0     SmmLockBox:SmmLockBox.obj
+ 0002:00000410       ??_C@_0ED@MKGCMJG@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFF@ 0000000000004110     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0002:00000460       ??_C@_0ED@JAIIHABO@d?3?2myedk2?2edk2?2MdePkg?2Library?2B@ 0000000000004160     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0002:000004a8       ??_C@_0DO@MAOBOFEG@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFF@ 00000000000041a8     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0002:000004e8       ??_C@_0BL@CPGKAMND@JumpBuffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000041e8     BaseLib:SetJump.obj
+ 0002:00000508       ??_C@_0DA@EDINMIIB@d?3?2myedk2?2edk2?2MdePkg?2Library?2B@ 0000000000004208     BaseLib:SetJump.obj
+ 0002:00000538       ??_C@_0CD@OEHNCIHG@?$CI?$CIUINTN?$CJJumpBuffer?5?$CG?5?$CI8?5?9?51?$CJ?$CJ?5?$DN@ 0000000000004238     BaseLib:SetJump.obj
+ 0002:00000560       ??_C@_0BH@LKMBFCBF@Format?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000004260     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:00000580       ??_C@_0EA@MCEJFCHO@d?3?2myedk2?2edk2?2MdePkg?2Library?2B@ 0000000000004280     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:000005c0       ??_C@_0BI@NOCKJDBJ@ASSERT?5?$FL?$CFa?$FN?5?$CFa?$CI?$CFd?$CJ?3?5?$CFa?6@ 00000000000042c0     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:000005d8       ??_C@_0BH@IACGKAP@Buffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000042d8     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:000005f0       ??_C@_0BN@COECPDCC@gImageHandle?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000042f0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000610       ??_C@_0FC@HJEJKBBP@d?3?2myedk2?2edk2?2MdePkg?2Library?2U@ 0000000000004310     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000668       ??_C@_0BE@DGNHAHIL@gST?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000004368     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000680       ??_C@_0BE@BDFJLGLN@gBS?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000004380     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000006a0       ??_C@_0EI@MNICKMIC@d?3?2myedk2?2edk2?2MdePkg?2Library?2S@ 00000000000043a0     SmmServicesTableLib:SmmServicesTableLib.obj
+ 0002:000006e8       ??_C@_0CB@GMLECJKN@InternalSmmBase2?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50@ 00000000000043e8     SmmServicesTableLib:SmmServicesTableLib.obj
+ 0002:00000710       ??_C@_0BG@FOOPBBEG@gSmst?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000004410     SmmServicesTableLib:SmmServicesTableLib.obj
+ 0002:00000730       ??_C@_0EL@KHOJDGKN@d?3?2myedk2?2edk2?2MdePkg?2Library?2S@ 0000000000004430     SmmMemoryAllocationLib:MemoryAllocationLib.obj
+ 0002:00000780       ??_C@_0DJ@CIDFFKAG@Status?5?$DN?$DN?5?$CI?$CIRETURN_STATUS?$CJ?$CI0x80@ 0000000000004480     SmmMemoryAllocationLib:MemoryAllocationLib.obj
+ 0002:000007c0       ??_C@_0BN@PLBIHFL@mSmramRanges?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000044c0     SmmMemoryAllocationLib:MemoryAllocationLib.obj
+ 0002:000007e0       ??_C@_0DO@GEEICOOO@AllocationSize?5?$DM?$DN?5?$CI0xFFFFFFFFFF@ 00000000000044e0     SmmMemoryAllocationLib:MemoryAllocationLib.obj
+ 0002:00000820       ??_C@_0BE@OBDFIHND@gRT?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000004520     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:00000840       ??_C@_0FI@ELFALICJ@d?3?2myedk2?2edk2?2MdePkg?2Library?2U@ 0000000000004540     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:000008a0       ??_C@_0FG@PKIHNGDJ@d?3?2myedk2?2edk2?2MdePkg?2Library?2U@ 00000000000045a0     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:000008f8       ??_C@_0DC@CNNBPJA@mDevicePathLibDevicePathUtiliti@ 00000000000045f8     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:00000930       ??_C@_0BK@PPOBBAMB@TableGuid?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000004630     UefiLib:UefiLib.obj
+ 0002:00000950       ??_C@_0DA@MHLDPJPP@d?3?2myedk2?2edk2?2MdePkg?2Library?2U@ 0000000000004650     UefiLib:UefiLib.obj
+ 0002:00000980       ??_C@_0BG@JDKEGFNB@Table?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000004680     UefiLib:UefiLib.obj
+ 0002:000009a0       ??_C@_0EG@GAAKACEH@d?3?2myedk2?2edk2?2MdePkg?2Library?2M@ 00000000000046a0     MmServicesTableLib:MmServicesTableLib.obj
+ 0002:000009e8       ??_C@_0BP@DCJGHMHD@InternalMmBase?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000046e8     MmServicesTableLib:MmServicesTableLib.obj
+ 0002:00000a08       ??_C@_0BG@MGMEAPBK@gMmst?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000004708     MmServicesTableLib:MmServicesTableLib.obj
+ 0002:00000a20       ??_C@_0DB@IMLKCNBK@d?3?2myedk2?2edk2?2MdePkg?2Library?2D@ 0000000000004720     DxeHobLib:HobLib.obj
+ 0002:00000a58       ??_C@_0BJ@OBFMLLDO@mHobList?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000004758     DxeHobLib:HobLib.obj
+ 0002:00000a78       ??_C@_0BJ@NOLLDKJB@HobStart?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000004778     DxeHobLib:HobLib.obj
+ 0002:00000aa0       ??_C@_0EI@EGOBAHNO@d?3?2myedk2?2edk2?2MdePkg?2Library?2D@ 00000000000047a0     DxeServicesTableLib:DxeServicesTableLib.obj
+ 0002:00000ae8       ??_C@_0BE@IOIFLNKO@gDS?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000047e8     DxeServicesTableLib:DxeServicesTableLib.obj
+ 0002:00000b00       ??_C@_0EE@PKDKGLDI@d?3?2myedk2?2edk2?2MdeModulePkg?2Lib@ 0000000000004800     SmmLockBoxSmmLib:SmmLockBoxMmLib.obj
+ 0002:00000b48       ??_C@_0DC@EIJAHHDD@SmmLockBoxSmmLib?5SmmLockBoxMmCo@ 0000000000004848     SmmLockBoxSmmLib:SmmLockBoxMmLib.obj
+ 0002:00000b80       ??_C@_0DI@BAAPPKAM@SmmLockBoxSmmLib?5SmmLockBoxCont@ 0000000000004880     SmmLockBoxSmmLib:SmmLockBoxMmLib.obj
+ 0002:00000bb8       ??_C@_0DB@HFEFEGGA@SmmLockBoxSmmLib?5SmmLockBoxMmCo@ 00000000000048b8     SmmLockBoxSmmLib:SmmLockBoxMmLib.obj
+ 0002:00000bf0       ??_C@_0CJ@JJHBPKMA@SmmLockBoxSmmLib?5SmmLockBoxCont@ 00000000000048f0     SmmLockBoxSmmLib:SmmLockBoxMmLib.obj
+ 0002:00000c20       ??_C@_0CK@DHAEADCH@SmmLockBoxSmmLib?5LockBoxDataAdd@ 0000000000004920     SmmLockBoxSmmLib:SmmLockBoxMmLib.obj
+ 0002:00000c50       ??_C@_0DG@MPBENBKK@SmmLockBoxSmmLib?5SmmLockBoxMmDe@ 0000000000004950     SmmLockBoxSmmLib:SmmLockBoxMmLib.obj
+ 0002:00000c90       ??_C@_0EI@DKKFBKMD@SmmLockBoxSmmLib?5uninstall?5SmmL@ 0000000000004990     SmmLockBoxSmmLib:SmmLockBoxMmLib.obj
+ 0002:00000cd8       ??_C@_0CC@LFOBLGHH@SmmLockBoxContext?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?5@ 00000000000049d8     SmmLockBoxSmmLib:SmmLockBoxMmLib.obj
+ 0002:00000d00       ??_C@_0BN@IEHCDDPB@LockBoxQueue?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000004a00     SmmLockBoxSmmLib:SmmLockBoxMmLib.obj
+ 0002:00000d20       ??_C@_0CG@JNBCLCGO@SmmLockBoxSmmLib?5SaveLockBox?5?9?5@ 0000000000004a20     SmmLockBoxSmmLib:SmmLockBoxMmLib.obj
+ 0002:00000d48       ??_C@_0CK@NHANFBHN@SmmLockBoxSmmLib?5SaveLockBox?5?9?5@ 0000000000004a48     SmmLockBoxSmmLib:SmmLockBoxMmLib.obj
+ 0002:00000d78       ??_C@_0DH@FIJNOAIH@LockBoxGuid?5?9?5?$CFg?0?5SmramBuffer?5?9@ 0000000000004a78     SmmLockBoxSmmLib:SmmLockBoxMmLib.obj
+ 0002:00000db0       ??_C@_0CP@FLDKIMMK@SmmLockBoxSmmLib?5SetLockBoxAttr@ 0000000000004ab0     SmmLockBoxSmmLib:SmmLockBoxMmLib.obj
+ 0002:00000de0       ??_C@_0DD@BEKLNOJK@SmmLockBoxSmmLib?5SetLockBoxAttr@ 0000000000004ae0     SmmLockBoxSmmLib:SmmLockBoxMmLib.obj
+ 0002:00000e20       ??_C@_0FC@NOMADNFB@?5?5LOCK_BOX_ATTRIBUTE_RESTORE_IN@ 0000000000004b20     SmmLockBoxSmmLib:SmmLockBoxMmLib.obj
+ 0002:00000e78       ??_C@_0BL@FDGLONFP@?5?5can?5not?5be?5set?5together?6@ 0000000000004b78     SmmLockBoxSmmLib:SmmLockBoxMmLib.obj
+ 0002:00000e98       ??_C@_0DP@FJLHKIMI@SmmLockBoxSmmLib?5SetLockBoxAttr@ 0000000000004b98     SmmLockBoxSmmLib:SmmLockBoxMmLib.obj
+ 0002:00000ed8       ??_C@_0CI@NOHBCGJA@SmmLockBoxSmmLib?5UpdateLockBox?5@ 0000000000004bd8     SmmLockBoxSmmLib:SmmLockBoxMmLib.obj
+ 0002:00000f00       ??_C@_0CM@OKKLAIIL@SmmLockBoxSmmLib?5UpdateLockBox?5@ 0000000000004c00     SmmLockBoxSmmLib:SmmLockBoxMmLib.obj
+ 0002:00000f30       ??_C@_0EF@KDGBOMJH@SmmLockBoxSmmLib?5UpdateLockBox?5@ 0000000000004c30     SmmLockBoxSmmLib:SmmLockBoxMmLib.obj
+ 0002:00000f80       ??_C@_0EC@PMKLICBC@SmmLockBoxSmmLib?5UpdateLockBox?5@ 0000000000004c80     SmmLockBoxSmmLib:SmmLockBoxMmLib.obj
+ 0002:00000fd0       ??_C@_0EA@PBBLDOIM@?$CIUINTN?$CJLockBox?9?$DOSmramBuffer?5?$DM?$DN?5@ 0000000000004cd0     SmmLockBoxSmmLib:SmmLockBoxMmLib.obj
+ 0002:00001010       ??_C@_0CJ@IEPBLFPC@SmmLockBoxSmmLib?5RestoreLockBox@ 0000000000004d10     SmmLockBoxSmmLib:SmmLockBoxMmLib.obj
+ 0002:00001040       ??_C@_0CN@DEOMBBAL@SmmLockBoxSmmLib?5RestoreLockBox@ 0000000000004d40     SmmLockBoxSmmLib:SmmLockBoxMmLib.obj
+ 0002:00001070       ??_C@_0DD@LABHGOPK@SmmLockBoxSmmLib?5RestoreAllLock@ 0000000000004d70     SmmLockBoxSmmLib:SmmLockBoxMmLib.obj
+ 0002:000010a8       ??_C@_0DH@FJBEEDOK@SmmLockBoxSmmLib?5RestoreAllLock@ 0000000000004da8     SmmLockBoxSmmLib:SmmLockBoxMmLib.obj
+ 0002:000010e0       ??_C@_0BK@EENFIALI@PhysicalAddressBits?5?$DM?$DN?552@ 0000000000004de0     SmmMemLib:SmmMemLib.obj
+ 0002:00001100       ??_C@_0DE@OHEBGKGA@d?3?2myedk2?2edk2?2MdePkg?2Library?2S@ 0000000000004e00     SmmMemLib:SmmMemLib.obj
+ 0002:00001138       ??_C@_0DB@PDNKLHK@mSmmMemLibInternalMaximumSuppor@ 0000000000004e38     SmmMemLib:SmmMemLib.obj
+ 0002:00001170       ??_C@_0GG@DONGBGEE@SmmIsBufferOutsideSmmValid?3?5Ove@ 0000000000004e70     SmmMemLib:SmmMemLib.obj
+ 0002:000011e0       ??_C@_0EH@FAFNFMDA@SmmIsBufferOutsideSmmValid?3?5Ove@ 0000000000004ee0     SmmMemLib:SmmMemLib.obj
+ 0002:00001228       ??_C@_0CJ@KEHNLENF@CpuStart?5?$CI0x?$CFlx?$CJ?5?9?5PhysicalSize@ 0000000000004f28     SmmMemLib:SmmMemLib.obj
+ 0002:00001260       ??_C@_0FO@OIBGBKBH@SmmIsBufferOutsideSmmValid?3?5Not@ 0000000000004f60     SmmMemLib:SmmMemLib.obj
+ 0002:000012c0       ??_C@_0FI@MGEJLPJA@SmmIsBufferOutsideSmmValid?3?5In?5@ 0000000000004fc0     SmmMemLib:SmmMemLib.obj
+ 0002:00001320       ??_C@_0FE@NELGICEF@SmmIsBufferOutsideSmmValid?3?5In?5@ 0000000000005020     SmmMemLib:SmmMemLib.obj
+ 0002:00001378       ??_C@_0CG@EBDMLLKF@mSmmMemLibGcdMemSpace?5?$CB?$DN?5?$CI?$CIvoid@ 0000000000005078     SmmMemLib:SmmMemLib.obj
+ 0002:000013a0       ??_C@_0DA@DFBCLCMM@mSmmMemLibMemoryAttributesTable@ 00000000000050a0     SmmMemLib:SmmMemLib.obj
+ 0002:000013d0       ??_C@_0BK@BEMEMBP@MemoryMap?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000050d0     SmmMemLib:SmmMemLib.obj
+ 0002:000013f0       ??_C@_0BL@GHNPPLKP@mMemoryMap?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000050f0     SmmMemLib:SmmMemLib.obj
+ 0002:00001410       ??_C@_0CO@JCGMICBD@mSmmMemLibInternalSmramRanges?5?$CB@ 0000000000005110     SmmMemLib:SmmMemLib.obj
+ 0002:00001440       ??_C@_0ED@CECKBBNJ@d?3?2myedk2?2edk2?2MdePkg?2Library?2B@ 0000000000005140     BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0002:00001488       ??_C@_0DG@EEENIGGL@Length?5?$DM?$DN?5?$CI0xFFFFFFFFFFFFFFFFUL@ 0000000000005188     BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0002:000014c0       ??_C@_0BH@MAAHKCPC@String?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000051c0     BaseLib:String.obj
+ 0002:000014d8       ??_C@_0CP@DJBLNMJI@d?3?2myedk2?2edk2?2MdePkg?2Library?2B@ 00000000000051d8     BaseLib:String.obj
+ 0002:00001508       ??_C@_0CC@GFNLNIOC@?$CI?$CIUINTN?$CJString?5?$CG?50x00000001?$CJ?5?$DN?$DN@ 0000000000005208     BaseLib:String.obj
+ 0002:00001530       ??_C@_0DI@MDIKFADO@Length?5?$DM?5_gPcd_FixedAtBuild_Pcd@ 0000000000005230     BaseLib:String.obj
+ 0002:00001568       ??_C@_0DC@DDBICJIK@d?3?2myedk2?2edk2?2MdePkg?2Library?2B@ 0000000000005268     BaseLib:Unaligned.obj
+ 0002:000015a0       ??_C@_0BF@NJNGJMPC@List?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 00000000000052a0     BaseLib:LinkedList.obj
+ 0002:000015b8       ??_C@_0DD@DMMJEGIP@d?3?2myedk2?2edk2?2MdePkg?2Library?2B@ 00000000000052b8     BaseLib:LinkedList.obj
+ 0002:000015f0       ??_C@_0CC@KDLPLAED@List?9?$DOForwardLink?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?5@ 00000000000052f0     BaseLib:LinkedList.obj
+ 0002:00001618       ??_C@_0BP@IJJCCMAK@List?9?$DOBackLink?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000005318     BaseLib:LinkedList.obj
+ 0002:00001638       ??_C@_0CG@LGIALJFK@InternalBaseLibIsListValid?5?$CILis@ 0000000000005338     BaseLib:LinkedList.obj
+ 0002:00001660       ??_C@_0L@MEMPDLHB@Count?5?$DM?564@ 0000000000005360     BaseLib:LShiftU64.obj
+ 0002:00001670       ??_C@_0DC@KCMAEPFB@d?3?2myedk2?2edk2?2MdePkg?2Library?2B@ 0000000000005370     BaseLib:LShiftU64.obj
+ 0002:000016a8       ??_C@_0DD@OKIGPFG@d?3?2myedk2?2edk2?2MdePkg?2Library?2B@ 00000000000053a8     BaseLib:SafeString.obj
+ 0002:000016e0       ??_C@_0BJ@CNKJJNE@?$CIBuffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 00000000000053e0     BaseLib:SafeString.obj
+ 0002:00001700       ??_C@_0N@KGHEHMDL@Divisor?5?$CB?$DN?50@ 0000000000005400     BaseLib:DivU64x32.obj
+ 0002:00001710       ??_C@_0DO@DLJLNPNA@d?3?2myedk2?2edk2?2MdePkg?2Library?2B@ 0000000000005410     BasePrintLib:PrintLibInternal.obj
+ 0002:00001750       ??_C@_0EB@HDGIDCIO@?$CIBufferSize?5?$DM?$DN?5?$CI_gPcd_FixedAtBu@ 0000000000005450     BasePrintLib:PrintLibInternal.obj
+ 0002:00001798       ??_C@_0BJ@PPAKKDJG@?$CIFormat?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 0000000000005498     BasePrintLib:PrintLibInternal.obj
+ 0002:000017c0       ??_C@_0ED@LPDDCECB@?$CIBufferSize?5?$DM?$DN?5?$CI_gPcd_FixedAtBu@ 00000000000054c0     BasePrintLib:PrintLibInternal.obj
+ 0002:00001810       ??_C@_0IM@BFJJFLGB@?$CIStrnLenS?5?$CI?$CICHAR16?5?$CK?$CJFormat?0?5?$CI_@ 0000000000005510     BasePrintLib:PrintLibInternal.obj
+ 0002:000018a0       ??_C@_0ID@PLGJGION@?$CIAsciiStrnLenS?5?$CIFormat?0?5?$CI_gPcd_@ 00000000000055a0     BasePrintLib:PrintLibInternal.obj
+ 0002:00001928       ??_C@_0O@MLOLIMFM@?$DMnull?5string?$DO@ 0000000000005628     BasePrintLib:PrintLibInternal.obj
+ 0002:00001938       ??_C@_0M@BJJDNPHK@?$DMnull?5guid?$DO@ 0000000000005638     BasePrintLib:PrintLibInternal.obj
+ 0002:00001948       ??_C@_0DB@PMLHLBMO@?$CF08x?9?$CF04x?9?$CF04x?9?$CF02x?$CF02x?9?$CF02x?$CF02@ 0000000000005648     BasePrintLib:PrintLibInternal.obj
+ 0002:00001980       ??_C@_0M@LHGBCIKM@?$DMnull?5time?$DO@ 0000000000005680     BasePrintLib:PrintLibInternal.obj
+ 0002:00001990       ??_C@_0BK@FCPKCIDD@?$CF02d?1?$CF02d?1?$CF04d?5?5?$CF02d?3?$CF02d@ 0000000000005690     BasePrintLib:PrintLibInternal.obj
+ 0002:000019ac       ??_C@_04JIMNDDED@?$CF08X@  00000000000056ac     BasePrintLib:PrintLibInternal.obj
+ 0002:000019b4       ??_C@_02PCIJFNDE@?$AN?6@   00000000000056b4     BasePrintLib:PrintLibInternal.obj
+ 0002:000019b8       ??_C@_01LIIJDEN@?$AN@      00000000000056b8     BasePrintLib:PrintLibInternal.obj
+ 0002:000019c0       mWarningString             00000000000056c0     BasePrintLib:PrintLibInternal.obj
+ 0002:00001a60       mErrorString               0000000000005760     BasePrintLib:PrintLibInternal.obj
+ 0002:00001d20       mHexStr                    0000000000005a20     BasePrintLib:PrintLibInternal.obj
+ 0002:00001d30       ??_C@_0DL@JEBMKBEC@d?3?2myedk2?2edk2?2MdePkg?2Library?2B@ 0000000000005a30     BaseLib:DivU64x32Remainder.obj
+ 0002:00001dc0       __volatile_metadata        0000000000005ac0     <linker-defined>
+ 0003:00000000       gEfiMmSxDispatchProtocolGuid 0000000000005c40     SmmLockBox:AutoGen.obj
+ 0003:00000010       gEfiLockBoxProtocolGuid    0000000000005c50     SmmLockBox:AutoGen.obj
+ 0003:00000020       gEfiMmBaseProtocolGuid     0000000000005c60     SmmLockBox:AutoGen.obj
+ 0003:00000030       gEfiMmReadyToLockProtocolGuid 0000000000005c70     SmmLockBox:AutoGen.obj
+ 0003:00000040       gEfiMemoryAttributesTableGuid 0000000000005c80     SmmLockBox:AutoGen.obj
+ 0003:00000050       gEfiDevicePathUtilitiesProtocolGuid 0000000000005c90     SmmLockBox:AutoGen.obj
+ 0003:00000060       gEfiSmmLockBoxCommunicationGuid 0000000000005ca0     SmmLockBox:AutoGen.obj
+ 0003:00000070       gEfiSmmReadyToLockProtocolGuid 0000000000005cb0     SmmLockBox:AutoGen.obj
+ 0003:00000080       gEfiHobListGuid            0000000000005cc0     SmmLockBox:AutoGen.obj
+ 0003:00000090       gEdkiiEndOfS3ResumeGuid    0000000000005cd0     SmmLockBox:AutoGen.obj
+ 0003:000000a0       gEfiSmmEndOfDxeProtocolGuid 0000000000005ce0     SmmLockBox:AutoGen.obj
+ 0003:000000b0       gEfiSmmBase2ProtocolGuid   0000000000005cf0     SmmLockBox:AutoGen.obj
+ 0003:000000c0       gEfiDxeServicesTableGuid   0000000000005d00     SmmLockBox:AutoGen.obj
+ 0003:000000d0       gEfiMmEndOfDxeProtocolGuid 0000000000005d10     SmmLockBox:AutoGen.obj
+ 0003:000000e0       gEfiSmmAccess2ProtocolGuid 0000000000005d20     SmmLockBox:AutoGen.obj
+ 0003:000000f0       mLockBoxQueue              0000000000005d30     SmmLockBoxSmmLib:SmmLockBoxMmLib.obj
+ 0003:00000100       mLocked                    0000000000005d40     SmmLockBox:SmmLockBox.obj
+ 0003:00000108       gST                        0000000000005d48     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:00000110       gBS                        0000000000005d50     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:00000118       gImageHandle               0000000000005d58     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:00000120       gSmst                      0000000000005d60     SmmServicesTableLib:SmmServicesTableLib.obj
+ 0003:00000128       gRT                        0000000000005d68     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0003:00000130       mDevicePathLibDevicePathUtilities 0000000000005d70     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0003:00000138       gMmst                      0000000000005d78     MmServicesTableLib:MmServicesTableLib.obj
+ 0003:00000140       mHobList                   0000000000005d80     DxeHobLib:HobLib.obj
+ 0003:00000148       gDS                        0000000000005d88     DxeServicesTableLib:DxeServicesTableLib.obj
+ 0003:00000150       mSmmLockBoxRegistrationEndOfS3Resume 0000000000005d90     SmmLockBoxSmmLib:SmmLockBoxMmLib.obj
+ 0003:00000158       mSmmLockBoxSmmReadyToLock  0000000000005d98     SmmLockBoxSmmLib:SmmLockBoxMmLib.obj
+ 0003:00000160       mSmmLockBoxRegistrationSmmReadyToLock 0000000000005da0     SmmLockBoxSmmLib:SmmLockBoxMmLib.obj
+ 0003:00000168       mSmmLockBoxDuringS3Resume  0000000000005da8     SmmLockBoxSmmLib:SmmLockBoxMmLib.obj
+ 0003:00000170       mSmmLockBoxRegistrationSmmEndOfDxe 0000000000005db0     SmmLockBoxSmmLib:SmmLockBoxMmLib.obj
+ 0003:00000178       mSmmConfigurationTableInstalled 0000000000005db8     SmmLockBoxSmmLib:SmmLockBoxMmLib.obj
+ 0003:00000180       mSmmMemLibMemoryAttributesTable 0000000000005dc0     SmmMemLib:SmmMemLib.obj
+ 0003:00000188       mSmmMemLibGcdMemNumberOfDesc 0000000000005dc8     SmmMemLib:SmmMemLib.obj
+ 0003:00000190       mSmmMemLibGcdMemSpace      0000000000005dd0     SmmMemLib:SmmMemLib.obj
+ 0003:00000198       mSmmMemLibSmmReadyToLock   0000000000005dd8     SmmMemLib:SmmMemLib.obj
+ 0003:000001a0       mSmmMemLibInternalMaximumSupportAddress 0000000000005de0     SmmMemLib:SmmMemLib.obj
+ 0003:000001a8       gParity                    0000000000005de8     PcAtSerialPortLib:SerialPortLib.obj
+ 0003:000001a9       gBreakSet                  0000000000005de9     PcAtSerialPortLib:SerialPortLib.obj
+ 0003:000002b8       mMemoryMap                 0000000000005ef8     <common>
+ 0003:000002c0       mMemoryMapEntryCount       0000000000005f00     <common>
+ 0003:000002c8       mSmmMemLibInternalSmramRanges 0000000000005f08     <common>
+ 0003:000002d0       mDescriptorSize            0000000000005f10     <common>
+ 0003:000002d8       mRegistrationEndOfDxe      0000000000005f18     <common>
+ 0003:000002e0       mRegistrationReadyToLock   0000000000005f20     <common>
+ 0003:000002e8       mSmmMemLibInternalSmramCount 0000000000005f28     <common>
+ 0003:000002f0       mSmmLockBoxContext         0000000000005f30     <common>
+ 0003:00000300       mSmramRangeCount           0000000000005f40     <common>
+ 0003:00000308       mSmramRanges               0000000000005f48     <common>
+
+ entry point at        0001:00000378
+
+ Static symbols
+
+ 0001:0000001a       InternalMemCopyMem.0       00000000000002da     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000002a       @CopyBackward              00000000000002ea     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000033       @CopyBytes                 00000000000002f3     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000083       CetDone                    0000000000000343     BaseLib:SetJump.obj
+ 0001:00000140       CetDone                    0000000000000400     BaseLib:LongJump.obj
+ 0001:000001df       AsmCpuid.0                 000000000000049f     BaseLib:CpuId.obj
+ 0001:000001e4       AsmCpuid.1                 00000000000004a4     BaseLib:CpuId.obj
+ 0001:000001eb       AsmCpuid.2                 00000000000004ab     BaseLib:CpuId.obj
+ 0001:000001f4       AsmCpuid.3                 00000000000004b4     BaseLib:CpuId.obj
+ 0001:000002ee       TdVmCall.no_return_data    00000000000005ae     BaseLib:TdVmcall.obj
+ 0001:0000036b       TdCall.exit                000000000000062b     BaseLib:TdCall.obj
+ 0003:000001b0       mJumpContext               0000000000005df0     SmmLockBox:AutoGen.obj
+ 0003:000002b0       mDriverEntryPointStatus    0000000000005ef0     SmmLockBox:AutoGen.obj
+ 0005:00000000       $unwind$InternalBaseLibIsListValid 0000000000006140     BaseLib:LinkedList.obj
+ 0005:00000000       $unwind$StrnLenS           0000000000006140     BaseLib:SafeString.obj
+ 0005:00000000       $unwind$FreePool           0000000000006140     SmmMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:00000000       $unwind$_ModuleEntryPoint  0000000000006140     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0005:00000008       $unwind$ProcessLibraryConstructorList 0000000000006148     SmmLockBox:AutoGen.obj
+ 0005:0000001c       $unwind$ProcessLibraryDestructorList 000000000000615c     SmmLockBox:AutoGen.obj
+ 0005:00000024       $unwind$InternalGetSmmLockBoxContext 0000000000006164     SmmLockBoxSmmLib:SmmLockBoxMmLib.obj
+ 0005:00000024       $unwind$ProcessModuleEntryPointList 0000000000006164     SmmLockBox:AutoGen.obj
+ 0005:00000024       $unwind$LShiftU64          0000000000006164     BaseLib:LShiftU64.obj
+ 0005:00000024       $unwind$InsertTailList     0000000000006164     BaseLib:LinkedList.obj
+ 0005:00000024       $unwind$AsciiStrLen        0000000000006164     BaseLib:String.obj
+ 0005:00000024       $unwind$ZeroMem            0000000000006164     BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0005:00000024       $unwind$InternalAllocateCopyPool 0000000000006164     SmmMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:00000030       $unwind$SmmLockBoxRestore  0000000000006170     SmmLockBox:SmmLockBox.obj
+ 0005:00000038       $unwind$SmmLockBoxHandler  0000000000006178     SmmLockBox:SmmLockBox.obj
+ 0005:00000050       $unwind$SmmLockBoxEntryPoint 0000000000006190     SmmLockBox:SmmLockBox.obj
+ 0005:0000005c       $unwind$InternalFindLockBoxByGuid 000000000000619c     SmmLockBoxSmmLib:SmmLockBoxMmLib.obj
+ 0005:0000005c       $unwind$RestoreLockBox     000000000000619c     SmmLockBoxSmmLib:SmmLockBoxMmLib.obj
+ 0005:0000005c       $unwind$CopyMem            000000000000619c     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0005:00000070       $unwind$InternalGetLockBoxQueue 00000000000061b0     SmmLockBoxSmmLib:SmmLockBoxMmLib.obj
+ 0005:00000070       $unwind$InternalAssertJumpBuffer 00000000000061b0     BaseLib:SetJump.obj
+ 0005:00000070       $unwind$GetHobList         00000000000061b0     DxeHobLib:HobLib.obj
+ 0005:00000070       $unwind$InternalAllocatePool 00000000000061b0     SmmMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:00000078       $unwind$DebugPrint         00000000000061b8     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:00000080       $unwind$DebugPrintMarker   00000000000061c0     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:00000094       $unwind$DebugAssert        00000000000061d4     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:0000009c       $unwind$EfiGetSystemConfigurationTable 00000000000061dc     UefiLib:UefiLib.obj
+ 0005:000000b4       $unwind$SmmLockBoxSmmEndOfDxeNotify 00000000000061f4     SmmLockBoxSmmLib:SmmLockBoxMmLib.obj
+ 0005:000000bc       $unwind$SmmLockBoxMmConstructor 00000000000061fc     SmmLockBoxSmmLib:SmmLockBoxMmLib.obj
+ 0005:000000d4       $unwind$SaveLockBox        0000000000006214     SmmLockBoxSmmLib:SmmLockBoxMmLib.obj
+ 0005:000000e8       $unwind$SetLockBoxAttributes 0000000000006228     SmmLockBoxSmmLib:SmmLockBoxMmLib.obj
+ 0005:000000e8       $unwind$SmmIsBufferOutsideSmmValid 0000000000006228     SmmMemLib:SmmMemLib.obj
+ 0005:000000f8       $unwind$UpdateLockBox      0000000000006238     SmmLockBoxSmmLib:SmmLockBoxMmLib.obj
+ 0005:00000114       $unwind$SmmLibInternalEndOfDxeNotify 0000000000006254     SmmMemLib:SmmMemLib.obj
+ 0005:0000012c       $unwind$SmmMemLibConstructor 000000000000626c     SmmMemLib:SmmMemLib.obj
+ 0005:0000013c       $unwind$CompareGuid        000000000000627c     BaseMemoryLibRepStr:MemLibGuid.obj
+ 0005:00000154       $unwind$AsciiSPrint        0000000000006294     BasePrintLib:PrintLib.obj
+ 0005:0000015c       $unwind$BasePrintLibValueToString 000000000000629c     BasePrintLib:PrintLibInternal.obj
+ 0005:0000016c       $unwind$BasePrintLibSPrintMarker 00000000000062ac     BasePrintLib:PrintLibInternal.obj
+ 0005:00000188       $unwind$BasePrintLibSPrint 00000000000062c8     BasePrintLib:PrintLibInternal.obj

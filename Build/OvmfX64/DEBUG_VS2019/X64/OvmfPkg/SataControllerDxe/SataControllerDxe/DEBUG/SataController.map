@@ -1,0 +1,214 @@
+ SataController
+
+ Timestamp is 62c3c2b1 (Tue Jul  5 12:48:49 2022)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 000001b8H .text                   CODE
+ 0001:000001b8 00002506H .text$mn                CODE
+ 0002:00000000 00001020H .rdata                  DATA
+ 0002:00001020 00000020H .rdata$voltmd           DATA
+ 0002:00001040 00000148H .rdata$zzzdbg           DATA
+ 0003:00000000 00000100H .data                   DATA
+ 0003:00000100 0000002aH .bss                    DATA
+ 0004:00000000 00000168H .pdata                  DATA
+ 0005:00000000 00000150H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0001:00000000       InternalMemCopyMem         00000000000002c0     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000040       InternalMemSetMem          0000000000000300     BaseMemoryLibRepStr:SetMem.obj
+ 0001:00000060       InternalMemZeroMem         0000000000000320     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000080       InternalMemSetMem64        0000000000000340     BaseMemoryLibRepStr:SetMem64.obj
+ 0001:000000a0       InternalMemSetMem32        0000000000000360     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:000000c0       CpuPause                   0000000000000380     BaseLib:CpuPause.obj
+ 0001:000000d0       TdVmCall                   0000000000000390     BaseLib:TdVmcall.obj
+ 0001:00000160       TdCall                     0000000000000420     BaseLib:TdCall.obj
+ 0001:000001b8       _ModuleEntryPoint          0000000000000478 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:000001d4       ProcessLibraryConstructorList 0000000000000494 f   SataController:AutoGen.obj
+ 0001:00000368       ProcessModuleEntryPointList 0000000000000628 f   SataController:AutoGen.obj
+ 0001:00000440       CalculateBestPioMode       0000000000000700 f   SataController:SataController.obj
+ 0001:000005b0       SataControllerSupported    0000000000000870 f   SataController:SataController.obj
+ 0001:00000638       SataControllerStart        00000000000008f8 f   SataController:SataController.obj
+ 0001:0000098c       SataControllerStop         0000000000000c4c f   SataController:SataController.obj
+ 0001:00000b60       IdeInitGetChannelInfo      0000000000000e20 f   SataController:SataController.obj
+ 0001:00000c04       IdeInitNotifyPhase         0000000000000ec4 f   SataController:SataController.obj
+ 0001:00000c04       IdeInitSetTiming           0000000000000ec4 f   SataController:SataController.obj
+ 0001:00000c08       IdeInitSubmitData          0000000000000ec8 f   SataController:SataController.obj
+ 0001:00000ce8       IdeInitDisqualifyMode      0000000000000fa8 f   SataController:SataController.obj
+ 0001:00000db4       IdeInitCalculateMode       0000000000001074 f   SataController:SataController.obj
+ 0001:00000fe4       SataControllerComponentNameGetDriverName 00000000000012a4 f   SataController:ComponentName.obj
+ 0001:00001018       SataControllerComponentNameGetControllerName 00000000000012d8 f   SataController:ComponentName.obj
+ 0001:000010f4       CopyMem                    00000000000013b4 f   BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0001:00001188       DebugPrint                 0000000000001448 f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:000011ac       DebugPrintMarker           000000000000146c f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:0000125c       DebugAssert                000000000000151c f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:000012d4       InternalAllocatePool       0000000000001594 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00001304       FreePool                   00000000000015c4 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00001348       IsLanguageSupported        0000000000001608 f   UefiLib:UefiLib.obj
+ 0001:000013d0       LookupUnicodeString2       0000000000001690 f   UefiLib:UefiLib.obj
+ 0001:000014c4       ZeroMem                    0000000000001784 f   BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0001:00001534       AsciiStrLen                00000000000017f4 f   BaseLib:String.obj
+ 0001:000015a0       AsciiStrnCmp               0000000000001860 f   BaseLib:String.obj
+ 0001:0000166c       StrnLenS                   000000000000192c f   BaseLib:SafeString.obj
+ 0001:000016c4       AsciiSPrint                0000000000001984 f   BasePrintLib:PrintLib.obj
+ 0001:000016f0       BasePrintLibFillBuffer     00000000000019b0 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00001724       BasePrintLibValueToString  00000000000019e4 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00001790       BasePrintLibSPrintMarker   0000000000001a50 f   BasePrintLib:PrintLibInternal.obj
+ 0001:0000269c       BasePrintLibSPrint         000000000000295c f   BasePrintLib:PrintLibInternal.obj
+ 0002:00000000       ??_C@_0CB@DMEJJJHA@?6ASSERT_EFI_ERROR?5?$CIStatus?5?$DN?5?$CFr?$CJ@ 0000000000002980     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0002:00000028       ??_C@_0CH@BBNBJKHK@?$CB?$CI?$CI?$CIINTN?$CJ?$CIRETURN_STATUS?$CJ?$CIStatus@ 00000000000029a8     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0002:00000050       ??_C@_0P@EACPHDPD@SataController@ 00000000000029d0     SataController:AutoGen.obj
+ 0002:00000060       ??_C@_0GK@FIPMMJAK@d?3?2myedk2?2edk2?2Build?2OvmfX64?2DE@ 00000000000029e0     SataController:AutoGen.obj
+ 0002:000000d0       ??_C@_0BG@BDDIFCPF@PciIo?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000002a50     SataController:SataController.obj
+ 0002:000000e8       ??_C@_0DK@EFLMLGNL@d?3?2myedk2?2edk2?2OvmfPkg?2SataCont@ 0000000000002a68     SataController:SataController.obj
+ 0002:00000128       ??_C@_0CM@MHDHKFHH@CalculateBestPioMode?3?5AdvancedP@ 0000000000002aa8     SataController:SataController.obj
+ 0002:00000158       ??_C@_0CM@NPCPOGAP@CalculateBestUdmaMode?3?5DeviceUD@ 0000000000002ad8     SataController:SataController.obj
+ 0002:00000188       ??_C@_0BL@IACLDPFH@SataControllerStart?5START?6@ 0000000000002b08     SataController:SataController.obj
+ 0002:000001a8       ??_C@_0CF@GFLGAPID@SataControllerStart?5END?5status?5@ 0000000000002b28     SataController:SataController.obj
+ 0002:000001d0       ??_C@_0CO@BIBELLKD@SataControllerStart?5error?5retur@ 0000000000002b50     SataController:SataController.obj
+ 0002:00000200       ??_C@_0BF@NDBIKIKC@CR?5has?5Bad?5Signature@ 0000000000002b80     SataController:SataController.obj
+ 0002:00000218       ??_C@_0CA@NJGCJAAE@SataPrivateData?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000002b98     SataController:SataController.obj
+ 0002:00000238       ??_C@_0DA@KEPHJLCN@Channel?5?$DM?5SataPrivateData?9?$DOIdeI@ 0000000000002bb8     SataController:SataController.obj
+ 0002:00000268       ??_C@_0CG@EBFGMICA@Device?5?$DM?5SataPrivateData?9?$DODevic@ 0000000000002be8     SataController:SataController.obj
+ 0002:00000290       ??_C@_0CA@NIKPBDMO@?$CKSupportedModes?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000002c10     SataController:SataController.obj
+ 0002:000002b0       ??_C@_0CE@GKNNNHG@IdeInitCalculateMode?3?5PioMode?5?$DN@ 0000000000002c30     SataController:SataController.obj
+ 0002:000002d8       ??_C@_0CF@PFDAGBON@IdeInitCalculateMode?3?5UdmaMode?5@ 0000000000002c58     SataController:SataController.obj
+ 0002:00000300       ??_C@_03LKLGDMJI@eng@      0000000000002c80     SataController:ComponentName.obj
+ 0002:00000304       ??_C@_02LFNMGJAP@en@       0000000000002c84     SataController:ComponentName.obj
+ 0002:00000308       ??_C@_06DALJLGPG@eng?$DLen@ 0000000000002c88     SataController:ComponentName.obj
+ 0002:00000310       ??_C@_1DI@EKKODBLH@?$AAS?$AAa?$AAt?$AAa?$AA?5?$AAC?$AAo?$AAn?$AAt?$AAr?$AAo?$AAl?$AAl?$AAe?$AAr@ 0000000000002c90     SataController:ComponentName.obj
+ 0002:00000348       ??_C@_1CA@EHGIFMEH@?$AAS?$AAa?$AAt?$AAa?$AA?5?$AAC?$AAo?$AAn?$AAt?$AAr?$AAo?$AAl?$AAl?$AAe?$AAr@ 0000000000002cc8     SataController:ComponentName.obj
+ 0002:00000370       ??_C@_0ED@MKGCMJG@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFF@ 0000000000002cf0     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0002:000003c0       ??_C@_0ED@JAIIHABO@d?3?2myedk2?2edk2?2MdePkg?2Library?2B@ 0000000000002d40     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0002:00000408       ??_C@_0DO@MAOBOFEG@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFF@ 0000000000002d88     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0002:00000448       ??_C@_0BH@LKMBFCBF@Format?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000002dc8     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:00000460       ??_C@_0EA@MCEJFCHO@d?3?2myedk2?2edk2?2MdePkg?2Library?2B@ 0000000000002de0     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:000004a0       ??_C@_0BI@NOCKJDBJ@ASSERT?5?$FL?$CFa?$FN?5?$CFa?$CI?$CFd?$CJ?3?5?$CFa?6@ 0000000000002e20     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:000004b8       ??_C@_0BH@IACGKAP@Buffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000002e38     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:000004d0       ??_C@_0BN@COECPDCC@gImageHandle?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000002e50     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:000004f0       ??_C@_0FC@HJEJKBBP@d?3?2myedk2?2edk2?2MdePkg?2Library?2U@ 0000000000002e70     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000548       ??_C@_0BE@DGNHAHIL@gST?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000002ec8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000560       ??_C@_0BE@BDFJLGLN@gBS?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000002ee0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00000580       ??_C@_0EM@BLKCBDHP@d?3?2myedk2?2edk2?2MdePkg?2Library?2U@ 0000000000002f00     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0002:000005d0       ??_C@_0BE@OBDFIHND@gRT?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000002f50     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:000005f0       ??_C@_0FI@ELFALICJ@d?3?2myedk2?2edk2?2MdePkg?2Library?2U@ 0000000000002f70     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:00000650       ??_C@_0FG@PKIHNGDJ@d?3?2myedk2?2edk2?2MdePkg?2Library?2U@ 0000000000002fd0     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:000006a8       ??_C@_0DC@CNNBPJA@mDevicePathLibDevicePathUtiliti@ 0000000000003028     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:000006e0       ??_C@_0DI@BANHGNLM@d?3?2myedk2?2edk2?2MdePkg?2Library?2U@ 0000000000003060     UefiLib:UefiDriverModel.obj
+ 0002:00000720       ??_C@_0ED@CECKBBNJ@d?3?2myedk2?2edk2?2MdePkg?2Library?2B@ 00000000000030a0     BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0002:00000768       ??_C@_0DG@EEENIGGL@Length?5?$DM?$DN?5?$CI0xFFFFFFFFFFFFFFFFUL@ 00000000000030e8     BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0002:000007a0       ??_C@_0BH@MAAHKCPC@String?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 0000000000003120     BaseLib:String.obj
+ 0002:000007b8       ??_C@_0CP@DJBLNMJI@d?3?2myedk2?2edk2?2MdePkg?2Library?2B@ 0000000000003138     BaseLib:String.obj
+ 0002:000007e8       ??_C@_0CC@GFNLNIOC@?$CI?$CIUINTN?$CJString?5?$CG?50x00000001?$CJ?5?$DN?$DN@ 0000000000003168     BaseLib:String.obj
+ 0002:00000810       ??_C@_0DI@MDIKFADO@Length?5?$DM?5_gPcd_FixedAtBuild_Pcd@ 0000000000003190     BaseLib:String.obj
+ 0002:00000848       ??_C@_0BL@IKFBNFIL@AsciiStrSize?5?$CIFirstString?$CJ@ 00000000000031c8     BaseLib:String.obj
+ 0002:00000868       ??_C@_0BM@EDNOKLLE@AsciiStrSize?5?$CISecondString?$CJ@ 00000000000031e8     BaseLib:String.obj
+ 0002:00000888       ??_C@_0DJ@JJHGIFMP@Length?5?$DM?$DN?5_gPcd_FixedAtBuild_Pc@ 0000000000003208     BaseLib:String.obj
+ 0002:000008c8       ??_C@_0DC@DDBICJIK@d?3?2myedk2?2edk2?2MdePkg?2Library?2B@ 0000000000003248     BaseLib:Unaligned.obj
+ 0002:00000900       ??_C@_0DD@OKIGPFG@d?3?2myedk2?2edk2?2MdePkg?2Library?2B@ 0000000000003280     BaseLib:SafeString.obj
+ 0002:00000938       ??_C@_0BJ@CNKJJNE@?$CIBuffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 00000000000032b8     BaseLib:SafeString.obj
+ 0002:00000958       ??_C@_0N@KGHEHMDL@Divisor?5?$CB?$DN?50@ 00000000000032d8     BaseLib:DivU64x32.obj
+ 0002:00000968       ??_C@_0DO@DLJLNPNA@d?3?2myedk2?2edk2?2MdePkg?2Library?2B@ 00000000000032e8     BasePrintLib:PrintLibInternal.obj
+ 0002:000009b0       ??_C@_0EB@HDGIDCIO@?$CIBufferSize?5?$DM?$DN?5?$CI_gPcd_FixedAtBu@ 0000000000003330     BasePrintLib:PrintLibInternal.obj
+ 0002:000009f8       ??_C@_0BJ@PPAKKDJG@?$CIFormat?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 0000000000003378     BasePrintLib:PrintLibInternal.obj
+ 0002:00000a20       ??_C@_0ED@LPDDCECB@?$CIBufferSize?5?$DM?$DN?5?$CI_gPcd_FixedAtBu@ 00000000000033a0     BasePrintLib:PrintLibInternal.obj
+ 0002:00000a70       ??_C@_0IM@BFJJFLGB@?$CIStrnLenS?5?$CI?$CICHAR16?5?$CK?$CJFormat?0?5?$CI_@ 00000000000033f0     BasePrintLib:PrintLibInternal.obj
+ 0002:00000b00       ??_C@_0ID@PLGJGION@?$CIAsciiStrnLenS?5?$CIFormat?0?5?$CI_gPcd_@ 0000000000003480     BasePrintLib:PrintLibInternal.obj
+ 0002:00000b88       ??_C@_0O@MLOLIMFM@?$DMnull?5string?$DO@ 0000000000003508     BasePrintLib:PrintLibInternal.obj
+ 0002:00000b98       ??_C@_0M@BJJDNPHK@?$DMnull?5guid?$DO@ 0000000000003518     BasePrintLib:PrintLibInternal.obj
+ 0002:00000ba8       ??_C@_0DB@PMLHLBMO@?$CF08x?9?$CF04x?9?$CF04x?9?$CF02x?$CF02x?9?$CF02x?$CF02@ 0000000000003528     BasePrintLib:PrintLibInternal.obj
+ 0002:00000be0       ??_C@_0M@LHGBCIKM@?$DMnull?5time?$DO@ 0000000000003560     BasePrintLib:PrintLibInternal.obj
+ 0002:00000bf0       ??_C@_0BK@FCPKCIDD@?$CF02d?1?$CF02d?1?$CF04d?5?5?$CF02d?3?$CF02d@ 0000000000003570     BasePrintLib:PrintLibInternal.obj
+ 0002:00000c0c       ??_C@_04JIMNDDED@?$CF08X@  000000000000358c     BasePrintLib:PrintLibInternal.obj
+ 0002:00000c14       ??_C@_02PCIJFNDE@?$AN?6@   0000000000003594     BasePrintLib:PrintLibInternal.obj
+ 0002:00000c18       ??_C@_01LIIJDEN@?$AN@      0000000000003598     BasePrintLib:PrintLibInternal.obj
+ 0002:00000c20       mWarningString             00000000000035a0     BasePrintLib:PrintLibInternal.obj
+ 0002:00000cc0       mErrorString               0000000000003640     BasePrintLib:PrintLibInternal.obj
+ 0002:00000f80       mHexStr                    0000000000003900     BasePrintLib:PrintLibInternal.obj
+ 0002:00000f90       ??_C@_0DL@JEBMKBEC@d?3?2myedk2?2edk2?2MdePkg?2Library?2B@ 0000000000003910     BaseLib:DivU64x32Remainder.obj
+ 0002:00001020       __volatile_metadata        00000000000039a0     <linker-defined>
+ 0003:00000000       gEfiComponentName2ProtocolGuid 0000000000003b20     SataController:AutoGen.obj
+ 0003:00000010       gEfiPciIoProtocolGuid      0000000000003b30     SataController:AutoGen.obj
+ 0003:00000020       gEfiDevicePathUtilitiesProtocolGuid 0000000000003b40     SataController:AutoGen.obj
+ 0003:00000030       gEfiDriverBindingProtocolGuid 0000000000003b50     SataController:AutoGen.obj
+ 0003:00000040       gEfiIdeControllerInitProtocolGuid 0000000000003b60     SataController:AutoGen.obj
+ 0003:00000050       gEfiComponentNameProtocolGuid 0000000000003b70     SataController:AutoGen.obj
+ 0003:00000060       gSataControllerDriverBinding 0000000000003b80     SataController:SataController.obj
+ 0003:00000090       gSataControllerComponentName 0000000000003bb0     SataController:ComponentName.obj
+ 0003:000000a8       gSataControllerComponentName2 0000000000003bc8     SataController:ComponentName.obj
+ 0003:000000c0       mSataControllerControllerNameTable 0000000000003be0     SataController:ComponentName.obj
+ 0003:000000e0       mSataControllerDriverNameTable 0000000000003c00     SataController:ComponentName.obj
+ 0003:00000100       gST                        0000000000003c20     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:00000108       gBS                        0000000000003c28     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:00000110       gImageHandle               0000000000003c30     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:00000118       gRT                        0000000000003c38     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0003:00000120       mDevicePathLibDevicePathUtilities 0000000000003c40     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0003:00000128       gParity                    0000000000003c48     PcAtSerialPortLib:SerialPortLib.obj
+ 0003:00000129       gBreakSet                  0000000000003c49     PcAtSerialPortLib:SerialPortLib.obj
+
+ entry point at        0001:000001b8
+
+ Static symbols
+
+ 0001:0000001a       InternalMemCopyMem.0       00000000000002da     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000002a       @CopyBackward              00000000000002ea     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000033       @CopyBytes                 00000000000002f3     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000012e       TdVmCall.no_return_data    00000000000003ee     BaseLib:TdVmcall.obj
+ 0001:000001ab       TdCall.exit                000000000000046b     BaseLib:TdCall.obj
+ 0001:00000acc       FlatDeviceIndex            0000000000000d8c f   SataController:SataController.obj
+ 0005:00000000       $unwind$StrnLenS           0000000000003de0     BaseLib:SafeString.obj
+ 0005:00000000       $unwind$_ModuleEntryPoint  0000000000003de0     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0005:00000008       $unwind$AsciiStrLen        0000000000003de8     BaseLib:String.obj
+ 0005:00000008       $unwind$ZeroMem            0000000000003de8     BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0005:00000008       $unwind$ProcessLibraryConstructorList 0000000000003de8     SataController:AutoGen.obj
+ 0005:00000014       $unwind$ProcessModuleEntryPointList 0000000000003df4     SataController:AutoGen.obj
+ 0005:00000020       $unwind$CalculateBestPioMode 0000000000003e00     SataController:SataController.obj
+ 0005:0000003c       $unwind$SataControllerSupported 0000000000003e1c     SataController:SataController.obj
+ 0005:00000044       $unwind$SataControllerStart 0000000000003e24     SataController:SataController.obj
+ 0005:00000058       $unwind$SataControllerStop 0000000000003e38     SataController:SataController.obj
+ 0005:0000006c       $unwind$AsciiStrnCmp       0000000000003e4c     BaseLib:String.obj
+ 0005:0000006c       $unwind$BasePrintLibValueToString 0000000000003e4c     BasePrintLib:PrintLibInternal.obj
+ 0005:0000006c       $unwind$IsLanguageSupported 0000000000003e4c     UefiLib:UefiLib.obj
+ 0005:0000006c       $unwind$FlatDeviceIndex    0000000000003e4c     SataController:SataController.obj
+ 0005:0000007c       $unwind$IdeInitDisqualifyMode 0000000000003e5c     SataController:SataController.obj
+ 0005:0000007c       $unwind$IdeInitGetChannelInfo 0000000000003e5c     SataController:SataController.obj
+ 0005:0000007c       $unwind$IdeInitSubmitData  0000000000003e5c     SataController:SataController.obj
+ 0005:00000094       $unwind$IdeInitCalculateMode 0000000000003e74     SataController:SataController.obj
+ 0005:000000ac       $unwind$SataControllerComponentNameGetDriverName 0000000000003e8c     SataController:ComponentName.obj
+ 0005:000000b4       $unwind$SataControllerComponentNameGetControllerName 0000000000003e94     SataController:ComponentName.obj
+ 0005:000000cc       $unwind$CopyMem            0000000000003eac     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0005:000000e0       $unwind$DebugPrint         0000000000003ec0     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:000000e8       $unwind$DebugPrintMarker   0000000000003ec8     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:000000fc       $unwind$DebugAssert        0000000000003edc     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:00000104       $unwind$FreePool           0000000000003ee4     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:00000104       $unwind$InternalAllocatePool 0000000000003ee4     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:0000010c       $unwind$LookupUnicodeString2 0000000000003eec     UefiLib:UefiLib.obj
+ 0005:00000124       $unwind$AsciiSPrint        0000000000003f04     BasePrintLib:PrintLib.obj
+ 0005:0000012c       $unwind$BasePrintLibSPrintMarker 0000000000003f0c     BasePrintLib:PrintLibInternal.obj
+ 0005:00000148       $unwind$BasePrintLibSPrint 0000000000003f28     BasePrintLib:PrintLibInternal.obj

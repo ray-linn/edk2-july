@@ -1,0 +1,679 @@
+ PiSmmCore
+
+ Timestamp is 62c3c2a2 (Tue Jul  5 12:48:34 2022)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000358H .text                   CODE
+ 0001:00000358 0000a527H .text$mn                CODE
+ 0002:00000000 00002d30H .rdata                  DATA
+ 0002:00002d30 00000020H .rdata$voltmd           DATA
+ 0002:00002d50 0000013cH .rdata$zzzdbg           DATA
+ 0003:00000000 000005a0H .data                   DATA
+ 0003:000005a0 00000360H .bss                    DATA
+ 0004:00000000 00000594H .pdata                  DATA
+ 0005:00000000 000004b4H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __ImageBase                0000000000000000     <linker-defined>
+ 0001:00000000       InternalMemCopyMem         00000000000002c0     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000040       InternalMemZeroMem         0000000000000300     BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000060       InternalMemCompareMem      0000000000000320     BaseMemoryLibRepStr:CompareMem.obj
+ 0001:00000080       InternalMemSetMem64        0000000000000340     BaseMemoryLibRepStr:SetMem64.obj
+ 0001:000000a0       InternalMemSetMem          0000000000000360     BaseMemoryLibRepStr:SetMem.obj
+ 0001:000000c0       InternalMemSetMem32        0000000000000380     BaseMemoryLibRepStr:SetMem32.obj
+ 0001:000000e0       AsmWbinvd                  00000000000003a0     BaseLib:Wbinvd.obj
+ 0001:000000f0       AsmFlushCacheLine          00000000000003b0     BaseLib:FlushCacheLine.obj
+ 0001:00000100       AsmInvd                    00000000000003c0     BaseLib:Invd.obj
+ 0001:00000110       AsmCpuid                   00000000000003d0     BaseLib:CpuId.obj
+ 0001:00000140       CpuPause                   0000000000000400     BaseLib:CpuPause.obj
+ 0001:00000150       AsmInterruptHandle         0000000000000410     PeCoffExtraActionLib:IntHandler.obj
+ 0001:00000160       AsmWriteDr2                0000000000000420     BaseLib:WriteDr2.obj
+ 0001:00000170       AsmWriteDr3                0000000000000430     BaseLib:WriteDr3.obj
+ 0001:00000180       AsmWriteCr4                0000000000000440     BaseLib:WriteCr4.obj
+ 0001:00000190       AsmWriteDr1                0000000000000450     BaseLib:WriteDr1.obj
+ 0001:000001a0       AsmReadDr2                 0000000000000460     BaseLib:ReadDr2.obj
+ 0001:000001b0       AsmWriteDr7                0000000000000470     BaseLib:WriteDr7.obj
+ 0001:000001c0       AsmReadDr0                 0000000000000480     BaseLib:ReadDr0.obj
+ 0001:000001d0       AsmWriteDr0                0000000000000490     BaseLib:WriteDr0.obj
+ 0001:000001e0       AsmReadDr7                 00000000000004a0     BaseLib:ReadDr7.obj
+ 0001:000001f0       AsmReadDr1                 00000000000004b0     BaseLib:ReadDr1.obj
+ 0001:00000200       AsmReadDr3                 00000000000004c0     BaseLib:ReadDr3.obj
+ 0001:00000210       AsmReadCr4                 00000000000004d0     BaseLib:ReadCr4.obj
+ 0001:00000220       AsmReadCs                  00000000000004e0     BaseLib:ReadCs.obj
+ 0001:00000230       InternalX86ReadIdtr        00000000000004f0     BaseLib:ReadIdtr.obj
+ 0001:00000240       EnableInterrupts           0000000000000500     BaseLib:EnableInterrupts.obj
+ 0001:00000250       DisableInterrupts          0000000000000510     BaseLib:DisableInterrupts.obj
+ 0001:00000260       AsmReadEflags              0000000000000520     BaseLib:ReadEflags.obj
+ 0001:00000270       TdVmCall                   0000000000000530     BaseLib:TdVmcall.obj
+ 0001:00000300       TdCall                     00000000000005c0     BaseLib:TdCall.obj
+ 0001:00000358       _ModuleEntryPoint          0000000000000618 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00000384       ProcessLibraryConstructorList 0000000000000644 f   PiSmmCore:AutoGen.obj
+ 0001:0000061c       ProcessLibraryDestructorList 00000000000008dc f   PiSmmCore:AutoGen.obj
+ 0001:0000066c       SmmEfiNotAvailableYetArg5  000000000000092c f   PiSmmCore:PiSmmCore.obj
+ 0001:00000678       SmmLegacyBootHandler       0000000000000938 f   PiSmmCore:PiSmmCore.obj
+ 0001:00000714       SmmExitBootServicesHandler 00000000000009d4 f   PiSmmCore:PiSmmCore.obj
+ 0001:000007ac       SmmS3EntryCallBack         0000000000000a6c f   PiSmmCore:PiSmmCore.obj
+ 0001:000007b8       SmmReadyToBootHandler      0000000000000a78 f   PiSmmCore:PiSmmCore.obj
+ 0001:000007fc       SmmReadyToLockHandler      0000000000000abc f   PiSmmCore:PiSmmCore.obj
+ 0001:00000938       SmmEndOfDxeHandler         0000000000000bf8 f   PiSmmCore:PiSmmCore.obj
+ 0001:000009f0       SmmS3SmmInitDoneHandler    0000000000000cb0 f   PiSmmCore:PiSmmCore.obj
+ 0001:00000bcc       SmmEndOfS3ResumeHandler    0000000000000e8c f   PiSmmCore:PiSmmCore.obj
+ 0001:00000db0       SmmEntryPoint              0000000000001070 f   PiSmmCore:PiSmmCore.obj
+ 0001:00000f0c       SmmCoreInstallLoadedImage  00000000000011cc f   PiSmmCore:PiSmmCore.obj
+ 0001:000011d4       SmmMain                    0000000000001494 f   PiSmmCore:PiSmmCore.obj
+ 0001:00001e4c       SmmInsertImageRecord       000000000000210c f   PiSmmCore:MemoryAttributesTable.obj
+ 0001:0000221c       PublishMemoryAttributesTable 00000000000024dc f   PiSmmCore:MemoryAttributesTable.obj
+ 0001:00002494       SmmInstallImageRecord      0000000000002754 f   PiSmmCore:MemoryAttributesTable.obj
+ 0001:0000263c       SmmInstallMemoryAttributesTable 00000000000028fc f   PiSmmCore:MemoryAttributesTable.obj
+ 0001:00002720       SmmLoadImage               00000000000029e0 f   PiSmmCore:Dispatcher.obj
+ 0001:00002dd4       SmmGetDepexSectionAndPreProccess 0000000000003094 f   PiSmmCore:Dispatcher.obj
+ 0001:00002e84       SmmDispatcher              0000000000003144 f   PiSmmCore:Dispatcher.obj
+ 0001:00003158       SmmInsertOnScheduledQueueWhileProcessingBeforeAndAfter 0000000000003418 f   PiSmmCore:Dispatcher.obj
+ 0001:0000330c       SmmDriverDispatchHandler   00000000000035cc f   PiSmmCore:Dispatcher.obj
+ 0001:000038cc       SmmCoreFindSmiEntry        0000000000003b8c f   PiSmmCore:Smi.obj
+ 0001:000039c0       SmiManage                  0000000000003c80 f   PiSmmCore:Smi.obj
+ 0001:00003af8       SmiHandlerRegister         0000000000003db8 f   PiSmmCore:Smi.obj
+ 0001:00003ba8       SmiHandlerUnRegister       0000000000003e68 f   PiSmmCore:Smi.obj
+ 0001:00003db8       SmmInstallConfigurationTable 0000000000004078 f   PiSmmCore:InstallConfigurationTable.obj
+ 0001:00003f20       SmmFindProtocolEntry       00000000000041e0 f   PiSmmCore:Handle.obj
+ 0001:00004044       SmmFindProtocolInterface   0000000000004304 f   PiSmmCore:Handle.obj
+ 0001:000040e0       SmmInstallProtocolInterface 00000000000043a0 f   PiSmmCore:Handle.obj
+ 0001:000040f0       SmmInstallProtocolInterfaceNotify 00000000000043b0 f   PiSmmCore:Handle.obj
+ 0001:00004338       SmmUninstallProtocolInterface 00000000000045f8 f   PiSmmCore:Handle.obj
+ 0001:00004470       SmmHandleProtocol          0000000000004730 f   PiSmmCore:Handle.obj
+ 0001:00004540       SmmGetNextLocateAllHandles 0000000000004800 f   PiSmmCore:Locate.obj
+ 0001:00004598       SmmGetNextLocateByRegisterNotify 0000000000004858 f   PiSmmCore:Locate.obj
+ 0001:00004644       SmmGetNextLocateByProtocol 0000000000004904 f   PiSmmCore:Locate.obj
+ 0001:000046f0       SmmLocateProtocol          00000000000049b0 f   PiSmmCore:Locate.obj
+ 0001:000047bc       SmmLocateHandle            0000000000004a7c f   PiSmmCore:Locate.obj
+ 0001:00004954       SmmRegisterProtocolNotify  0000000000004c14 f   PiSmmCore:Notify.obj
+ 0001:00004aec       UefiMemoryTypeToSmmPoolType 0000000000004dac f   PiSmmCore:Pool.obj
+ 0001:00004b38       InternalAllocPoolByIndex   0000000000004df8 f   PiSmmCore:Pool.obj
+ 0001:00004d0c       InternalFreePoolByIndex    0000000000004fcc f   PiSmmCore:Pool.obj
+ 0001:00004e2c       SmmInternalAllocatePool    00000000000050ec f   PiSmmCore:Pool.obj
+ 0001:00004f88       SmmAllocatePool            0000000000005248 f   PiSmmCore:Pool.obj
+ 0001:00004f90       SmmInternalFreePool        0000000000005250 f   PiSmmCore:Pool.obj
+ 0001:000050f0       SmmFreePool                00000000000053b0 f   PiSmmCore:Pool.obj
+ 0001:000050f8       FindGuardedMemoryMap       00000000000053b8 f   PiSmmCore:HeapGuard.obj
+ 0001:00005340       GetGuardedMemoryBits       0000000000005600 f   PiSmmCore:HeapGuard.obj
+ 0001:00005480       IsGuardPage                0000000000005740 f   PiSmmCore:HeapGuard.obj
+ 0001:000054b4       SetGuardPage               0000000000005774 f   PiSmmCore:HeapGuard.obj
+ 0001:00005520       SetGuardForMemory          00000000000057e0 f   PiSmmCore:HeapGuard.obj
+ 0001:00005674       InternalAllocMaxAddressWithGuard 0000000000005934 f   PiSmmCore:HeapGuard.obj
+ 0001:00005778       SetAllGuardPages           0000000000005a38 f   PiSmmCore:HeapGuard.obj
+ 0001:00005928       DumpGuardedMemoryBitmap    0000000000005be8 f   PiSmmCore:HeapGuard.obj
+ 0001:00005b58       VerifyMemoryGuard          0000000000005e18 f   PiSmmCore:HeapGuard.obj
+ 0001:00005c20       CoreFreeMemoryMapStack     0000000000005ee0 f   PiSmmCore:Page.obj
+ 0001:00005e18       InsertNewEntry             00000000000060d8 f   PiSmmCore:Page.obj
+ 0001:00005ecc       ConvertSmmMemoryMapEntry   000000000000618c f   PiSmmCore:Page.obj
+ 0001:00006138       InternalAllocPagesOnOneNode 00000000000063f8 f   PiSmmCore:Page.obj
+ 0001:000061a8       SmmInternalAllocatePagesEx 0000000000006468 f   PiSmmCore:Page.obj
+ 0001:00006344       SmmAllocatePages           0000000000006604 f   PiSmmCore:Page.obj
+ 0001:0000635c       InternalMergeNodes         000000000000661c f   PiSmmCore:Page.obj
+ 0001:000063d0       SmmInternalFreePagesEx     0000000000006690 f   PiSmmCore:Page.obj
+ 0001:000064c8       SmmFreePages               0000000000006788 f   PiSmmCore:Page.obj
+ 0001:00006574       SmmAddMemoryRegion         0000000000006834 f   PiSmmCore:Page.obj
+ 0001:00006660       SmmCoreGetMemoryMap        0000000000006920 f   PiSmmCore:Page.obj
+ 0001:00006758       GrowDepexStack             0000000000006a18 f   PiSmmCore:Dependency.obj
+ 0001:000067fc       PushBool                   0000000000006abc f   PiSmmCore:Dependency.obj
+ 0001:0000683c       PopBool                    0000000000006afc f   PiSmmCore:Dependency.obj
+ 0001:00006868       SmmIsSchedulable           0000000000006b28 f   PiSmmCore:Dependency.obj
+ 0001:00006bb0       GetPcdProtocol             0000000000006e70 f   DxePcdLib:DxePcdLib.obj
+ 0001:00006c3c       CopyMem                    0000000000006efc f   BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0001:00006cd8       ZeroMem                    0000000000006f98 f   BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0001:00006d48       CopyGuid                   0000000000007008 f   BaseMemoryLibRepStr:MemLibGuid.obj
+ 0001:00006df8       CompareGuid                00000000000070b8 f   BaseMemoryLibRepStr:MemLibGuid.obj
+ 0001:00006ebc       SetMem64                   000000000000717c f   BaseMemoryLibRepStr:SetMem64Wrapper.obj
+ 0001:00006f80       SetMem                     0000000000007240 f   BaseMemoryLibRepStr:SetMemWrapper.obj
+ 0001:00006fd8       InternalBaseLibIsListValid 0000000000007298 f   BaseLib:LinkedList.obj
+ 0001:00007044       InsertHeadList             0000000000007304 f   BaseLib:LinkedList.obj
+ 0001:00007094       InsertTailList             0000000000007354 f   BaseLib:LinkedList.obj
+ 0001:000070e8       GetFirstNode               00000000000073a8 f   BaseLib:LinkedList.obj
+ 0001:0000711c       IsListEmpty                00000000000073dc f   BaseLib:LinkedList.obj
+ 0001:00007154       IsNull                     0000000000007414 f   BaseLib:LinkedList.obj
+ 0001:00007198       RemoveEntryList            0000000000007458 f   BaseLib:LinkedList.obj
+ 0001:000071e0       LShiftU64                  00000000000074a0 f   BaseLib:LShiftU64.obj
+ 0001:00007224       RShiftU64                  00000000000074e4 f   BaseLib:RShiftU64.obj
+ 0001:00007268       AsciiStrLen                0000000000007528 f   BaseLib:String.obj
+ 0001:000072d4       StrnLenS                   0000000000007594 f   BaseLib:SafeString.obj
+ 0001:0000732c       DebugPrint                 00000000000075ec f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:00007350       DebugPrintMarker           0000000000007610 f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:00007400       DebugAssert                00000000000076c0 f   BaseDebugLibSerialPort:DebugLib.obj
+ 0001:00007478       BufferInSmram              0000000000007738 f   PiSmmCoreMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000074bc       InternalAllocatePool       000000000000777c f   PiSmmCoreMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000074ec       AllocateZeroPool           00000000000077ac f   PiSmmCoreMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00007514       InternalAllocateCopyPool   00000000000077d4 f   PiSmmCoreMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:0000758c       FreePool                   000000000000784c f   PiSmmCoreMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000075ec       PiSmmCoreMemoryAllocationLibConstructor 00000000000078ac f   PiSmmCoreMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000077f0       EfiGetSystemConfigurationTable 0000000000007ab0 f   UefiLib:UefiLib.obj
+ 0001:000078b4       EfiInitializeFwVolDevicepathNode 0000000000007b74 f   UefiLib:UefiNotTiano.obj
+ 0001:0000794c       GetHobList                 0000000000007c0c f   DxeHobLib:HobLib.obj
+ 0001:000079d0       PeCoffLoaderGetPeHeader    0000000000007c90 f   BasePeCoffLib:BasePeCoff.obj
+ 0001:00007ecc       PeCoffLoaderGetImageInfo   000000000000818c f   BasePeCoffLib:BasePeCoff.obj
+ 0001:0000823c       PeCoffLoaderRelocateImage  00000000000084fc f   BasePeCoffLib:BasePeCoff.obj
+ 0001:00008534       PeCoffLoaderLoadImage      00000000000087f4 f   BasePeCoffLib:BasePeCoff.obj
+ 0001:00008b0c       PeCoffLoaderImageReadFromMemory 0000000000008dcc f   BasePeCoffLib:BasePeCoff.obj
+ 0001:00008bac       PeCoffLoaderGetPdbPointer  0000000000008e6c f   BasePeCoffGetEntryPointLib:PeCoffGetEntryPoint.obj
+ 0001:00008cf8       InternalReportStatusCode   0000000000008fb8 f   DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0001:00008d94       ReportStatusCodeWithExtendedData 0000000000009054 f   DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0001:00008e50       SmmIsBufferOutsideSmmValid 0000000000009110 f   SmmMemLib:SmmMemLib.obj
+ 0001:00009088       SmmLibInternalEndOfDxeNotify 0000000000009348 f   SmmMemLib:SmmMemLib.obj
+ 0001:00009400       SmmLibInternalReadyToLockNotify 00000000000096c0 f   SmmMemLib:SmmMemLib.obj
+ 0001:0000940c       SmmMemLibConstructor       00000000000096cc f   SmmMemLib:SmmMemLib.obj
+ 0001:000096a8       AsciiSPrint                0000000000009968 f   BasePrintLib:PrintLib.obj
+ 0001:000096d4       BasePrintLibFillBuffer     0000000000009994 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00009708       BasePrintLibValueToString  00000000000099c8 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00009774       BasePrintLibSPrintMarker   0000000000009a34 f   BasePrintLib:PrintLibInternal.obj
+ 0001:0000a680       BasePrintLibSPrint         000000000000a940 f   BasePrintLib:PrintLibInternal.obj
+ 0001:0000a6a4       PeCoffLoaderExtraActionCommon 000000000000a964 f   PeCoffExtraActionLib:PeCoffExtraActionLib.obj
+ 0002:00000000       ??_C@_0CB@DMEJJJHA@?6ASSERT_EFI_ERROR?5?$CIStatus?5?$DN?5?$CFr?$CJ@ 000000000000ab40     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0002:00000028       ??_C@_0CH@BBNBJKHK@?$CB?$CI?$CI?$CIINTN?$CJ?$CIRETURN_STATUS?$CJ?$CIStatus@ 000000000000ab68     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0002:00000050       ??_C@_09ODOKAFKK@PiSmmCore@ 000000000000ab90     PiSmmCore:AutoGen.obj
+ 0002:00000060       ??_C@_0GE@LOMJEKBK@d?3?2myedk2?2edk2?2Build?2OvmfX64?2DE@ 000000000000aba0     PiSmmCore:AutoGen.obj
+ 0002:000000c8       ??_C@_0CM@MFIAHIJI@?6SMM?3?5SmmCpuIo?5Arch?5Protocol?5no@ 000000000000ac08     PiSmmCore:PiSmmCore.obj
+ 0002:000000f8       ??_C@_0DH@KGEEDFBD@d?3?2myedk2?2edk2?2MdeModulePkg?2Cor@ 000000000000ac38     PiSmmCore:PiSmmCore.obj
+ 0002:00000130       ??_C@_0BE@IPCFPJGJ@SmmEndOfDxeHandler?6@ 000000000000ac70     PiSmmCore:PiSmmCore.obj
+ 0002:00000148       ??_C@_0BJ@ENLMCDLK@SmmS3SmmInitDoneHandler?6@ 000000000000ac88     PiSmmCore:PiSmmCore.obj
+ 0002:00000168       ??_C@_0BM@OEAALMMA@It?5is?5not?5during?5S3?5resume?6@ 000000000000aca8     PiSmmCore:PiSmmCore.obj
+ 0002:00000188       ??_C@_0BJ@DNLACCME@SmmEndOfS3ResumeHandler?6@ 000000000000acc8     PiSmmCore:PiSmmCore.obj
+ 0002:000001a8       ??_C@_0CB@PKDOKCIM@mFullSmramRanges?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50@ 000000000000ace8     PiSmmCore:PiSmmCore.obj
+ 0002:000001d0       ??_C@_0BF@NDBIKIKC@CR?5has?5Bad?5Signature@ 000000000000ad10     PiSmmCore:MemoryAttributesTable.obj
+ 0002:000001f0       ??_C@_0ED@PINOIBCJ@d?3?2myedk2?2edk2?2MdeModulePkg?2Cor@ 000000000000ad30     PiSmmCore:MemoryAttributesTable.obj
+ 0002:00000238       ??_C@_0BK@BEMEMBP@MemoryMap?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000ad78     PiSmmCore:MemoryAttributesTable.obj
+ 0002:00000258       ??_C@_0DG@BEKIIMLD@SMM?5SetMemoryAttributesTableSec@ 000000000000ad98     PiSmmCore:MemoryAttributesTable.obj
+ 0002:00000290       ??_C@_0CD@IJGOBDFF@SMM?5ImageCode?5SegmentCount?5?9?50x@ 000000000000add0     PiSmmCore:MemoryAttributesTable.obj
+ 0002:000002b8       ??_C@_0CF@FGIKFFCF@SMM?5?5Image?$FL?$CFd?$FN?3?50x?$CF016lx?5?9?50x?$CF0@ 000000000000adf8     PiSmmCore:MemoryAttributesTable.obj
+ 0002:000002e0       ??_C@_0BO@KHOHIKIH@SMM?5InsertImageRecord?5?9?50x?$CFx?6@ 000000000000ae20     PiSmmCore:MemoryAttributesTable.obj
+ 0002:00000300       ??_C@_0CL@DPBAJDHP@SMM?5InsertImageRecord?5?9?50x?$CF016l@ 000000000000ae40     PiSmmCore:MemoryAttributesTable.obj
+ 0002:00000330       ??_C@_0BN@EBGKMNNH@SMM?5ImageRecordCount?5?9?50x?$CFx?6@ 000000000000ae70     PiSmmCore:MemoryAttributesTable.obj
+ 0002:00000350       ??_C@_0BC@EBKBNDBN@SMM?5?5?5Image?5?9?5?$CFa?6@ 000000000000ae90     PiSmmCore:MemoryAttributesTable.obj
+ 0002:00000368       ??_C@_0CI@PIFFOMIB@SMM?5Hdr?4Pe32?9?$DOSignature?5invalid@ 000000000000aea8     PiSmmCore:MemoryAttributesTable.obj
+ 0002:00000390       ??_C@_0FA@IMKPJEMG@SMM?5?$CB?$CB?$CB?$CB?$CB?$CB?$CB?$CB?5?5InsertImageRecord@ 000000000000aed0     PiSmmCore:MemoryAttributesTable.obj
+ 0002:000003e0       ??_C@_0CE@MKPBHHAN@SMM?5?$CB?$CB?$CB?$CB?$CB?$CB?$CB?$CB?5?5Image?5?9?5?$CFa?5?5?$CB?$CB?$CB?$CB?$CB@ 000000000000af20     PiSmmCore:MemoryAttributesTable.obj
+ 0002:00000408       ??_C@_0CE@HEHEBFNL@SMM?5?5?5Section?5?9?5?8?$CFc?$CFc?$CFc?$CFc?$CFc?$CFc?$CFc@ 000000000000af48     PiSmmCore:MemoryAttributesTable.obj
+ 0002:00000430       ??_C@_0CF@LDKOAOCD@SMM?5?5?5VirtualSize?5?5?5?5?5?5?5?5?5?5?9?50x@ 000000000000af70     PiSmmCore:MemoryAttributesTable.obj
+ 0002:00000458       ??_C@_0CF@FDOIMHJN@SMM?5?5?5VirtualAddress?5?5?5?5?5?5?5?9?50x@ 000000000000af98     PiSmmCore:MemoryAttributesTable.obj
+ 0002:00000480       ??_C@_0CF@PFFAIKFA@SMM?5?5?5SizeOfRawData?5?5?5?5?5?5?5?5?9?50x@ 000000000000afc0     PiSmmCore:MemoryAttributesTable.obj
+ 0002:000004a8       ??_C@_0CF@HKFLDGHL@SMM?5?5?5PointerToRawData?5?5?5?5?5?9?50x@ 000000000000afe8     PiSmmCore:MemoryAttributesTable.obj
+ 0002:000004d0       ??_C@_0CF@OLBKCIKN@SMM?5?5?5PointerToRelocations?5?9?50x@ 000000000000b010     PiSmmCore:MemoryAttributesTable.obj
+ 0002:000004f8       ??_C@_0CF@IHFPFMAE@SMM?5?5?5PointerToLinenumbers?5?9?50x@ 000000000000b038     PiSmmCore:MemoryAttributesTable.obj
+ 0002:00000520       ??_C@_0CF@JPCIFMCE@SMM?5?5?5NumberOfRelocations?5?5?9?50x@ 000000000000b060     PiSmmCore:MemoryAttributesTable.obj
+ 0002:00000548       ??_C@_0CF@DAEOACBM@SMM?5?5?5NumberOfLinenumbers?5?5?9?50x@ 000000000000b088     PiSmmCore:MemoryAttributesTable.obj
+ 0002:00000570       ??_C@_0CF@GDBLINE@SMM?5?5?5Characteristics?5?5?5?5?5?5?9?50x@ 000000000000b0b0     PiSmmCore:MemoryAttributesTable.obj
+ 0002:00000598       ??_C@_0CE@PELCKFHB@SMM?5ImageCode?3?50x?$CF016lx?5?9?50x?$CF01@ 000000000000b0d8     PiSmmCore:MemoryAttributesTable.obj
+ 0002:000005c0       ??_C@_0ED@HOKEPCNN@SMM?5?$CB?$CB?$CB?$CB?$CB?$CB?$CB?$CB?5?5InsertImageRecord@ 000000000000b100     PiSmmCore:MemoryAttributesTable.obj
+ 0002:00000608       ??_C@_0CK@CFGMDEBL@SMM?5IsImageRecordCodeSectionVal@ 000000000000b148     PiSmmCore:MemoryAttributesTable.obj
+ 0002:00000638       ??_C@_0DJ@CIDFFKAG@Status?5?$DN?$DN?5?$CI?$CIRETURN_STATUS?$CJ?$CI0x80@ 000000000000b178     PiSmmCore:MemoryAttributesTable.obj
+ 0002:00000678       ??_C@_0BG@DAMAKDMO@MemoryMapSize?5?9?50x?$CFx?6@ 000000000000b1b8     PiSmmCore:MemoryAttributesTable.obj
+ 0002:00000690       ??_C@_0BC@FKINOIJE@MemoryMap?5?9?50x?$CFx?6@ 000000000000b1d0     PiSmmCore:MemoryAttributesTable.obj
+ 0002:000006a8       ??_C@_0CG@FPGHNECH@MemoryAttributesTable?5?$CB?$DN?5?$CI?$CIvoid@ 000000000000b1e8     PiSmmCore:MemoryAttributesTable.obj
+ 0002:000006d0       ??_C@_0BI@HNOKICAB@MemoryAttributesTable?3?6@ 000000000000b210     PiSmmCore:MemoryAttributesTable.obj
+ 0002:000006e8       ??_C@_0CB@GMMBKKEK@?5?5Version?5?5?5?5?5?5?5?5?5?5?5?5?5?5?9?50x?$CF08x@ 000000000000b228     PiSmmCore:MemoryAttributesTable.obj
+ 0002:00000710       ??_C@_0CB@KMMAFNLM@?5?5NumberOfEntries?5?5?5?5?5?5?9?50x?$CF08x@ 000000000000b250     PiSmmCore:MemoryAttributesTable.obj
+ 0002:00000738       ??_C@_0CB@FHOLKKC@?5?5DescriptorSize?5?5?5?5?5?5?5?9?50x?$CF08x@ 000000000000b278     PiSmmCore:MemoryAttributesTable.obj
+ 0002:00000760       ??_C@_0O@BJLMFKPN@Entry?5?$CI0x?$CFx?$CJ?6@ 000000000000b2a0     PiSmmCore:MemoryAttributesTable.obj
+ 0002:00000770       ??_C@_0BM@OFOMNHPM@?5?5Type?5?5?5?5?5?5?5?5?5?5?5?5?5?5?9?50x?$CFx?6@ 000000000000b2b0     PiSmmCore:MemoryAttributesTable.obj
+ 0002:00000790       ??_C@_0CA@LKNOBKLP@?5?5PhysicalStart?5?5?5?5?5?9?50x?$CF016lx?6@ 000000000000b2d0     PiSmmCore:MemoryAttributesTable.obj
+ 0002:000007b0       ??_C@_0CA@OBLLFPPH@?5?5VirtualStart?5?5?5?5?5?5?9?50x?$CF016lx?6@ 000000000000b2f0     PiSmmCore:MemoryAttributesTable.obj
+ 0002:000007d0       ??_C@_0CA@HKCNAHEO@?5?5NumberOfPages?5?5?5?5?5?9?50x?$CF016lx?6@ 000000000000b310     PiSmmCore:MemoryAttributesTable.obj
+ 0002:000007f0       ??_C@_0CA@EEMGMJFM@?5?5Attribute?5?5?5?5?5?5?5?5?5?9?50x?$CF016lx?6@ 000000000000b330     PiSmmCore:MemoryAttributesTable.obj
+ 0002:00000810       ??_C@_0BJ@ILNNGNAB@LoadedImage?5?9?50x?$CFx?50x?$CFx?5@ 000000000000b350     PiSmmCore:MemoryAttributesTable.obj
+ 0002:0000082c       ??_C@_05INGBLANI@?$CI?$CFa?$CJ?5@ 000000000000b36c     PiSmmCore:MemoryAttributesTable.obj
+ 0002:00000834       ??_C@_01EEMJAFIK@?6@       000000000000b374     PiSmmCore:MemoryAttributesTable.obj
+ 0002:00000838       ??_C@_0CK@MAMAOABL@SMM?5MemoryProtectionAttribute?5?9@ 000000000000b378     PiSmmCore:MemoryAttributesTable.obj
+ 0002:00000868       ??_C@_0BO@KKMIJEFG@SMM?5Total?5Image?5Count?5?9?50x?$CFx?6@ 000000000000b3a8     PiSmmCore:MemoryAttributesTable.obj
+ 0002:00000888       ??_C@_0BH@GLANIDM@SMM?5Dump?5ImageRecord?3?6@ 000000000000b3c8     PiSmmCore:MemoryAttributesTable.obj
+ 0002:000008a0       ??_C@_0DI@IAELGJOD@mSecurity2?5?$DN?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?5?$HM?$HM?5m@ 000000000000b3e0     PiSmmCore:Dispatcher.obj
+ 0002:000008d8       ??_C@_0DI@BPPCDIDM@d?3?2myedk2?2edk2?2MdeModulePkg?2Cor@ 000000000000b418     PiSmmCore:Dispatcher.obj
+ 0002:00000910       ??_C@_0DA@NBLEECFG@Loading?5SMM?5driver?5at?50x?$CF11p?5En@ 000000000000b450     PiSmmCore:Dispatcher.obj
+ 0002:00000940       ??_C@_02ECNOPIAA@?$CFa@    000000000000b480     PiSmmCore:Dispatcher.obj
+ 0002:00000948       ??_C@_0CL@FCGPHMMN@Error?3?5SMM?5image?5at?5?$CF11p?5start?5@ 000000000000b488     PiSmmCore:Dispatcher.obj
+ 0002:00000978       ??_C@_0CA@LIGPJNLP@Evaluate?5SMM?5DEPEX?5for?5FFS?$CI?$CFg?$CJ?6@ 000000000000b4b8     PiSmmCore:Dispatcher.obj
+ 0002:00000998       ??_C@_0BE@NGDMDIJA@?5?5BEFORE?5FFS?$CI?$CFg?$CJ?5?$DN?5@ 000000000000b4d8     PiSmmCore:Dispatcher.obj
+ 0002:000009b0       ??_C@_0BM@FKEPNHMN@TRUE?6?5?5END?6?5?5RESULT?5?$DN?5TRUE?6@ 000000000000b4f0     PiSmmCore:Dispatcher.obj
+ 0002:000009d0       ??_C@_0BO@IOEAMIGE@FALSE?6?5?5END?6?5?5RESULT?5?$DN?5FALSE?6@ 000000000000b510     PiSmmCore:Dispatcher.obj
+ 0002:000009f0       ??_C@_0BD@NIJHLBPK@?5?5AFTER?5FFS?$CI?$CFg?$CJ?5?$DN?5@ 000000000000b530     PiSmmCore:Dispatcher.obj
+ 0002:00000a08       ??_C@_0BM@PPFNPPMA@KnownHandle?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000b548     PiSmmCore:Dispatcher.obj
+ 0002:00000a28       ??_C@_0BM@HECPJCLL@DriverEntry?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000b568     PiSmmCore:Dispatcher.obj
+ 0002:00000a48       ??_C@_0BC@FEDIJHFF@?$CI?$CIBOOLEAN?$CJ?$CI0?$DN?$DN1?$CJ?$CJ@ 000000000000b588     PiSmmCore:Dispatcher.obj
+ 0002:00000a60       ??_C@_0BL@HMFJNHJC@?5?5RESULT?5?$DN?5TRUE?5?$CIApriori?$CJ?6@ 000000000000b5a0     PiSmmCore:Dispatcher.obj
+ 0002:00000a80       ??_C@_0CP@HKFPNCDK@SMM?5Driver?5?$CFg?5was?5discovered?5bu@ 000000000000b5c0     PiSmmCore:Dispatcher.obj
+ 0002:00000ab0       mSmmFileTypes              000000000000b5f0     PiSmmCore:Dispatcher.obj
+ 0002:00000ab8       ??_C@_0BJ@OAAKNPEN@Pe32Data?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000b5f8     PiSmmCore:SmramProfileRecord.obj
+ 0002:00000ad8       ??_C@_0DB@DIHAJOAN@d?3?2myedk2?2edk2?2MdeModulePkg?2Cor@ 000000000000b618     PiSmmCore:Smi.obj
+ 0002:00000b10       ??_C@_0DE@FHOKFIMK@d?3?2myedk2?2edk2?2MdeModulePkg?2Cor@ 000000000000b650     PiSmmCore:Handle.obj
+ 0002:00000b48       ??_C@_0CE@JCCJBMHL@SmmInstallProtocolInterface?3?5?$CFg@ 000000000000b688     PiSmmCore:Handle.obj
+ 0002:00000b70       ??_C@_0DO@IMCGBLMJ@SmmInstallProtocolInterface?3?5in@ 000000000000b6b0     PiSmmCore:Handle.obj
+ 0002:00000bb0       ??_C@_0EH@CLBLKAHD@SmmFindProtocolInterface?5?$CIHandl@ 000000000000b6f0     PiSmmCore:Handle.obj
+ 0002:00000bf8       ??_C@_0DD@FIEILNMH@SmmInstallProtocolInterface?3?5?$CFg@ 000000000000b738     PiSmmCore:Handle.obj
+ 0002:00000c30       ??_C@_0DE@HOAGDHME@d?3?2myedk2?2edk2?2MdeModulePkg?2Cor@ 000000000000b770     PiSmmCore:Locate.obj
+ 0002:00000c70       ??_C@_0EP@ECHJCHON@ProtNotify?9?$DOSignature?5?$DN?$DN?5?$CI?$CI?$CI?8s?8@ 000000000000b7b0     PiSmmCore:Locate.obj
+ 0002:00000cc0       ??_C@_0BK@BPKPPMIP@SearchKey?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000b800     PiSmmCore:Locate.obj
+ 0002:00000ce0       ??_C@_0DE@BODFBDKK@d?3?2myedk2?2edk2?2MdeModulePkg?2Cor@ 000000000000b820     PiSmmCore:Notify.obj
+ 0002:00000d20       ??_C@_0FB@BHAJMLEA@?$CIMemoryType?5?$DN?$DN?5EfiRuntimeServic@ 000000000000b860     PiSmmCore:Pool.obj
+ 0002:00000d78       ??_C@_0DC@IKGGPEFE@d?3?2myedk2?2edk2?2MdeModulePkg?2Cor@ 000000000000b8b8     PiSmmCore:Pool.obj
+ 0002:00000db0       ??_C@_0CA@PMMDGFAK@PoolIndex?5?$DM?$DN?5?$CI?$CI12?5?9?51?$CJ?5?9?56?5?$CL?51?$CJ@ 000000000000b8f0     PiSmmCore:Pool.obj
+ 0002:00000dd0       ??_C@_0EB@MDIPMDI@?$CIFreePoolHdr?9?$DOHeader?4Size?5?$CG?5?$CIFr@ 000000000000b910     PiSmmCore:Pool.obj
+ 0002:00000e18       ??_C@_0DL@FPNFBMNN@?$CI?$CIUINTN?$CJFreePoolHdr?5?$CG?5?$CIFreePool@ 000000000000b958     PiSmmCore:Pool.obj
+ 0002:00000e58       ??_C@_0CF@JAKNDKBE@FreePoolHdr?9?$DOHeader?4Size?5?$DO?$DN?5?$CI1?5@ 000000000000b998     PiSmmCore:Pool.obj
+ 0002:00000e80       ??_C@_0BP@NPAMDLLO@PoolIndex?5?$DM?5?$CI?$CI12?5?9?51?$CJ?5?9?56?5?$CL?51?$CJ@ 000000000000b9c0     PiSmmCore:Pool.obj
+ 0002:00000ea0       ??_C@_0FH@DNCMAMBI@FreePoolHdr?9?$DOHeader?4Signature?5?$DN@ 000000000000b9e0     PiSmmCore:Pool.obj
+ 0002:00000ef8       ??_C@_0BP@BOABAGGB@?$CBFreePoolHdr?9?$DOHeader?4Available@ 000000000000ba38     PiSmmCore:Pool.obj
+ 0002:00000f20       ??_C@_0EN@JKPGEKPN@PoolTail?9?$DOSignature?5?$DN?$DN?5?$CI?$CI?$CI?8s?8?$CJ?5@ 000000000000ba60     PiSmmCore:Pool.obj
+ 0002:00000f70       ??_C@_0CL@OHBDMKPO@FreePoolHdr?9?$DOHeader?4Size?5?$DN?$DN?5Poo@ 000000000000bab0     PiSmmCore:Pool.obj
+ 0002:00000fa0       ??_C@_0CC@HAMMJJEP@?$CI?$CIUINTN?$CJFreePoolHdr?5?$CG?50xFFF?$CJ?5?$DN?$DN@ 000000000000bae0     PiSmmCore:Pool.obj
+ 0002:00000fc8       ??_C@_0CI@GHCMNKIL@?$CIFreePoolHdr?9?$DOHeader?4Size?5?$CG?50xF@ 000000000000bb08     PiSmmCore:Pool.obj
+ 0002:00000ff0       ??_C@_0BG@NIPFGNEI@BitNumber?5?$DM?$DN?5?$CI1?5?$DM?$DM?56?$CJ@ 000000000000bb30     PiSmmCore:HeapGuard.obj
+ 0002:00001008       ??_C@_0DH@LGHACDBG@d?3?2myedk2?2edk2?2MdeModulePkg?2Cor@ 000000000000bb48     PiSmmCore:HeapGuard.obj
+ 0002:00001040       ??_C@_0P@BELBPKJL@MapMemory?5?$CB?$DN?50@ 000000000000bb80     PiSmmCore:HeapGuard.obj
+ 0002:00001050       ??_C@_0BH@CPAFCLMN@BitMap?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000bb90     PiSmmCore:HeapGuard.obj
+ 0002:00001070       ??_C@_0EB@EIBLPEBL@?5?5?5?5?5?5?5?5?5?5?5?5?5?5?53?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5@ 000000000000bbb0     PiSmmCore:HeapGuard.obj
+ 0002:000010c0       ??_C@_0EB@FELEBAHK@FEDCBA9876543210FEDCBA987654321@ 000000000000bc00     PiSmmCore:HeapGuard.obj
+ 0002:00001110       ??_C@_0FF@LOBMCLHE@?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?5G@ 000000000000bc50     PiSmmCore:HeapGuard.obj
+ 0002:00001168       ??_C@_0BH@CEHKHKEI@?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?$CFa?$AN?6@ 000000000000bca8     PiSmmCore:HeapGuard.obj
+ 0002:00001180       ??_C@_0FF@KBIOOBAM@?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN@ 000000000000bcc0     PiSmmCore:HeapGuard.obj
+ 0002:000011d8       ??_C@_0N@HACLFNEI@?$CF016lx?3?5?$CFa?$AN?6@ 000000000000bd18     PiSmmCore:HeapGuard.obj
+ 0002:000011e8       ??_C@_0BI@CMOKHMIN@?4?4?4?5?5?5?5?5?5?5?5?5?5?5?5?5?3?5?4?4?4?$AN?6@ 000000000000bd28     PiSmmCore:HeapGuard.obj
+ 0002:00001200       ??_C@_0CP@KPBNKGPF@Head?5Guard?5is?5not?5set?5at?3?5?$CF016l@ 000000000000bd40     PiSmmCore:HeapGuard.obj
+ 0002:00001230       ??_C@_0CP@LPAGIPGE@Tail?5Guard?5is?5not?5set?5at?3?5?$CF016l@ 000000000000bd70     PiSmmCore:HeapGuard.obj
+ 0002:00001260       ??_C@_0DC@PNBEJBGP@d?3?2myedk2?2edk2?2MdeModulePkg?2Cor@ 000000000000bda0     PiSmmCore:Page.obj
+ 0002:00001294       ??_C@_05HKHPEFOF@Entry@    000000000000bdd4     PiSmmCore:Page.obj
+ 0002:000012a0       ??_C@_0O@LJAPMOCN@mMapDepth?5?$DM?56@ 000000000000bde0     PiSmmCore:Page.obj
+ 0002:000012b0       ??_C@_0EA@KEDHIJLI@VerifyMemoryGuard?5?$CI?$CKMemory?0?5Num@ 000000000000bdf0     PiSmmCore:Page.obj
+ 0002:000012f0       ??_C@_0DN@HFKLNIAA@?$CI?$CI?$CIUINTN?$CJNext?5?9?5?$CIUINTN?$CJFirst?$CJ?5?$DO@ 000000000000be30     PiSmmCore:Page.obj
+ 0002:00001330       ??_C@_0BE@JHOHPFAC@SmmAddMemoryRegion?6@ 000000000000be70     PiSmmCore:Page.obj
+ 0002:00001348       ??_C@_0BG@PEMKPPMN@?5?5MemBase?5?5?5?5?9?50x?$CFlx?6@ 000000000000be88     PiSmmCore:Page.obj
+ 0002:00001360       ??_C@_0BG@MHIBPONL@?5?5MemLength?5?5?9?50x?$CFlx?6@ 000000000000bea0     PiSmmCore:Page.obj
+ 0002:00001378       ??_C@_0BF@GAADDDBJ@?5?5Type?5?5?5?5?5?5?5?9?50x?$CFx?6@ 000000000000beb8     PiSmmCore:Page.obj
+ 0002:00001390       ??_C@_0BG@GEJJFHKA@?5?5Attributes?5?9?50x?$CFlx?6@ 000000000000bed0     PiSmmCore:Page.obj
+ 0002:000013a8       ??_C@_0CD@LLCKFAOC@?5?5RESULT?5?$DN?5FALSE?5?$CIDepex?5is?5empt@ 000000000000bee8     PiSmmCore:Dependency.obj
+ 0002:000013d0       ??_C@_0DI@MFHADGM@d?3?2myedk2?2edk2?2MdeModulePkg?2Cor@ 000000000000bf10     PiSmmCore:Dependency.obj
+ 0002:00001408       ??_C@_0DH@HJNPFLMD@?5?5RESULT?5?$DN?5FALSE?5?$CIAttempt?5to?5fe@ 000000000000bf48     PiSmmCore:Dependency.obj
+ 0002:00001440       ??_C@_0DG@BLEOFCEK@?5?5RESULT?5?$DN?5FALSE?5?$CIUnexpected?5BE@ 000000000000bf80     PiSmmCore:Dependency.obj
+ 0002:00001478       ??_C@_0BJ@NLJMNGGI@?5?5PUSH?5GUID?$CI?$CFg?$CJ?5?$DN?5FALSE?6@ 000000000000bfb8     PiSmmCore:Dependency.obj
+ 0002:00001498       ??_C@_0BI@OMMPINOL@?5?5PUSH?5GUID?$CI?$CFg?$CJ?5?$DN?5TRUE?6@ 000000000000bfd8     PiSmmCore:Dependency.obj
+ 0002:000014b0       ??_C@_0CF@JIJFBAAC@?5?5RESULT?5?$DN?5FALSE?5?$CIUnexpected?5er@ 000000000000bff0     PiSmmCore:Dependency.obj
+ 0002:000014d8       ??_C@_06DJKGIPEK@?5?5AND?6@ 000000000000c018     PiSmmCore:Dependency.obj
+ 0002:000014e0       ??_C@_05NOPACOFB@?5?5OR?6@ 000000000000c020     PiSmmCore:Dependency.obj
+ 0002:000014e8       ??_C@_06BPGMNMIO@?5?5NOT?6@ 000000000000c028     PiSmmCore:Dependency.obj
+ 0002:000014f0       ??_C@_07JLHPFCH@?5?5TRUE?6@ 000000000000c030     PiSmmCore:Dependency.obj
+ 0002:000014f8       ??_C@_08EJKLCAIL@?5?5FALSE?6@ 000000000000c038     PiSmmCore:Dependency.obj
+ 0002:00001504       ??_C@_06MMCGCJIK@?5?5END?6@ 000000000000c044     PiSmmCore:Dependency.obj
+ 0002:0000150c       ??_C@_04HCDDPBNL@TRUE@     000000000000c04c     PiSmmCore:Dependency.obj
+ 0002:00001514       ??_C@_05MAJJAKPI@FALSE@    000000000000c054     PiSmmCore:Dependency.obj
+ 0002:00001520       ??_C@_0P@GJLOBHPI@?5?5RESULT?5?$DN?5?$CFa?6@ 000000000000c060     PiSmmCore:Dependency.obj
+ 0002:00001530       ??_C@_0CD@LDMHFHNL@?5?5RESULT?5?$DN?5FALSE?5?$CIUnknown?5opcod@ 000000000000c070     PiSmmCore:Dependency.obj
+ 0002:00001558       ??_C@_0DE@IBFOALAL@d?3?2myedk2?2edk2?2MdePkg?2Library?2D@ 000000000000c098     DxePcdLib:DxePcdLib.obj
+ 0002:00001590       ??_C@_0BF@OOKDELHM@mPcd?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000c0d0     DxePcdLib:DxePcdLib.obj
+ 0002:000015a8       ??_C@_0BH@IACGKAP@Buffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000c0e8     DxePcdLib:DxePcdLib.obj
+ 0002:000015c0       ??_C@_0ED@MKGCMJG@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFF@ 000000000000c100     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0002:00001610       ??_C@_0ED@JAIIHABO@d?3?2myedk2?2edk2?2MdePkg?2Library?2B@ 000000000000c150     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0002:00001658       ??_C@_0DO@MAOBOFEG@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFF@ 000000000000c198     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0002:000016a0       ??_C@_0ED@CECKBBNJ@d?3?2myedk2?2edk2?2MdePkg?2Library?2B@ 000000000000c1e0     BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0002:000016e8       ??_C@_0DG@EEENIGGL@Length?5?$DM?$DN?5?$CI0xFFFFFFFFFFFFFFFFUL@ 000000000000c228     BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0002:00001720       ??_C@_0EE@OOKBMMBN@d?3?2myedk2?2edk2?2MdePkg?2Library?2B@ 000000000000c260     BaseMemoryLibRepStr:SetMem64Wrapper.obj
+ 0002:00001768       ??_C@_0DI@DAGDPLPG@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFF@ 000000000000c2a8     BaseMemoryLibRepStr:SetMem64Wrapper.obj
+ 0002:000017a0       ??_C@_0CO@LECKNDNC@?$CI?$CI?$CIUINTN?$CJBuffer?$CJ?5?$CG?5?$CIsizeof?5?$CIVal@ 000000000000c2e0     BaseMemoryLibRepStr:SetMem64Wrapper.obj
+ 0002:000017d0       ??_C@_0CF@LEICOABD@?$CILength?5?$CG?5?$CIsizeof?5?$CIValue?$CJ?5?9?51?$CJ?$CJ@ 000000000000c310     BaseMemoryLibRepStr:SetMem64Wrapper.obj
+ 0002:00001800       ??_C@_0EC@NJPJFNGD@d?3?2myedk2?2edk2?2MdePkg?2Library?2B@ 000000000000c340     BaseMemoryLibRepStr:SetMemWrapper.obj
+ 0002:00001848       ??_C@_0BF@NJNGJMPC@List?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000c388     BaseLib:LinkedList.obj
+ 0002:00001860       ??_C@_0DD@DMMJEGIP@d?3?2myedk2?2edk2?2MdePkg?2Library?2B@ 000000000000c3a0     BaseLib:LinkedList.obj
+ 0002:00001898       ??_C@_0CC@KDLPLAED@List?9?$DOForwardLink?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?5@ 000000000000c3d8     BaseLib:LinkedList.obj
+ 0002:000018c0       ??_C@_0BP@IJJCCMAK@List?9?$DOBackLink?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000c400     BaseLib:LinkedList.obj
+ 0002:000018e0       ??_C@_0CI@BMHOPIIO@InternalBaseLibIsListValid?5?$CIFir@ 000000000000c420     BaseLib:LinkedList.obj
+ 0002:00001908       ??_C@_0BJ@NJABNCDK@ListHead?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000c448     BaseLib:LinkedList.obj
+ 0002:00001928       ??_C@_0CG@LGIALJFK@InternalBaseLibIsListValid?5?$CILis@ 000000000000c468     BaseLib:LinkedList.obj
+ 0002:00001950       ??_C@_0CC@JLDICICM@InternalBaseLibIsListValid?5?$CILis@ 000000000000c490     BaseLib:LinkedList.obj
+ 0002:00001978       ??_C@_0BF@NMBJJECB@?$CBIsListEmpty?5?$CIEntry?$CJ@ 000000000000c4b8     BaseLib:LinkedList.obj
+ 0002:00001990       ??_C@_0L@MEMPDLHB@Count?5?$DM?564@ 000000000000c4d0     BaseLib:LShiftU64.obj
+ 0002:000019a0       ??_C@_0DC@KCMAEPFB@d?3?2myedk2?2edk2?2MdePkg?2Library?2B@ 000000000000c4e0     BaseLib:LShiftU64.obj
+ 0002:000019d8       ??_C@_0DC@EHOJHBLD@d?3?2myedk2?2edk2?2MdePkg?2Library?2B@ 000000000000c518     BaseLib:RShiftU64.obj
+ 0002:00001a10       ??_C@_0DC@DDBICJIK@d?3?2myedk2?2edk2?2MdePkg?2Library?2B@ 000000000000c550     BaseLib:Unaligned.obj
+ 0002:00001a48       ??_C@_0BH@MAAHKCPC@String?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000c588     BaseLib:String.obj
+ 0002:00001a60       ??_C@_0CP@DJBLNMJI@d?3?2myedk2?2edk2?2MdePkg?2Library?2B@ 000000000000c5a0     BaseLib:String.obj
+ 0002:00001a90       ??_C@_0CC@GFNLNIOC@?$CI?$CIUINTN?$CJString?5?$CG?50x00000001?$CJ?5?$DN?$DN@ 000000000000c5d0     BaseLib:String.obj
+ 0002:00001ab8       ??_C@_0DI@MDIKFADO@Length?5?$DM?5_gPcd_FixedAtBuild_Pcd@ 000000000000c5f8     BaseLib:String.obj
+ 0002:00001af0       ??_C@_0DD@OKIGPFG@d?3?2myedk2?2edk2?2MdePkg?2Library?2B@ 000000000000c630     BaseLib:SafeString.obj
+ 0002:00001b28       ??_C@_0BJ@CNKJJNE@?$CIBuffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 000000000000c668     BaseLib:SafeString.obj
+ 0002:00001b48       ??_C@_0N@KGHEHMDL@Divisor?5?$CB?$DN?50@ 000000000000c688     BaseLib:DivU64x32.obj
+ 0002:00001b58       ??_C@_0BH@LKMBFCBF@Format?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000c698     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:00001b70       ??_C@_0EA@MCEJFCHO@d?3?2myedk2?2edk2?2MdePkg?2Library?2B@ 000000000000c6b0     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:00001bb0       ??_C@_0BI@NOCKJDBJ@ASSERT?5?$FL?$CFa?$FN?5?$CFa?$CI?$CFd?$CJ?3?5?$CFa?6@ 000000000000c6f0     BaseDebugLibSerialPort:DebugLib.obj
+ 0002:00001bc8       ??_C@_0BN@COECPDCC@gImageHandle?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000c708     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00001bf0       ??_C@_0FC@HJEJKBBP@d?3?2myedk2?2edk2?2MdePkg?2Library?2U@ 000000000000c730     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00001c48       ??_C@_0BE@DGNHAHIL@gST?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000c788     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00001c60       ??_C@_0BE@BDFJLGLN@gBS?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000c7a0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0002:00001c80       ??_C@_0FH@IFIJFECL@d?3?2myedk2?2edk2?2MdeModulePkg?2Lib@ 000000000000c7c0     PiSmmCoreMemoryAllocationLib:MemoryAllocationLib.obj
+ 0002:00001cd8       ??_C@_0DO@GEEICOOO@AllocationSize?5?$DM?$DN?5?$CI0xFFFFFFFFFF@ 000000000000c818     PiSmmCoreMemoryAllocationLib:MemoryAllocationLib.obj
+ 0002:00001d18       ??_C@_0DC@MKDMBHJD@mSmmCoreMemoryAllocLibSmramRang@ 000000000000c858     PiSmmCoreMemoryAllocationLib:MemoryAllocationLib.obj
+ 0002:00001d50       ??_C@_0BE@OBDFIHND@gRT?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000c890     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:00001d70       ??_C@_0FI@ELFALICJ@d?3?2myedk2?2edk2?2MdePkg?2Library?2U@ 000000000000c8b0     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0002:00001dd0       ??_C@_0FG@PKIHNGDJ@d?3?2myedk2?2edk2?2MdePkg?2Library?2U@ 000000000000c910     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:00001e28       ??_C@_0DC@CNNBPJA@mDevicePathLibDevicePathUtiliti@ 000000000000c968     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:00001e5c       mUefiDevicePathLibEndDevicePath 000000000000c99c     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0002:00001e60       ??_C@_0BK@PPOBBAMB@TableGuid?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000c9a0     UefiLib:UefiLib.obj
+ 0002:00001e80       ??_C@_0DA@MHLDPJPP@d?3?2myedk2?2edk2?2MdePkg?2Library?2U@ 000000000000c9c0     UefiLib:UefiLib.obj
+ 0002:00001eb0       ??_C@_0BG@JDKEGFNB@Table?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000c9f0     UefiLib:UefiLib.obj
+ 0002:00001ec8       ??_C@_0DF@JLANBOAC@d?3?2myedk2?2edk2?2MdePkg?2Library?2U@ 000000000000ca08     UefiLib:UefiNotTiano.obj
+ 0002:00001f00       ??_C@_0CB@OKGFGBHJ@FvDevicePathNode?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50@ 000000000000ca40     UefiLib:UefiNotTiano.obj
+ 0002:00001f28       ??_C@_0BJ@GMMGGIMG@NameGuid?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000ca68     UefiLib:UefiNotTiano.obj
+ 0002:00001f50       ??_C@_0EI@EGOBAHNO@d?3?2myedk2?2edk2?2MdePkg?2Library?2D@ 000000000000ca90     DxeServicesTableLib:DxeServicesTableLib.obj
+ 0002:00001f98       ??_C@_0BE@IOIFLNKO@gDS?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000cad8     DxeServicesTableLib:DxeServicesTableLib.obj
+ 0002:00001fb0       ??_C@_0DB@IMLKCNBK@d?3?2myedk2?2edk2?2MdePkg?2Library?2D@ 000000000000caf0     DxeHobLib:HobLib.obj
+ 0002:00001fe8       ??_C@_0BJ@OBFMLLDO@mHobList?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000cb28     DxeHobLib:HobLib.obj
+ 0002:00002008       ??_C@_0BJ@NOLLDKJB@HobStart?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000cb48     DxeHobLib:HobLib.obj
+ 0002:00002028       ??_C@_0BN@MJEPDGEJ@ImageContext?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000cb68     BasePeCoffLib:BasePeCoff.obj
+ 0002:00002048       ??_C@_0DJ@EGDPEGIG@d?3?2myedk2?2edk2?2MdePkg?2Library?2B@ 000000000000cb88     BasePeCoffLib:BasePeCoff.obj
+ 0002:00002090       ??_C@_0FB@MOCPCCHF@?$CIUINTN?$CJFixupData?5?$DM?$DN?5?$CIUINTN?$CJImag@ 000000000000cbd0     BasePeCoffLib:BasePeCoff.obj
+ 0002:000020e8       ??_C@_0BJ@KIAHAFBF@ReadSize?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000cc28     BasePeCoffLib:BasePeCoff.obj
+ 0002:00002108       ??_C@_0BL@INAOLIJI@FileHandle?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000cc48     BasePeCoffLib:BasePeCoff.obj
+ 0002:00002130       ??_C@_0EP@ECBBBAMP@d?3?2myedk2?2edk2?2MdePkg?2Library?2B@ 000000000000cc70     BasePeCoffGetEntryPointLib:PeCoffGetEntryPoint.obj
+ 0002:00002180       ??_C@_0DJ@EPHLDLOO@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFF@ 000000000000ccc0     BaseCacheMaintenanceLib:X86Cache.obj
+ 0002:000021c0       ??_C@_0EB@BBGPJFCK@d?3?2myedk2?2edk2?2MdePkg?2Library?2B@ 000000000000cd00     BaseCacheMaintenanceLib:X86Cache.obj
+ 0002:00002210       ??_C@_0FB@HLAKEICA@d?3?2myedk2?2edk2?2MdeModulePkg?2Lib@ 000000000000cd50     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0002:00002268       ??_C@_0BN@HMHGLLOO@ExtendedData?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000cda8     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0002:00002288       ??_C@_0DN@HHIHPHHB@?$CB?$CI?$CIExtendedData?5?$DN?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000cdc8     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0002:000022c8       ??_C@_0BK@EENFIALI@PhysicalAddressBits?5?$DM?$DN?552@ 000000000000ce08     SmmMemLib:SmmMemLib.obj
+ 0002:000022e8       ??_C@_0DE@OHEBGKGA@d?3?2myedk2?2edk2?2MdePkg?2Library?2S@ 000000000000ce28     SmmMemLib:SmmMemLib.obj
+ 0002:00002320       ??_C@_0DB@PDNKLHK@mSmmMemLibInternalMaximumSuppor@ 000000000000ce60     SmmMemLib:SmmMemLib.obj
+ 0002:00002360       ??_C@_0GG@DONGBGEE@SmmIsBufferOutsideSmmValid?3?5Ove@ 000000000000cea0     SmmMemLib:SmmMemLib.obj
+ 0002:000023d0       ??_C@_0EH@FAFNFMDA@SmmIsBufferOutsideSmmValid?3?5Ove@ 000000000000cf10     SmmMemLib:SmmMemLib.obj
+ 0002:00002418       ??_C@_0CJ@KEHNLENF@CpuStart?5?$CI0x?$CFlx?$CJ?5?9?5PhysicalSize@ 000000000000cf58     SmmMemLib:SmmMemLib.obj
+ 0002:00002450       ??_C@_0FO@OIBGBKBH@SmmIsBufferOutsideSmmValid?3?5Not@ 000000000000cf90     SmmMemLib:SmmMemLib.obj
+ 0002:000024b0       ??_C@_0FI@MGEJLPJA@SmmIsBufferOutsideSmmValid?3?5In?5@ 000000000000cff0     SmmMemLib:SmmMemLib.obj
+ 0002:00002510       ??_C@_0FE@NELGICEF@SmmIsBufferOutsideSmmValid?3?5In?5@ 000000000000d050     SmmMemLib:SmmMemLib.obj
+ 0002:00002568       ??_C@_0CG@EBDMLLKF@mSmmMemLibGcdMemSpace?5?$CB?$DN?5?$CI?$CIvoid@ 000000000000d0a8     SmmMemLib:SmmMemLib.obj
+ 0002:00002590       ??_C@_0DA@DFBCLCMM@mSmmMemLibMemoryAttributesTable@ 000000000000d0d0     SmmMemLib:SmmMemLib.obj
+ 0002:000025c0       ??_C@_0BL@GHNPPLKP@mMemoryMap?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ@ 000000000000d100     SmmMemLib:SmmMemLib.obj
+ 0002:000025e0       ??_C@_0CO@JCGMICBD@mSmmMemLibInternalSmramRanges?5?$CB@ 000000000000d120     SmmMemLib:SmmMemLib.obj
+ 0002:00002610       ??_C@_0DO@DLJLNPNA@d?3?2myedk2?2edk2?2MdePkg?2Library?2B@ 000000000000d150     BasePrintLib:PrintLibInternal.obj
+ 0002:00002650       ??_C@_0EB@HDGIDCIO@?$CIBufferSize?5?$DM?$DN?5?$CI_gPcd_FixedAtBu@ 000000000000d190     BasePrintLib:PrintLibInternal.obj
+ 0002:00002698       ??_C@_0BJ@PPAKKDJG@?$CIFormat?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$CJ@ 000000000000d1d8     BasePrintLib:PrintLibInternal.obj
+ 0002:000026c0       ??_C@_0ED@LPDDCECB@?$CIBufferSize?5?$DM?$DN?5?$CI_gPcd_FixedAtBu@ 000000000000d200     BasePrintLib:PrintLibInternal.obj
+ 0002:00002710       ??_C@_0IM@BFJJFLGB@?$CIStrnLenS?5?$CI?$CICHAR16?5?$CK?$CJFormat?0?5?$CI_@ 000000000000d250     BasePrintLib:PrintLibInternal.obj
+ 0002:000027a0       ??_C@_0ID@PLGJGION@?$CIAsciiStrnLenS?5?$CIFormat?0?5?$CI_gPcd_@ 000000000000d2e0     BasePrintLib:PrintLibInternal.obj
+ 0002:00002828       ??_C@_0O@MLOLIMFM@?$DMnull?5string?$DO@ 000000000000d368     BasePrintLib:PrintLibInternal.obj
+ 0002:00002838       ??_C@_0M@BJJDNPHK@?$DMnull?5guid?$DO@ 000000000000d378     BasePrintLib:PrintLibInternal.obj
+ 0002:00002848       ??_C@_0DB@PMLHLBMO@?$CF08x?9?$CF04x?9?$CF04x?9?$CF02x?$CF02x?9?$CF02x?$CF02@ 000000000000d388     BasePrintLib:PrintLibInternal.obj
+ 0002:00002880       ??_C@_0M@LHGBCIKM@?$DMnull?5time?$DO@ 000000000000d3c0     BasePrintLib:PrintLibInternal.obj
+ 0002:00002890       ??_C@_0BK@FCPKCIDD@?$CF02d?1?$CF02d?1?$CF04d?5?5?$CF02d?3?$CF02d@ 000000000000d3d0     BasePrintLib:PrintLibInternal.obj
+ 0002:000028ac       ??_C@_04JIMNDDED@?$CF08X@  000000000000d3ec     BasePrintLib:PrintLibInternal.obj
+ 0002:000028b4       ??_C@_02PCIJFNDE@?$AN?6@   000000000000d3f4     BasePrintLib:PrintLibInternal.obj
+ 0002:000028b8       ??_C@_01LIIJDEN@?$AN@      000000000000d3f8     BasePrintLib:PrintLibInternal.obj
+ 0002:000028c0       mWarningString             000000000000d400     BasePrintLib:PrintLibInternal.obj
+ 0002:00002960       mErrorString               000000000000d4a0     BasePrintLib:PrintLibInternal.obj
+ 0002:00002c20       mHexStr                    000000000000d760     BasePrintLib:PrintLibInternal.obj
+ 0002:00002c30       ??_C@_0FM@HHOODKFE@d?3?2myedk2?2edk2?2SourceLevelDebug@ 000000000000d770     PeCoffExtraActionLib:PeCoffExtraActionLib.obj
+ 0002:00002c90       ??_C@_0O@NKPOEJD@?5?5?5?5PDB?5?$DN?5?$CFa?6@ 000000000000d7d0     PeCoffExtraActionLib:PeCoffExtraActionLib.obj
+ 0002:00002ca0       ??_C@_0DL@JEBMKBEC@d?3?2myedk2?2edk2?2MdePkg?2Library?2B@ 000000000000d7e0     BaseLib:DivU64x32Remainder.obj
+ 0002:00002d30       __volatile_metadata        000000000000d870     <linker-defined>
+ 0003:00000000       gEfiLoadedImageProtocolGuid 000000000000d9e0     PiSmmCore:AutoGen.obj
+ 0003:00000010       gEfiStatusCodeSpecificDataGuid 000000000000d9f0     PiSmmCore:AutoGen.obj
+ 0003:00000020       gEdkiiPiSmmMemoryAttributesTableGuid 000000000000da00     PiSmmCore:AutoGen.obj
+ 0003:00000030       gEfiStatusCodeRuntimeProtocolGuid 000000000000da10     PiSmmCore:AutoGen.obj
+ 0003:00000040       gEfiSecurityArchProtocolGuid 000000000000da20     PiSmmCore:AutoGen.obj
+ 0003:00000050       gEfiEventReadyToBootGuid   000000000000da30     PiSmmCore:AutoGen.obj
+ 0003:00000060       gEfiEventLegacyBootGuid    000000000000da40     PiSmmCore:AutoGen.obj
+ 0003:00000070       gLoadFixedAddressConfigurationTableGuid 000000000000da50     PiSmmCore:AutoGen.obj
+ 0003:00000080       gEdkiiSmmLegacyBootProtocolGuid 000000000000da60     PiSmmCore:AutoGen.obj
+ 0003:00000090       gPcdProtocolGuid           000000000000da70     PiSmmCore:AutoGen.obj
+ 0003:000000a0       gEfiDxeSmmReadyToLockProtocolGuid 000000000000da80     PiSmmCore:AutoGen.obj
+ 0003:000000b0       gEfiSmmCpuIo2ProtocolGuid  000000000000da90     PiSmmCore:AutoGen.obj
+ 0003:000000c0       gEdkiiSmmExitBootServicesProtocolGuid 000000000000daa0     PiSmmCore:AutoGen.obj
+ 0003:000000d0       gEfiDevicePathProtocolGuid 000000000000dab0     PiSmmCore:AutoGen.obj
+ 0003:000000e0       gEfiFirmwareVolume2ProtocolGuid 000000000000dac0     PiSmmCore:AutoGen.obj
+ 0003:000000f0       gEfiMemoryAttributesTableGuid 000000000000dad0     PiSmmCore:AutoGen.obj
+ 0003:00000100       gEdkiiS3SmmInitDoneGuid    000000000000dae0     PiSmmCore:AutoGen.obj
+ 0003:00000110       gAprioriGuid               000000000000daf0     PiSmmCore:AutoGen.obj
+ 0003:00000120       gEfiDevicePathUtilitiesProtocolGuid 000000000000db00     PiSmmCore:AutoGen.obj
+ 0003:00000130       gEfiEventDxeDispatchGuid   000000000000db10     PiSmmCore:AutoGen.obj
+ 0003:00000140       gEfiSmmReadyToLockProtocolGuid 000000000000db20     PiSmmCore:AutoGen.obj
+ 0003:00000150       gEfiHobListGuid            000000000000db30     PiSmmCore:AutoGen.obj
+ 0003:00000160       gEdkiiEndOfS3ResumeGuid    000000000000db40     PiSmmCore:AutoGen.obj
+ 0003:00000170       gEfiEventExitBootServicesGuid 000000000000db50     PiSmmCore:AutoGen.obj
+ 0003:00000180       gEdkiiSmmMemoryAttributeProtocolGuid 000000000000db60     PiSmmCore:AutoGen.obj
+ 0003:00000190       gEfiSecurity2ArchProtocolGuid 000000000000db70     PiSmmCore:AutoGen.obj
+ 0003:000001a0       gEfiSmmEndOfDxeProtocolGuid 000000000000db80     PiSmmCore:AutoGen.obj
+ 0003:000001b0       gEdkiiSmmReadyToBootProtocolGuid 000000000000db90     PiSmmCore:AutoGen.obj
+ 0003:000001c0       gEfiEndOfDxeEventGroupGuid 000000000000dba0     PiSmmCore:AutoGen.obj
+ 0003:000001d0       gEfiDxeServicesTableGuid   000000000000dbb0     PiSmmCore:AutoGen.obj
+ 0003:000001e0       gEfiSmmSxDispatch2ProtocolGuid 000000000000dbc0     PiSmmCore:AutoGen.obj
+ 0003:000001f0       gEfiCallerIdGuid           000000000000dbd0     PiSmmCore:AutoGen.obj
+ 0003:00000200       gEfiSmmAccess2ProtocolGuid 000000000000dbe0     PiSmmCore:AutoGen.obj
+ 0003:00000210       mSmmCoreS3SmiHandlers      000000000000dbf0     PiSmmCore:PiSmmCore.obj
+ 0003:00000270       mSmmCoreSmiHandlers        000000000000dc50     PiSmmCore:PiSmmCore.obj
+ 0003:00000350       gSmmCoreSmst               000000000000dd30     PiSmmCore:PiSmmCore.obj
+ 0003:00000440       mMemoryProtectionAttribute 000000000000de20     PiSmmCore:MemoryAttributesTable.obj
+ 0003:00000448       mImagePropertiesPrivateData 000000000000de28     PiSmmCore:MemoryAttributesTable.obj
+ 0003:00000470       mScheduledQueue            000000000000de50     PiSmmCore:Dispatcher.obj
+ 0003:00000480       mFvHandleList              000000000000de60     PiSmmCore:Dispatcher.obj
+ 0003:00000490       mDiscoveredList            000000000000de70     PiSmmCore:Dispatcher.obj
+ 0003:000004a0       mRootSmiEntry              000000000000de80     PiSmmCore:Smi.obj
+ 0003:000004d8       mSmiEntryList              000000000000deb8     PiSmmCore:Smi.obj
+ 0003:000004e8       mProtocolDatabase          000000000000dec8     PiSmmCore:Handle.obj
+ 0003:000004f8       gHandleList                000000000000ded8     PiSmmCore:Handle.obj
+ 0003:00000510       mLevelMask                 000000000000def0     PiSmmCore:HeapGuard.obj
+ 0003:00000538       mMapLevel                  000000000000df18     PiSmmCore:HeapGuard.obj
+ 0003:00000540       mLevelShift                000000000000df20     PiSmmCore:HeapGuard.obj
+ 0003:00000568       mSmmMemoryMap              000000000000df48     PiSmmCore:Page.obj
+ 0003:00000578       mFreeMemoryMapEntryList    000000000000df58     PiSmmCore:Page.obj
+ 0003:00000588       gMemoryMap                 000000000000df68     PiSmmCore:Page.obj
+ 0003:000005a0       mInLegacyBoot              000000000000df80     PiSmmCore:PiSmmCore.obj
+ 0003:000005a1       mAcpiS3Enable              000000000000df81     PiSmmCore:PiSmmCore.obj
+ 0003:000005a2       mDuringS3Resume            000000000000df82     PiSmmCore:PiSmmCore.obj
+ 0003:000005a3       gDispatcherRunning         000000000000df83     PiSmmCore:Dispatcher.obj
+ 0003:000005a4       gRequestDispatch           000000000000df84     PiSmmCore:Dispatcher.obj
+ 0003:000005a8       mSecurity                  000000000000df88     PiSmmCore:Dispatcher.obj
+ 0003:000005b0       mSecurity2                 000000000000df90     PiSmmCore:Dispatcher.obj
+ 0003:000005b8       mSmmSystemTableAllocateSize 000000000000df98     PiSmmCore:InstallConfigurationTable.obj
+ 0003:000005c0       mEfiLocateHandleRequest    000000000000dfa0     PiSmmCore:Locate.obj
+ 0003:000005c8       gLoadModuleAtFixAddressSmramBase 000000000000dfa8     PiSmmCore:Pool.obj
+ 0003:000005d0       mSmmMemoryAttribute        000000000000dfb0     PiSmmCore:HeapGuard.obj
+ 0003:000005d8       mGuardedMemoryMap          000000000000dfb8     PiSmmCore:HeapGuard.obj
+ 0003:000005e0       mOnGuarding                000000000000dfc0     PiSmmCore:HeapGuard.obj
+ 0003:000005e8       mFreeMapStack              000000000000dfc8     PiSmmCore:Page.obj
+ 0003:000005f0       mMapDepth                  000000000000dfd0     PiSmmCore:Page.obj
+ 0003:000005f8       mDepexEvaluationStack      000000000000dfd8     PiSmmCore:Dependency.obj
+ 0003:00000600       mDepexEvaluationStackEnd   000000000000dfe0     PiSmmCore:Dependency.obj
+ 0003:00000608       mDepexEvaluationStackPointer 000000000000dfe8     PiSmmCore:Dependency.obj
+ 0003:00000610       mPcd                       000000000000dff0     DxePcdLib:DxePcdLib.obj
+ 0003:00000618       gST                        000000000000dff8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:00000620       gBS                        000000000000e000     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:00000628       gImageHandle               000000000000e008     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:00000630       mSmmCoreMemoryAllocLibSmramRanges 000000000000e010     PiSmmCoreMemoryAllocationLib:MemoryAllocationLib.obj
+ 0003:00000638       mSmmCoreMemoryAllocLibSmramRangeCount 000000000000e018     PiSmmCoreMemoryAllocationLib:MemoryAllocationLib.obj
+ 0003:00000640       gRT                        000000000000e020     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0003:00000648       mDevicePathLibDevicePathUtilities 000000000000e028     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0003:00000650       gDS                        000000000000e030     DxeServicesTableLib:DxeServicesTableLib.obj
+ 0003:00000658       gSmst                      000000000000e038     PiSmmCoreSmmServicesTableLib:PiSmmCoreSmmServicesTableLib.obj
+ 0003:00000660       mHobList                   000000000000e040     DxeHobLib:HobLib.obj
+ 0003:00000668       mReportStatusCodeLibStatusCodeProtocol 000000000000e048     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0003:00000670       mSmmMemLibMemoryAttributesTable 000000000000e050     SmmMemLib:SmmMemLib.obj
+ 0003:00000678       mSmmMemLibGcdMemNumberOfDesc 000000000000e058     SmmMemLib:SmmMemLib.obj
+ 0003:00000680       mSmmMemLibGcdMemSpace      000000000000e060     SmmMemLib:SmmMemLib.obj
+ 0003:00000688       mSmmMemLibSmmReadyToLock   000000000000e068     SmmMemLib:SmmMemLib.obj
+ 0003:00000690       mSmmMemLibInternalMaximumSupportAddress 000000000000e070     SmmMemLib:SmmMemLib.obj
+ 0003:00000698       gParity                    000000000000e078     PcAtSerialPortLib:SerialPortLib.obj
+ 0003:00000699       gBreakSet                  000000000000e079     PcAtSerialPortLib:SerialPortLib.obj
+ 0003:000006a0       mMemoryMap                 000000000000e080     <common>
+ 0003:000006a8       mMemoryMapEntryCount       000000000000e088     <common>
+ 0003:000006b0       mSmmMemLibInternalSmramRanges 000000000000e090     <common>
+ 0003:000006b8       mDescriptorSize            000000000000e098     <common>
+ 0003:000006c0       mRegistrationEndOfDxe      000000000000e0a0     <common>
+ 0003:000006c8       mRegistrationReadyToLock   000000000000e0a8     <common>
+ 0003:000006d0       mSmmMemLibInternalSmramCount 000000000000e0b0     <common>
+ 0003:000006e0       mMapStack                  000000000000e0c0     <common>
+ 0003:00000800       mSmmPoolLists              000000000000e1e0     <common>
+ 0003:000008c0       mFvDevicePath              000000000000e2a0     <common>
+ 0003:000008d8       mFullSmramRanges           000000000000e2b8     <common>
+ 0003:000008e0       mSmmCoreDriverEntry        000000000000e2c0     <common>
+ 0003:000008e8       mFullSmramRangeCount       000000000000e2c8     <common>
+ 0003:000008f0       mSmmCoreLoadedImage        000000000000e2d0     <common>
+ 0003:000008f8       gSmmCorePrivate            000000000000e2d8     <common>
+
+ entry point at        0001:00000358
+
+ Static symbols
+
+ 0001:0000001a       InternalMemCopyMem.0       00000000000002da     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000002a       @CopyBackward              00000000000002ea     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000033       @CopyBytes                 00000000000002f3     BaseMemoryLibRepStr:CopyMem.obj
+ 0001:0000011f       AsmCpuid.0                 00000000000003df     BaseLib:CpuId.obj
+ 0001:00000124       AsmCpuid.1                 00000000000003e4     BaseLib:CpuId.obj
+ 0001:0000012b       AsmCpuid.2                 00000000000003eb     BaseLib:CpuId.obj
+ 0001:00000134       AsmCpuid.3                 00000000000003f4     BaseLib:CpuId.obj
+ 0001:000002ce       TdVmCall.no_return_data    000000000000058e     BaseLib:TdVmcall.obj
+ 0001:0000034b       TdCall.exit                000000000000060b     BaseLib:TdCall.obj
+ 0001:000013d0       GetImageRecordByAddress    0000000000001690 f   PiSmmCore:MemoryAttributesTable.obj
+ 0001:0000145c       SetNewRecord               000000000000171c f   PiSmmCore:MemoryAttributesTable.obj
+ 0001:000016e8       SplitTable                 00000000000019a8 f   PiSmmCore:MemoryAttributesTable.obj
+ 0001:00001a60       SmmCoreGetMemoryMapMemoryAttributesTable 0000000000001d20 f   PiSmmCore:MemoryAttributesTable.obj
+ 0001:00001b60       SortImageRecordCodeSection 0000000000001e20 f   PiSmmCore:MemoryAttributesTable.obj
+ 0001:00001c24       IsImageRecordCodeSectionValid 0000000000001ee4 f   PiSmmCore:MemoryAttributesTable.obj
+ 0001:00001cec       SortImageRecord            0000000000001fac f   PiSmmCore:MemoryAttributesTable.obj
+ 0005:00000000       $unwind$PushBool           000000000000e880     PiSmmCore:Dependency.obj
+ 0005:00000000       $unwind$SmmGetNextLocateAllHandles 000000000000e880     PiSmmCore:Locate.obj
+ 0005:00000000       $unwind$UefiMemoryTypeToSmmPoolType 000000000000e880     PiSmmCore:Pool.obj
+ 0005:00000000       $unwind$AllocateZeroPool   000000000000e880     PiSmmCoreMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:00000000       $unwind$FreePool           000000000000e880     PiSmmCoreMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:00000000       $unwind$InternalAllocatePool 000000000000e880     PiSmmCoreMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:00000000       $unwind$GetFirstNode       000000000000e880     BaseLib:LinkedList.obj
+ 0005:00000000       $unwind$InternalBaseLibIsListValid 000000000000e880     BaseLib:LinkedList.obj
+ 0005:00000000       $unwind$IsListEmpty        000000000000e880     BaseLib:LinkedList.obj
+ 0005:00000000       $unwind$RemoveEntryList    000000000000e880     BaseLib:LinkedList.obj
+ 0005:00000000       $unwind$StrnLenS           000000000000e880     BaseLib:SafeString.obj
+ 0005:00000000       $unwind$PeCoffLoaderGetPdbPointer 000000000000e880     BasePeCoffGetEntryPointLib:PeCoffGetEntryPoint.obj
+ 0005:00000000       $unwind$_ModuleEntryPoint  000000000000e880     UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0005:00000008       $unwind$ProcessLibraryConstructorList 000000000000e888     PiSmmCore:AutoGen.obj
+ 0005:00000008       $unwind$GetImageRecordByAddress 000000000000e888     PiSmmCore:MemoryAttributesTable.obj
+ 0005:00000008       $unwind$SortImageRecordCodeSection 000000000000e888     PiSmmCore:MemoryAttributesTable.obj
+ 0005:00000008       $unwind$SmmInternalAllocatePagesEx 000000000000e888     PiSmmCore:Page.obj
+ 0005:00000008       $unwind$InternalFreePoolByIndex 000000000000e888     PiSmmCore:Pool.obj
+ 0005:00000008       $unwind$SmiHandlerRegister 000000000000e888     PiSmmCore:Smi.obj
+ 0005:00000008       $unwind$CopyMem            000000000000e888     BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0005:00000008       $unwind$PeCoffLoaderImageReadFromMemory 000000000000e888     BasePeCoffLib:BasePeCoff.obj
+ 0005:0000001c       $unwind$ProcessLibraryDestructorList 000000000000e89c     PiSmmCore:AutoGen.obj
+ 0005:0000001c       $unwind$IsGuardPage        000000000000e89c     PiSmmCore:HeapGuard.obj
+ 0005:0000001c       $unwind$SetGuardPage       000000000000e89c     PiSmmCore:HeapGuard.obj
+ 0005:0000001c       $unwind$GetHobList         000000000000e89c     DxeHobLib:HobLib.obj
+ 0005:0000001c       $unwind$GetPcdProtocol     000000000000e89c     DxePcdLib:DxePcdLib.obj
+ 0005:00000024       $unwind$SmmLocateProtocol  000000000000e8a4     PiSmmCore:Locate.obj
+ 0005:00000024       $unwind$SmmExitBootServicesHandler 000000000000e8a4     PiSmmCore:PiSmmCore.obj
+ 0005:00000024       $unwind$SmmLegacyBootHandler 000000000000e8a4     PiSmmCore:PiSmmCore.obj
+ 0005:00000034       $unwind$SmmReadyToBootHandler 000000000000e8b4     PiSmmCore:PiSmmCore.obj
+ 0005:00000040       $unwind$SmmReadyToLockHandler 000000000000e8c0     PiSmmCore:PiSmmCore.obj
+ 0005:00000050       $unwind$SmmEndOfDxeHandler 000000000000e8d0     PiSmmCore:PiSmmCore.obj
+ 0005:00000058       $unwind$SmmEndOfS3ResumeHandler 000000000000e8d8     PiSmmCore:PiSmmCore.obj
+ 0005:00000058       $unwind$SmmS3SmmInitDoneHandler 000000000000e8d8     PiSmmCore:PiSmmCore.obj
+ 0005:00000070       $unwind$SmmEntryPoint      000000000000e8f0     PiSmmCore:PiSmmCore.obj
+ 0005:00000080       $unwind$SmmCoreInstallLoadedImage 000000000000e900     PiSmmCore:PiSmmCore.obj
+ 0005:00000088       $unwind$SmmMain            000000000000e908     PiSmmCore:PiSmmCore.obj
+ 0005:00000098       $unwind$SetNewRecord       000000000000e918     PiSmmCore:MemoryAttributesTable.obj
+ 0005:000000b4       $unwind$SplitTable         000000000000e934     PiSmmCore:MemoryAttributesTable.obj
+ 0005:000000cc       $unwind$SmmCoreGetMemoryMapMemoryAttributesTable 000000000000e94c     PiSmmCore:MemoryAttributesTable.obj
+ 0005:000000e4       $unwind$SmmGetNextLocateByRegisterNotify 000000000000e964     PiSmmCore:Locate.obj
+ 0005:000000e4       $unwind$IsImageRecordCodeSectionValid 000000000000e964     PiSmmCore:MemoryAttributesTable.obj
+ 0005:000000f8       $unwind$InternalAllocMaxAddressWithGuard 000000000000e978     PiSmmCore:HeapGuard.obj
+ 0005:000000f8       $unwind$SortImageRecord    000000000000e978     PiSmmCore:MemoryAttributesTable.obj
+ 0005:00000114       $unwind$SmmInsertImageRecord 000000000000e994     PiSmmCore:MemoryAttributesTable.obj
+ 0005:00000130       $unwind$PublishMemoryAttributesTable 000000000000e9b0     PiSmmCore:MemoryAttributesTable.obj
+ 0005:00000144       $unwind$SmmInstallImageRecord 000000000000e9c4     PiSmmCore:MemoryAttributesTable.obj
+ 0005:0000015c       $unwind$SmmInstallMemoryAttributesTable 000000000000e9dc     PiSmmCore:MemoryAttributesTable.obj
+ 0005:00000170       $unwind$SmmLoadImage       000000000000e9f0     PiSmmCore:Dispatcher.obj
+ 0005:00000188       $unwind$SmmGetDepexSectionAndPreProccess 000000000000ea08     PiSmmCore:Dispatcher.obj
+ 0005:00000198       $unwind$SmmDispatcher      000000000000ea18     PiSmmCore:Dispatcher.obj
+ 0005:000001b0       $unwind$SmmInsertOnScheduledQueueWhileProcessingBeforeAndAfter 000000000000ea30     PiSmmCore:Dispatcher.obj
+ 0005:000001c8       $unwind$SmmDriverDispatchHandler 000000000000ea48     PiSmmCore:Dispatcher.obj
+ 0005:000001e4       $unwind$SmmFindProtocolEntry 000000000000ea64     PiSmmCore:Handle.obj
+ 0005:000001e4       $unwind$SmmInternalFreePagesEx 000000000000ea64     PiSmmCore:Page.obj
+ 0005:000001e4       $unwind$SmmCoreFindSmiEntry 000000000000ea64     PiSmmCore:Smi.obj
+ 0005:000001fc       $unwind$SmiManage          000000000000ea7c     PiSmmCore:Smi.obj
+ 0005:00000218       $unwind$SmiHandlerUnRegister 000000000000ea98     PiSmmCore:Smi.obj
+ 0005:00000230       $unwind$SmmFindProtocolInterface 000000000000eab0     PiSmmCore:Handle.obj
+ 0005:00000230       $unwind$SmmHandleProtocol  000000000000eab0     PiSmmCore:Handle.obj
+ 0005:00000230       $unwind$SmmUninstallProtocolInterface 000000000000eab0     PiSmmCore:Handle.obj
+ 0005:00000230       $unwind$SmmInstallConfigurationTable 000000000000eab0     PiSmmCore:InstallConfigurationTable.obj
+ 0005:00000230       $unwind$InsertNewEntry     000000000000eab0     PiSmmCore:Page.obj
+ 0005:00000230       $unwind$SmmAddMemoryRegion 000000000000eab0     PiSmmCore:Page.obj
+ 0005:00000230       $unwind$SmmFreePages       000000000000eab0     PiSmmCore:Page.obj
+ 0005:00000230       $unwind$SmmInternalFreePool 000000000000eab0     PiSmmCore:Pool.obj
+ 0005:00000230       $unwind$EfiGetSystemConfigurationTable 000000000000eab0     UefiLib:UefiLib.obj
+ 0005:00000248       $unwind$SmmInstallProtocolInterface 000000000000eac8     PiSmmCore:Handle.obj
+ 0005:00000248       $unwind$SmmAllocatePages   000000000000eac8     PiSmmCore:Page.obj
+ 0005:00000250       $unwind$SmmInstallProtocolInterfaceNotify 000000000000ead0     PiSmmCore:Handle.obj
+ 0005:00000250       $unwind$FindGuardedMemoryMap 000000000000ead0     PiSmmCore:HeapGuard.obj
+ 0005:0000026c       $unwind$VerifyMemoryGuard  000000000000eaec     PiSmmCore:HeapGuard.obj
+ 0005:0000026c       $unwind$SmmGetNextLocateByProtocol 000000000000eaec     PiSmmCore:Locate.obj
+ 0005:0000026c       $unwind$InternalMergeNodes 000000000000eaec     PiSmmCore:Page.obj
+ 0005:0000026c       $unwind$SmmCoreGetMemoryMap 000000000000eaec     PiSmmCore:Page.obj
+ 0005:0000026c       $unwind$CopyGuid           000000000000eaec     BaseMemoryLibRepStr:MemLibGuid.obj
+ 0005:0000026c       $unwind$SetMem64           000000000000eaec     BaseMemoryLibRepStr:SetMem64Wrapper.obj
+ 0005:0000026c       $unwind$BasePrintLibValueToString 000000000000eaec     BasePrintLib:PrintLibInternal.obj
+ 0005:0000026c       $unwind$EfiInitializeFwVolDevicepathNode 000000000000eaec     UefiLib:UefiNotTiano.obj
+ 0005:0000027c       $unwind$SmmLocateHandle    000000000000eafc     PiSmmCore:Locate.obj
+ 0005:00000294       $unwind$SmmRegisterProtocolNotify 000000000000eb14     PiSmmCore:Notify.obj
+ 0005:00000294       $unwind$PiSmmCoreMemoryAllocationLibConstructor 000000000000eb14     PiSmmCoreMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:000002ac       $unwind$InternalAllocPoolByIndex 000000000000eb2c     PiSmmCore:Pool.obj
+ 0005:000002c4       $unwind$SmmInternalAllocatePool 000000000000eb44     PiSmmCore:Pool.obj
+ 0005:000002d8       $unwind$GetGuardedMemoryBits 000000000000eb58     PiSmmCore:HeapGuard.obj
+ 0005:000002f0       $unwind$SetGuardForMemory  000000000000eb70     PiSmmCore:HeapGuard.obj
+ 0005:00000308       $unwind$SetAllGuardPages   000000000000eb88     PiSmmCore:HeapGuard.obj
+ 0005:00000324       $unwind$DumpGuardedMemoryBitmap 000000000000eba4     PiSmmCore:HeapGuard.obj
+ 0005:00000340       $unwind$CoreFreeMemoryMapStack 000000000000ebc0     PiSmmCore:Page.obj
+ 0005:00000354       $unwind$ConvertSmmMemoryMapEntry 000000000000ebd4     PiSmmCore:Page.obj
+ 0005:00000354       $unwind$PeCoffLoaderExtraActionCommon 000000000000ebd4     PeCoffExtraActionLib:PeCoffExtraActionLib.obj
+ 0005:00000370       $unwind$GrowDepexStack     000000000000ebf0     PiSmmCore:Dependency.obj
+ 0005:00000370       $unwind$InternalAllocPagesOnOneNode 000000000000ebf0     PiSmmCore:Page.obj
+ 0005:00000370       $unwind$InternalAllocateCopyPool 000000000000ebf0     PiSmmCoreMemoryAllocationLib:MemoryAllocationLib.obj
+ 0005:00000370       $unwind$LShiftU64          000000000000ebf0     BaseLib:LShiftU64.obj
+ 0005:00000370       $unwind$InsertHeadList     000000000000ebf0     BaseLib:LinkedList.obj
+ 0005:00000370       $unwind$InsertTailList     000000000000ebf0     BaseLib:LinkedList.obj
+ 0005:00000370       $unwind$IsNull             000000000000ebf0     BaseLib:LinkedList.obj
+ 0005:00000370       $unwind$RShiftU64          000000000000ebf0     BaseLib:RShiftU64.obj
+ 0005:00000370       $unwind$AsciiStrLen        000000000000ebf0     BaseLib:String.obj
+ 0005:00000370       $unwind$SetMem             000000000000ebf0     BaseMemoryLibRepStr:SetMemWrapper.obj
+ 0005:00000370       $unwind$ZeroMem            000000000000ebf0     BaseMemoryLibRepStr:ZeroMemWrapper.obj
+ 0005:0000037c       $unwind$SmmIsSchedulable   000000000000ebfc     PiSmmCore:Dependency.obj
+ 0005:0000038c       $unwind$CompareGuid        000000000000ec0c     BaseMemoryLibRepStr:MemLibGuid.obj
+ 0005:000003a4       $unwind$DebugPrint         000000000000ec24     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:000003ac       $unwind$DebugPrintMarker   000000000000ec2c     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:000003c0       $unwind$DebugAssert        000000000000ec40     BaseDebugLibSerialPort:DebugLib.obj
+ 0005:000003c8       $unwind$PeCoffLoaderGetPeHeader 000000000000ec48     BasePeCoffLib:BasePeCoff.obj
+ 0005:000003e4       $unwind$PeCoffLoaderGetImageInfo 000000000000ec64     BasePeCoffLib:BasePeCoff.obj
+ 0005:00000404       $unwind$PeCoffLoaderRelocateImage 000000000000ec84     BasePeCoffLib:BasePeCoff.obj
+ 0005:00000420       $unwind$PeCoffLoaderLoadImage 000000000000eca0     BasePeCoffLib:BasePeCoff.obj
+ 0005:00000438       $unwind$InternalReportStatusCode 000000000000ecb8     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0005:00000438       $unwind$SmmIsBufferOutsideSmmValid 000000000000ecb8     SmmMemLib:SmmMemLib.obj
+ 0005:00000448       $unwind$ReportStatusCodeWithExtendedData 000000000000ecc8     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0005:00000460       $unwind$SmmLibInternalEndOfDxeNotify 000000000000ece0     SmmMemLib:SmmMemLib.obj
+ 0005:00000478       $unwind$SmmMemLibConstructor 000000000000ecf8     SmmMemLib:SmmMemLib.obj
+ 0005:00000488       $unwind$AsciiSPrint        000000000000ed08     BasePrintLib:PrintLib.obj
+ 0005:00000490       $unwind$BasePrintLibSPrintMarker 000000000000ed10     BasePrintLib:PrintLibInternal.obj
+ 0005:000004ac       $unwind$BasePrintLibSPrint 000000000000ed2c     BasePrintLib:PrintLibInternal.obj

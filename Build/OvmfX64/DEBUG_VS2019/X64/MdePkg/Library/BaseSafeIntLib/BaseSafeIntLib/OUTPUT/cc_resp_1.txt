@@ -1,0 +1,1 @@
+  d:\myedk2\edk2\MdePkg\Library\BaseSafeIntLib\SafeIntLib.c d:\myedk2\edk2\MdePkg\Library\BaseSafeIntLib\SafeIntLib64.c

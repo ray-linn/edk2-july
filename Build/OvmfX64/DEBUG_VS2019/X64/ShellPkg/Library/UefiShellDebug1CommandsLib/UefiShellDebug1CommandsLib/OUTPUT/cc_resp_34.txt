@@ -1,0 +1,1 @@
+  d:\myedk2\edk2\ShellPkg\Library\UefiShellDebug1CommandsLib\Edit\MainTextEditor.c d:\myedk2\edk2\ShellPkg\Library\UefiShellDebug1CommandsLib\Edit\Misc.c d:\myedk2\edk2\ShellPkg\Library\UefiShellDebug1CommandsLib\Edit\Edit.c d:\myedk2\edk2\ShellPkg\Library\UefiShellDebug1CommandsLib\Edit\FileBuffer.c

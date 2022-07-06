@@ -1,0 +1,1 @@
+  d:\myedk2\edk2\OvmfPkg\Library\QemuFwCfgS3Lib\QemuFwCfgS3PeiDxe.c d:\myedk2\edk2\OvmfPkg\Library\QemuFwCfgS3Lib\QemuFwCfgS3BasePei.c d:\myedk2\edk2\OvmfPkg\Library\QemuFwCfgS3Lib\QemuFwCfgS3Pei.c

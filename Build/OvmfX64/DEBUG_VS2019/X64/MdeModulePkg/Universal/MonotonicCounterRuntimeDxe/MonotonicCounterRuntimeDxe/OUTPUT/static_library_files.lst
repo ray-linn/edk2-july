@@ -1,0 +1,16 @@
+d:/myedk2/edk2/Build/OvmfX64/DEBUG_VS2019/X64/MdeModulePkg/Universal/MonotonicCounterRuntimeDxe/MonotonicCounterRuntimeDxe/OUTPUT/MonotonicCounterRuntimeDxe.lib
+d:/myedk2/edk2/Build/OvmfX64/DEBUG_VS2019/X64/MdePkg/Library/RegisterFilterLibNull/RegisterFilterLibNull/OUTPUT/FilterLibNull.lib
+d:/myedk2/edk2/Build/OvmfX64/DEBUG_VS2019/X64/MdePkg/Library/BaseMemoryLibRepStr/BaseMemoryLibRepStr/OUTPUT/BaseMemoryLibRepStr.lib
+d:/myedk2/edk2/Build/OvmfX64/DEBUG_VS2019/X64/MdePkg/Library/DxePcdLib/DxePcdLib/OUTPUT/DxePcdLib.lib
+d:/myedk2/edk2/Build/OvmfX64/DEBUG_VS2019/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib
+d:/myedk2/edk2/Build/OvmfX64/DEBUG_VS2019/X64/MdePkg/Library/TdxLib/TdxLib/OUTPUT/TdxLib.lib
+d:/myedk2/edk2/Build/OvmfX64/DEBUG_VS2019/X64/MdePkg/Library/CcProbeLibNull/CcProbeLibNull/OUTPUT/CcProbeLibNull.lib
+d:/myedk2/edk2/Build/OvmfX64/DEBUG_VS2019/X64/MdePkg/Library/BaseIoLibIntrinsic/BaseIoLibIntrinsicSev/OUTPUT/BaseIoLibIntrinsicSev.lib
+d:/myedk2/edk2/Build/OvmfX64/DEBUG_VS2019/X64/MdePkg/Library/BaseDebugPrintErrorLevelLib/BaseDebugPrintErrorLevelLib/OUTPUT/BaseDebugPrintErrorLevelLib.lib
+d:/myedk2/edk2/Build/OvmfX64/DEBUG_VS2019/X64/MdePkg/Library/BasePrintLib/BasePrintLib/OUTPUT/BasePrintLib.lib
+d:/myedk2/edk2/Build/OvmfX64/DEBUG_VS2019/X64/PcAtChipsetPkg/Library/SerialIoLib/SerialIoLib/OUTPUT/PcAtSerialPortLib.lib
+d:/myedk2/edk2/Build/OvmfX64/DEBUG_VS2019/X64/MdePkg/Library/BaseDebugLibSerialPort/BaseDebugLibSerialPort/OUTPUT/BaseDebugLibSerialPort.lib
+d:/myedk2/edk2/Build/OvmfX64/DEBUG_VS2019/X64/MdePkg/Library/UefiBootServicesTableLib/UefiBootServicesTableLib/OUTPUT/UefiBootServicesTableLib.lib
+d:/myedk2/edk2/Build/OvmfX64/DEBUG_VS2019/X64/MdePkg/Library/UefiRuntimeServicesTableLib/UefiRuntimeServicesTableLib/OUTPUT/UefiRuntimeServicesTableLib.lib
+d:/myedk2/edk2/Build/OvmfX64/DEBUG_VS2019/X64/MdePkg/Library/UefiRuntimeLib/UefiRuntimeLib/OUTPUT/UefiRuntimeLib.lib
+d:/myedk2/edk2/Build/OvmfX64/DEBUG_VS2019/X64/MdePkg/Library/UefiDriverEntryPoint/UefiDriverEntryPoint/OUTPUT/UefiDriverEntryPoint.lib

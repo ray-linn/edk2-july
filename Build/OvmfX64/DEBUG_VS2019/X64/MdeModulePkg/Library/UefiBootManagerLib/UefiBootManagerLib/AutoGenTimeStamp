@@ -1,0 +1,11 @@
+d:\myedk2\edk2\MdeModulePkg\Library\UefiBootManagerLib\BmConsole.c
+d:\myedk2\edk2\MdeModulePkg\Library\UefiBootManagerLib\BmBootDescription.c
+d:\myedk2\edk2\MdeModulePkg\Library\UefiBootManagerLib\BmMisc.c
+d:\myedk2\edk2\Build\OvmfX64\DEBUG_VS2019\X64\MdeModulePkg\Library\UefiBootManagerLib\UefiBootManagerLib\DEBUG\AutoGen.h
+d:\myedk2\edk2\MdeModulePkg\Library\UefiBootManagerLib\BmLoadOption.c
+d:\myedk2\edk2\MdeModulePkg\Library\UefiBootManagerLib\UefiBootManagerLib.inf
+d:\myedk2\edk2\MdeModulePkg\Library\UefiBootManagerLib\InternalBm.h
+d:\myedk2\edk2\MdeModulePkg\Library\UefiBootManagerLib\BmConnect.c
+d:\myedk2\edk2\MdeModulePkg\Library\UefiBootManagerLib\BmBoot.c
+d:\myedk2\edk2\MdeModulePkg\Library\UefiBootManagerLib\BmHotkey.c
+d:\myedk2\edk2\MdeModulePkg\Library\UefiBootManagerLib\BmDriverHealth.c

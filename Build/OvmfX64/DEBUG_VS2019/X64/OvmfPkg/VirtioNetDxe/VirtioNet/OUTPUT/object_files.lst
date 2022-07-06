@@ -1,0 +1,16 @@
+d:/myedk2/edk2/Build/OvmfX64/DEBUG_VS2019/X64/OvmfPkg/VirtioNetDxe/VirtioNet/OUTPUT/ComponentName.obj
+d:/myedk2/edk2/Build/OvmfX64/DEBUG_VS2019/X64/OvmfPkg/VirtioNetDxe/VirtioNet/OUTPUT/DriverBinding.obj
+d:/myedk2/edk2/Build/OvmfX64/DEBUG_VS2019/X64/OvmfPkg/VirtioNetDxe/VirtioNet/OUTPUT/EntryPoint.obj
+d:/myedk2/edk2/Build/OvmfX64/DEBUG_VS2019/X64/OvmfPkg/VirtioNetDxe/VirtioNet/OUTPUT/Events.obj
+d:/myedk2/edk2/Build/OvmfX64/DEBUG_VS2019/X64/OvmfPkg/VirtioNetDxe/VirtioNet/OUTPUT/SnpGetStatus.obj
+d:/myedk2/edk2/Build/OvmfX64/DEBUG_VS2019/X64/OvmfPkg/VirtioNetDxe/VirtioNet/OUTPUT/SnpInitialize.obj
+d:/myedk2/edk2/Build/OvmfX64/DEBUG_VS2019/X64/OvmfPkg/VirtioNetDxe/VirtioNet/OUTPUT/SnpMcastIpToMac.obj
+d:/myedk2/edk2/Build/OvmfX64/DEBUG_VS2019/X64/OvmfPkg/VirtioNetDxe/VirtioNet/OUTPUT/SnpReceive.obj
+d:/myedk2/edk2/Build/OvmfX64/DEBUG_VS2019/X64/OvmfPkg/VirtioNetDxe/VirtioNet/OUTPUT/SnpReceiveFilters.obj
+d:/myedk2/edk2/Build/OvmfX64/DEBUG_VS2019/X64/OvmfPkg/VirtioNetDxe/VirtioNet/OUTPUT/SnpSharedHelpers.obj
+d:/myedk2/edk2/Build/OvmfX64/DEBUG_VS2019/X64/OvmfPkg/VirtioNetDxe/VirtioNet/OUTPUT/SnpShutdown.obj
+d:/myedk2/edk2/Build/OvmfX64/DEBUG_VS2019/X64/OvmfPkg/VirtioNetDxe/VirtioNet/OUTPUT/SnpStart.obj
+d:/myedk2/edk2/Build/OvmfX64/DEBUG_VS2019/X64/OvmfPkg/VirtioNetDxe/VirtioNet/OUTPUT/SnpStop.obj
+d:/myedk2/edk2/Build/OvmfX64/DEBUG_VS2019/X64/OvmfPkg/VirtioNetDxe/VirtioNet/OUTPUT/SnpTransmit.obj
+d:/myedk2/edk2/Build/OvmfX64/DEBUG_VS2019/X64/OvmfPkg/VirtioNetDxe/VirtioNet/OUTPUT/SnpUnsupported.obj
+d:/myedk2/edk2/Build/OvmfX64/DEBUG_VS2019/X64/OvmfPkg/VirtioNetDxe/VirtioNet/OUTPUT/AutoGen.obj

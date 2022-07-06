@@ -1,0 +1,4 @@
+gCommandLineDefines: {'DEBUG_ON_SERIAL_PORT': 'TRUE', 'ARCH': 'X64'}
+BuildOptionPcd: []
+Active Platform: d:\myedk2\edk2\OvmfPkg\OvmfPkgX64.dsc
+Flash Image Definition: d:\myedk2\edk2\OvmfPkg\OvmfPkgX64.fdf

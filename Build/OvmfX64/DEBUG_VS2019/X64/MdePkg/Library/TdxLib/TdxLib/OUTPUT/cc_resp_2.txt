@@ -1,0 +1,1 @@
+  d:\myedk2\edk2\MdePkg\Library\TdxLib\TdInfo.c d:\myedk2\edk2\MdePkg\Library\TdxLib\AcceptPages.c d:\myedk2\edk2\MdePkg\Library\TdxLib\Rtmr.c

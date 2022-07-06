@@ -1,0 +1,1 @@
+  d:\myedk2\edk2\MdeModulePkg\Library\SmmLockBoxLib\SmmLockBoxTraditionalMmLib.c d:\myedk2\edk2\MdeModulePkg\Library\SmmLockBoxLib\SmmLockBoxMmLib.c

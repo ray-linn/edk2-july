@@ -1,0 +1,5 @@
+d:\myedk2\edk2\MdeModulePkg\Library\SmmLockBoxLib\SmmLockBoxSmmLib.inf
+d:\myedk2\edk2\MdeModulePkg\Library\SmmLockBoxLib\SmmLockBoxTraditionalMmLib.c
+d:\myedk2\edk2\MdeModulePkg\Library\SmmLockBoxLib\SmmLockBoxMmLib.c
+d:\myedk2\edk2\MdeModulePkg\Library\SmmLockBoxLib\SmmLockBoxLibPrivate.h
+d:\myedk2\edk2\Build\OvmfX64\DEBUG_VS2019\X64\MdeModulePkg\Library\SmmLockBoxLib\SmmLockBoxSmmLib\DEBUG\AutoGen.h

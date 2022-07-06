@@ -1,0 +1,1 @@
+  d:\myedk2\edk2\UefiCpuPkg\CpuDxe\CpuDxe.c d:\myedk2\edk2\UefiCpuPkg\CpuDxe\CpuGdt.c d:\myedk2\edk2\Build\OvmfX64\DEBUG_VS2019\X64\UefiCpuPkg\CpuDxe\CpuDxe\DEBUG\AutoGen.c d:\myedk2\edk2\UefiCpuPkg\CpuDxe\CpuMp.c d:\myedk2\edk2\UefiCpuPkg\CpuDxe\CpuPageTable.c

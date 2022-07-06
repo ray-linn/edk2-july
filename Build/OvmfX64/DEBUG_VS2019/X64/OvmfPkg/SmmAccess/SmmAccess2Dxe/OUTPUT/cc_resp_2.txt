@@ -1,0 +1,1 @@
+  d:\myedk2\edk2\OvmfPkg\SmmAccess\SmramInternal.c d:\myedk2\edk2\OvmfPkg\SmmAccess\SmmAccess2Dxe.c d:\myedk2\edk2\Build\OvmfX64\DEBUG_VS2019\X64\OvmfPkg\SmmAccess\SmmAccess2Dxe\DEBUG\AutoGen.c
