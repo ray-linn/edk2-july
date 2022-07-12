@@ -1,1 +1,0 @@
-  d:\myedk2\edk2\MdeModulePkg\Library\LzmaCustomDecompressLib\GuidedSectionExtraction.c d:\myedk2\edk2\MdeModulePkg\Library\LzmaCustomDecompressLib\LzmaDecompress.c

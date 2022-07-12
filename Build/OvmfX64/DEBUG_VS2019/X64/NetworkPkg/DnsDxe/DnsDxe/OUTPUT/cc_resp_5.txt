@@ -1,1 +1,0 @@
-  d:\myedk2\edk2\Build\OvmfX64\DEBUG_VS2019\X64\NetworkPkg\DnsDxe\DnsDxe\DEBUG\AutoGen.c d:\myedk2\edk2\NetworkPkg\DnsDxe\DnsImpl.c d:\myedk2\edk2\NetworkPkg\DnsDxe\DnsDriver.c d:\myedk2\edk2\NetworkPkg\DnsDxe\DnsProtocol.c d:\myedk2\edk2\NetworkPkg\DnsDxe\DnsDhcp.c d:\myedk2\edk2\NetworkPkg\DnsDxe\ComponentName.c

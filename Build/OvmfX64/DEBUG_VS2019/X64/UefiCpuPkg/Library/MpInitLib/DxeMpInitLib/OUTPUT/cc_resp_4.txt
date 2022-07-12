@@ -1,1 +1,0 @@
-  d:\myedk2\edk2\UefiCpuPkg\Library\MpInitLib\AmdSev.c d:\myedk2\edk2\UefiCpuPkg\Library\MpInitLib\DxeMpLib.c d:\myedk2\edk2\UefiCpuPkg\Library\MpInitLib\Microcode.c d:\myedk2\edk2\UefiCpuPkg\Library\MpInitLib\MpLib.c

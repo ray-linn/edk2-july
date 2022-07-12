@@ -383,9 +383,9 @@ LegacyBiosBuildBbs (
           FuncNum
           ));
 
-        BbsTable[BbsIndex].Bus                      = BusNum;
-        BbsTable[BbsIndex].Device                   = DevNum;
-        BbsTable[BbsIndex].Function                 = FuncNum;
+        BbsTable[BbsIndex].Bus                      = (UINT32)BusNum;
+        BbsTable[BbsIndex].Device                   = (UINT32)DevNum;
+        BbsTable[BbsIndex].Function                 = (UINT32)FuncNum;
         BbsTable[BbsIndex].Class                    = 1;
         BbsTable[BbsIndex].SubClass                 = 0x80;
         BbsTable[BbsIndex].StatusFlags.OldPosition  = 0;

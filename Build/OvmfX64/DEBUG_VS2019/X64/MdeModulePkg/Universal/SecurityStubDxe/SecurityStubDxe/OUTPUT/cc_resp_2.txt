@@ -1,1 +1,0 @@
-  d:\myedk2\edk2\MdeModulePkg\Universal\SecurityStubDxe\Defer3rdPartyImageLoad.c d:\myedk2\edk2\MdeModulePkg\Universal\SecurityStubDxe\SecurityStub.c d:\myedk2\edk2\Build\OvmfX64\DEBUG_VS2019\X64\MdeModulePkg\Universal\SecurityStubDxe\SecurityStubDxe\DEBUG\AutoGen.c

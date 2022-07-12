@@ -29,6 +29,7 @@ InitializeDebugTimer (
   InitializeLocalApicSoftwareEnable (TRUE);
   GetApicTimerState (&ApicTimerDivisor, NULL, NULL);
   ApicTimerFrequency = PcdGet32 (PcdFSBClock) / (UINT32)ApicTimerDivisor;
+
   //
   // Cpu Local Apic timer interrupt frequency, it is set to 0.1s
   //
@@ -39,12 +40,12 @@ InitializeDebugTimer (
                              ),
                            1000000u
                            );
-
   InitializeApicTimer (ApicTimerDivisor, InitialCount, TRUE, DEBUG_TIMER_VECTOR);
   //
   // Disable Debug Timer interrupt to avoid it is delivered before Debug Port
   // is initialized
   //
+
   DisableApicTimerInterrupt ();
 
   if (DumpFlag) {

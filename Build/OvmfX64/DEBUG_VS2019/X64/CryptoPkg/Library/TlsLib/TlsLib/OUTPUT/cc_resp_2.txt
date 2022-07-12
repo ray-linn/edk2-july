@@ -1,1 +1,0 @@
-  d:\myedk2\edk2\CryptoPkg\Library\TlsLib\TlsInit.c d:\myedk2\edk2\CryptoPkg\Library\TlsLib\TlsProcess.c d:\myedk2\edk2\CryptoPkg\Library\TlsLib\TlsConfig.c

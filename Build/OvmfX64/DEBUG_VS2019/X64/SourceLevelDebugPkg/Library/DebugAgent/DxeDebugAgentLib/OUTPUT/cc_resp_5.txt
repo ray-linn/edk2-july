@@ -1,1 +1,0 @@
-  d:\myedk2\edk2\SourceLevelDebugPkg\Library\DebugAgent\DxeDebugAgent\DxeDebugAgentLib.c d:\myedk2\edk2\SourceLevelDebugPkg\Library\DebugAgent\DxeDebugAgent\SerialIo.c

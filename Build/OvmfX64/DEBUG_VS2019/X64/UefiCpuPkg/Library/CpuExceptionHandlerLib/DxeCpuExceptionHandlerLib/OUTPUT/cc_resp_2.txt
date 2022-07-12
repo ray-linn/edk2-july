@@ -1,1 +1,0 @@
-  d:\myedk2\edk2\UefiCpuPkg\Library\CpuExceptionHandlerLib\DxeException.c d:\myedk2\edk2\UefiCpuPkg\Library\CpuExceptionHandlerLib\PeiDxeSmmCpuException.c d:\myedk2\edk2\UefiCpuPkg\Library\CpuExceptionHandlerLib\CpuExceptionCommon.c

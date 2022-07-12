@@ -1,1 +1,0 @@
-  d:\myedk2\edk2\OvmfPkg\Library\PlatformInitLib\Cmos.c d:\myedk2\edk2\OvmfPkg\Library\PlatformInitLib\MemDetect.c d:\myedk2\edk2\OvmfPkg\Library\PlatformInitLib\IntelTdx.c d:\myedk2\edk2\OvmfPkg\Library\PlatformInitLib\Platform.c

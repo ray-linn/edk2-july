@@ -1,1 +1,0 @@
-  d:\myedk2\edk2\OvmfPkg\Library\AcpiTimerLib\DxeAcpiTimerLib.c d:\myedk2\edk2\OvmfPkg\Library\AcpiTimerLib\AcpiTimerLib.c

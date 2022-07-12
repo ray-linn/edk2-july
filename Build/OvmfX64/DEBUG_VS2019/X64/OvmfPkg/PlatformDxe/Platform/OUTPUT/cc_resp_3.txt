@@ -1,1 +1,0 @@
-  d:\myedk2\edk2\OvmfPkg\PlatformDxe\PlatformConfig.c d:\myedk2\edk2\Build\OvmfX64\DEBUG_VS2019\X64\OvmfPkg\PlatformDxe\Platform\DEBUG\PlatformForms.c d:\myedk2\edk2\Build\OvmfX64\DEBUG_VS2019\X64\OvmfPkg\PlatformDxe\Platform\DEBUG\AutoGen.c d:\myedk2\edk2\OvmfPkg\PlatformDxe\Platform.c

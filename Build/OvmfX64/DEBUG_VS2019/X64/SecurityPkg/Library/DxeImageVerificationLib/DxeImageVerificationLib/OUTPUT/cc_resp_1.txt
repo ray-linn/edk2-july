@@ -1,1 +1,0 @@
-  d:\myedk2\edk2\SecurityPkg\Library\DxeImageVerificationLib\Measurement.c d:\myedk2\edk2\SecurityPkg\Library\DxeImageVerificationLib\DxeImageVerificationLib.c

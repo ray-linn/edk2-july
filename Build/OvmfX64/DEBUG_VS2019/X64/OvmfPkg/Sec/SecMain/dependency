@@ -1,7 +1,0 @@
-
-
-!IF EXIST(d:\myedk2\edk2\Build\OvmfX64\DEBUG_VS2019\X64\OvmfPkg\Sec\SecMain\OUTPUT\X64\SecEntry.nasm.trim.deps)
-!INCLUDE d:\myedk2\edk2\Build\OvmfX64\DEBUG_VS2019\X64\OvmfPkg\Sec\SecMain\OUTPUT\X64\SecEntry.nasm.trim.deps
-!ENDIF
-
-               

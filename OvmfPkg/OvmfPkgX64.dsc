@@ -30,8 +30,8 @@
   # -D FLAG=VALUE
   #
   DEFINE SECURE_BOOT_ENABLE      = TRUE
-  DEFINE SMM_REQUIRE             = TRUE
-  DEFINE SOURCE_DEBUG_ENABLE     = TRUE
+  DEFINE SMM_REQUIRE             = FALSE
+  DEFINE SOURCE_DEBUG_ENABLE     = FALSE
 
 !include OvmfPkg/OvmfTpmDefines.dsc.inc
 
@@ -819,6 +819,7 @@
 !else
   OvmfPkg/LocalApicTimerDxe/LocalApicTimerDxe.inf
 !endif
+
   OvmfPkg/IncompatiblePciDeviceSupportDxe/IncompatiblePciDeviceSupport.inf
   OvmfPkg/PciHotPlugInitDxe/PciHotPlugInit.inf
   MdeModulePkg/Bus/Pci/PciHostBridgeDxe/PciHostBridgeDxe.inf {

@@ -129,7 +129,7 @@ SecCoreStartupWithStack (
 
   DEBUG ((
     DEBUG_INFO,
-    "SecCoreStartupWithStack(0x%x, 0x%x)\n",
+    "IntelTdx:Sec:SecMain: SecCoreStartupWithStack(0x%x, 0x%x)\n",
     (UINT32)(UINTN)BootFv,
     (UINT32)(UINTN)TopOfCurrentStack
     ));

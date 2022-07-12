@@ -1,1 +1,0 @@
-GenSec -s EFI_SECTION_DXE_DEPEX -o d:\myedk2\edk2\Build\OvmfX64\DEBUG_VS2019\FV\Ffs\9F7DCADE-11EA-448a-A46F-76E003657DD1VariableSmmRuntimeDxe\9F7DCADE-11EA-448a-A46F-76E003657DD1SEC1.1.dpx d:\myedk2\edk2\Build\OvmfX64\DEBUG_VS2019\X64\MdeModulePkg\Universal\Variable\RuntimeDxe\VariableSmmRuntimeDxe\OUTPUT\VariableSmmRuntimeDxe.depex

@@ -1,1 +1,0 @@
-  d:\myedk2\edk2\Build\OvmfX64\DEBUG_VS2019\X64\MdeModulePkg\Universal\SetupBrowserDxe\SetupBrowserDxe\DEBUG\AutoGen.c d:\myedk2\edk2\MdeModulePkg\Universal\SetupBrowserDxe\Presentation.c d:\myedk2\edk2\MdeModulePkg\Universal\SetupBrowserDxe\IfrParse.c d:\myedk2\edk2\MdeModulePkg\Universal\SetupBrowserDxe\Setup.c d:\myedk2\edk2\MdeModulePkg\Universal\SetupBrowserDxe\Expression.c

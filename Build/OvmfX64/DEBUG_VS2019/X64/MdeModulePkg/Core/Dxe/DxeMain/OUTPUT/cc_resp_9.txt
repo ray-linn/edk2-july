@@ -1,1 +1,0 @@
-  d:\myedk2\edk2\MdeModulePkg\Core\Dxe\Dispatcher\Dependency.c d:\myedk2\edk2\MdeModulePkg\Core\Dxe\Dispatcher\Dispatcher.c

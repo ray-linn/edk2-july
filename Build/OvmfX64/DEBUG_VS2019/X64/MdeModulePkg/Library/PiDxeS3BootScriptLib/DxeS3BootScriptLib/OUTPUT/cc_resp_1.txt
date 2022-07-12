@@ -1,1 +1,0 @@
-  d:\myedk2\edk2\MdeModulePkg\Library\PiDxeS3BootScriptLib\BootScriptSave.c d:\myedk2\edk2\MdeModulePkg\Library\PiDxeS3BootScriptLib\BootScriptExecute.c

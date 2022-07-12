@@ -861,7 +861,7 @@ SecCoreStartupWithStack (
 
   DEBUG ((
     DEBUG_INFO,
-    "SecCoreStartupWithStack(0x%x, 0x%x)\n",
+    "Sec.SecMain SecCoreStartupWithStack(0x%x, 0x%x)\n",
     (UINT32)(UINTN)BootFv,
     (UINT32)(UINTN)TopOfCurrentStack
     ));
@@ -877,6 +877,7 @@ SecCoreStartupWithStack (
   // ASSERT that the Page Tables were set by the reset vector code to
   // the address we expect.
   //
+
   ASSERT (AsmReadCr3 () == (UINTN)PcdGet32 (PcdOvmfSecPageTablesBase));
  #endif
 
@@ -898,8 +899,9 @@ SecCoreStartupWithStack (
   // Initialize SEC hand-off state
   //
   SecCoreData.DataSize = sizeof (EFI_SEC_PEI_HAND_OFF);
-
+;
   SecCoreData.TemporaryRamSize = (UINTN)PcdGet32 (PcdOvmfSecPeiTempRamSize);
+
   SecCoreData.TemporaryRamBase = (VOID *)((UINT8 *)TopOfCurrentStack - SecCoreData.TemporaryRamSize);
 
   SecCoreData.PeiTemporaryRamBase = SecCoreData.TemporaryRamBase;
@@ -927,13 +929,16 @@ SecCoreStartupWithStack (
   // interrupts before initializing the Debug Agent and the debug timer is
   // enabled.
   //
+
   InitializeApicTimer (0, MAX_UINT32, TRUE, 5);
+
   DisableApicTimerInterrupt ();
 
   //
   // Initialize Debug Agent to support source level debug in SEC/PEI phases before memory ready.
   //
   InitializeDebugAgent (DEBUG_AGENT_INIT_PREMEM_SEC, &SecCoreData, SecStartupPhase2);
+
 }
 
 /**

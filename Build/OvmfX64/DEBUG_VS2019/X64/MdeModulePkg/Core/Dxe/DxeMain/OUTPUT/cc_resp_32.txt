@@ -1,1 +1,0 @@
-  d:\myedk2\edk2\MdeModulePkg\Core\Dxe\Mem\Page.c d:\myedk2\edk2\MdeModulePkg\Core\Dxe\Mem\MemoryProfileRecord.c d:\myedk2\edk2\MdeModulePkg\Core\Dxe\Mem\Pool.c d:\myedk2\edk2\MdeModulePkg\Core\Dxe\Mem\MemData.c d:\myedk2\edk2\MdeModulePkg\Core\Dxe\Mem\HeapGuard.c

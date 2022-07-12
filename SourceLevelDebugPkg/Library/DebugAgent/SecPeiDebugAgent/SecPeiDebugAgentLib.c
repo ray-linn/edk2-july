@@ -361,6 +361,9 @@ InitializeDebugAgent (
   IN DEBUG_AGENT_CONTINUE  Function  OPTIONAL
   )
 {
+	  DEBUG ((
+    DEBUG_INFO,
+    "InitializeDebugAgent %d",__LINE__));
   DEBUG_AGENT_MAILBOX              *Mailbox;
   DEBUG_AGENT_MAILBOX              *NewMailbox;
   DEBUG_AGENT_MAILBOX              MailboxInStack;
@@ -383,7 +386,9 @@ InitializeDebugAgent (
 
   switch (InitFlag) {
     case DEBUG_AGENT_INIT_PREMEM_SEC:
-
+	  DEBUG ((
+    DEBUG_INFO,
+    "DEBUG_AGENT_INIT_PREMEM_SEC %d\n",__LINE__));
       InitializeDebugIdt ();
 
       MailboxLocation = (UINT64)(UINTN)&MailboxInStack;
@@ -393,6 +398,9 @@ InitializeDebugAgent (
       // Get and save debug port handle and set the length of memory block.
       //
       SetLocationSavedMailboxPointerInIdtEntry (&MailboxLocation);
+	  	  	  DEBUG ((
+    DEBUG_INFO,
+    "SetDebugFlag %d\n",__LINE__));
       //
       // Force error message could be printed during the first shakehand between Target/HOST.
       //
@@ -401,6 +409,9 @@ InitializeDebugAgent (
       // Save init arch type when debug agent initialized
       //
       SetDebugFlag (DEBUG_AGENT_FLAG_INIT_ARCH, DEBUG_ARCH_SYMBOL);
+	  	  DEBUG ((
+    DEBUG_INFO,
+    "Initialize Debug Timer hardware %d\n",__LINE__));
       //
       // Initialize Debug Timer hardware and save its frequency
       //
@@ -419,6 +430,9 @@ InitializeDebugAgent (
       break;
 
     case DEBUG_AGENT_INIT_POSTMEM_SEC:
+		  DEBUG ((
+    DEBUG_INFO,
+    "DEBUG_AGENT_INIT_POSTMEM_SEC %d\n",__LINE__));
       Mailbox = GetMailboxPointer ();
       //
       // Memory has been ready
@@ -622,6 +636,9 @@ InitializeDebugAgent (
       break;
   }
 
+	  DEBUG ((
+    DEBUG_INFO,
+    "::: %d\n",__LINE__));
   if (InitFlag == DEBUG_AGENT_INIT_POSTMEM_SEC) {
     //
     // Restore CPU Interrupt state and keep debug timer interrupt state as is
@@ -638,7 +655,9 @@ InitializeDebugAgent (
     //
     EnableInterrupts ();
   }
-
+	  DEBUG ((
+    DEBUG_INFO,
+    "%a %d\n",__FUNCTION__,__LINE__));
   //
   // If Function is not NULL, invoke it always whatever debug agent was initialized successfully or not.
   //
@@ -652,6 +671,9 @@ InitializeDebugAgent (
   if ((InitFlag == DEBUG_AGENT_INIT_PEI) && (Context != NULL)) {
     *(EFI_STATUS *)Context = EFI_SUCCESS;
   }
+  	  DEBUG ((
+    DEBUG_INFO,
+    "InitializeDebugAgent end %d\n",__LINE__));
 }
 
 /**

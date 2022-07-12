@@ -1,1 +1,0 @@
-  d:\myedk2\edk2\OvmfPkg\Library\HardwareInfoLib\HardwareInfoPciHostBridgeLib.c d:\myedk2\edk2\OvmfPkg\Library\HardwareInfoLib\HardwareInfoPei.c d:\myedk2\edk2\OvmfPkg\Library\HardwareInfoLib\QemuFwCfgHardwareInfoLib.c

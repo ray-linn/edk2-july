@@ -1,1 +1,0 @@
-  d:\myedk2\edk2\MdeModulePkg\Library\VariablePolicyLib\VariablePolicyExtraInitNull.c d:\myedk2\edk2\MdeModulePkg\Library\VariablePolicyLib\VariablePolicyLib.c

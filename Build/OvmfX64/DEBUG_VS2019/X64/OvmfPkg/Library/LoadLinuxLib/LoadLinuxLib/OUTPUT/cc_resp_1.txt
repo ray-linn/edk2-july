@@ -1,1 +1,0 @@
-  d:\myedk2\edk2\OvmfPkg\Library\LoadLinuxLib\Linux.c d:\myedk2\edk2\OvmfPkg\Library\LoadLinuxLib\LinuxGdt.c

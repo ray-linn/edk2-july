@@ -1,1 +1,0 @@
-  d:\myedk2\edk2\UefiCpuPkg\PiSmmCpuDxeSmm\X64\Semaphore.c d:\myedk2\edk2\UefiCpuPkg\PiSmmCpuDxeSmm\X64\PageTbl.c d:\myedk2\edk2\UefiCpuPkg\PiSmmCpuDxeSmm\X64\SmmProfileArch.c d:\myedk2\edk2\UefiCpuPkg\PiSmmCpuDxeSmm\X64\SmmFuncsArch.c

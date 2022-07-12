@@ -1,1 +1,0 @@
-  d:\myedk2\edk2\ShellPkg\Library\UefiShellNetwork1CommandsLib\Ifconfig.c d:\myedk2\edk2\ShellPkg\Library\UefiShellNetwork1CommandsLib\UefiShellNetwork1CommandsLib.c d:\myedk2\edk2\Build\OvmfX64\DEBUG_VS2019\X64\ShellPkg\Library\UefiShellNetwork1CommandsLib\UefiShellNetwork1CommandsLib\DEBUG\AutoGen.c d:\myedk2\edk2\ShellPkg\Library\UefiShellNetwork1CommandsLib\Ping.c

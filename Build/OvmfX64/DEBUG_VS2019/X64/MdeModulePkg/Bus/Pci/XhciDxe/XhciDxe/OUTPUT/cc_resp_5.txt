@@ -1,1 +1,0 @@
-  d:\myedk2\edk2\MdeModulePkg\Bus\Pci\XhciDxe\UsbHcMem.c d:\myedk2\edk2\MdeModulePkg\Bus\Pci\XhciDxe\Xhci.c d:\myedk2\edk2\MdeModulePkg\Bus\Pci\XhciDxe\XhciSched.c d:\myedk2\edk2\MdeModulePkg\Bus\Pci\XhciDxe\XhciReg.c d:\myedk2\edk2\Build\OvmfX64\DEBUG_VS2019\X64\MdeModulePkg\Bus\Pci\XhciDxe\XhciDxe\DEBUG\AutoGen.c d:\myedk2\edk2\MdeModulePkg\Bus\Pci\XhciDxe\ComponentName.c

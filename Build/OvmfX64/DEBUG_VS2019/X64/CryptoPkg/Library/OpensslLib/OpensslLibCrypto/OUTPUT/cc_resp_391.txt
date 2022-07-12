@@ -1,1 +1,0 @@
-  d:\myedk2\edk2\CryptoPkg\Library\OpensslLib\openssl\crypto\comp\c_zlib.c d:\myedk2\edk2\CryptoPkg\Library\OpensslLib\openssl\crypto\comp\comp_lib.c d:\myedk2\edk2\CryptoPkg\Library\OpensslLib\openssl\crypto\comp\comp_err.c

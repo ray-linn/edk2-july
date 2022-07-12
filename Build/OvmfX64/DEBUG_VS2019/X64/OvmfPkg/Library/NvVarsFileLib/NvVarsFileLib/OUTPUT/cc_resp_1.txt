@@ -1,1 +1,0 @@
-  d:\myedk2\edk2\OvmfPkg\Library\NvVarsFileLib\NvVarsFileLib.c d:\myedk2\edk2\OvmfPkg\Library\NvVarsFileLib\FsAccess.c

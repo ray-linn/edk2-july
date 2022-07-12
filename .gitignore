@@ -1,7 +1,10 @@
 .DS_Store
 *_extdep/
 *.pyc
+*.bak
+*.log
 __pycache__/
 tags/
 .vscode/
 *.pdb
+Build/

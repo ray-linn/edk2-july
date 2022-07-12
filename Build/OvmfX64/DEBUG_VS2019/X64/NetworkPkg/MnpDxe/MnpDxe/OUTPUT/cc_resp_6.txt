@@ -1,1 +1,0 @@
-  d:\myedk2\edk2\NetworkPkg\MnpDxe\MnpConfig.c d:\myedk2\edk2\NetworkPkg\MnpDxe\ComponentName.c d:\myedk2\edk2\NetworkPkg\MnpDxe\MnpDriver.c d:\myedk2\edk2\NetworkPkg\MnpDxe\MnpVlan.c d:\myedk2\edk2\NetworkPkg\MnpDxe\MnpIo.c d:\myedk2\edk2\Build\OvmfX64\DEBUG_VS2019\X64\NetworkPkg\MnpDxe\MnpDxe\DEBUG\AutoGen.c d:\myedk2\edk2\NetworkPkg\MnpDxe\MnpMain.c
