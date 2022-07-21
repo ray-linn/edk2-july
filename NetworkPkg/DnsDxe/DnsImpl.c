@@ -1403,20 +1403,19 @@ ParseDnsResponse (
 			AnswerName++;//next char
 			RemainingLength--;
 		} 
-		// Skips /0
-		AnswerName++;
-		RemainingLength--;	 
+
 		//DEBUG((DEBUG_ERROR, "name length : %d chars\n",RecordSize));	
 	 }
 	 //Some of DNS answer name is a PTR (C0)
 	 else{
-		//Skip the C0;
-		AnswerName+=sizeof (UINT16);
-		RemainingLength -= sizeof (UINT16) ;//skip the "c0"	
+		//Skip the C0; 
+		AnswerName++;
+		RemainingLength --;//substract 1 byte
 	 }
-	 // Skips next zero 
-     //AnswerName++;
-     //RemainingLength--;	 
+	  //Skips next byte - 
+	  //if String  skip '\0' or next UINT8 if PTR
+     AnswerName++;
+     RemainingLength--;	 
 	 
 	 //Ensure packet avaiable for answer section
 	 if (RemainingLength < sizeof(DNS_ANSWER_SECTION)) {
@@ -1424,7 +1423,8 @@ ParseDnsResponse (
 		Status = EFI_ABORTED;
 		goto ON_EXIT;
 	}
-
+	//sub the ANSWER SECTION
+	RemainingLength -= sizeof(DNS_ANSWER_SECTION);
     //
     // Get Answer section.
     //
