@@ -493,6 +493,10 @@
 !endif
 
 [PcdsFixedAtBuild]
+!if $(CSM_ENABLE) == FALSE
+  gEfiMdePkgTokenSpaceGuid.PcdFSBClock|1000000000
+!endif
+
   gEfiMdeModulePkgTokenSpaceGuid.PcdStatusCodeMemorySize|1
 !if $(SMM_REQUIRE) == FALSE
   gEfiMdeModulePkgTokenSpaceGuid.PcdResetOnMemoryTypeInformationChange|FALSE
@@ -681,9 +685,7 @@
   # Set ConfidentialComputing defaults
   gEfiMdePkgTokenSpaceGuid.PcdConfidentialComputingGuestAttr|0
 
-#!if $(CSM_ENABLE) == FALSE
-#  gEfiMdePkgTokenSpaceGuid.PcdFSBClock|1000000000
-#!endif
+
 
 [PcdsDynamicHii]
 !include OvmfPkg/OvmfTpmPcdsHii.dsc.inc

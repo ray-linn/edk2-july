@@ -1402,18 +1402,21 @@ ParseDnsResponse (
 			//RecordSize++;
 			AnswerName++;//next char
 			RemainingLength--;
-		} 		
+		} 
+		// Skips /0
+		AnswerName++;
+		RemainingLength--;	 
 		//DEBUG((DEBUG_ERROR, "name length : %d chars\n",RecordSize));	
 	 }
 	 //Some of DNS answer name is a PTR (C0)
 	 else{
 		//Skip the C0;
-		AnswerName++;
+		AnswerName+=sizeof (UINT16);
 		RemainingLength -= sizeof (UINT16) ;//skip the "c0"	
 	 }
 	 // Skips next zero 
-     AnswerName++;
-     RemainingLength--;	 
+     //AnswerName++;
+     //RemainingLength--;	 
 	 
 	 //Ensure packet avaiable for answer section
 	 if (RemainingLength < sizeof(DNS_ANSWER_SECTION)) {
@@ -1459,7 +1462,6 @@ ParseDnsResponse (
       Dns4RR[RRCount].QName = AllocateZeroPool (AsciiStrLen (QueryName) + 1);
       if (Dns4RR[RRCount].QName == NULL) {
         Status = EFI_OUT_OF_RESOURCES;
-		DEBUG((DEBUG_ERROR, "%d\n",__LINE__));
         goto ON_EXIT;
       }
 

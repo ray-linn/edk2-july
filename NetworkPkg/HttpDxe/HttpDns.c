@@ -39,7 +39,8 @@ HttpDns4 (
   UINTN                      DnsServerListCount;
   EFI_IPv4_ADDRESS           *DnsServerList;
   UINTN                      DataSize;
-
+  
+  BOOLEAN Retry = TRUE;
   Service = HttpInstance->Service;
   ASSERT (Service != NULL);
 
@@ -104,19 +105,10 @@ HttpDns4 (
   //
   // Configure DNS4 instance for the DNS server address and protocol.
   //
+  DEBUG ((DEBUG_WARN, "Resolve ip from local DNS.\n"));
   ZeroMem (&Dns4CfgData, sizeof (Dns4CfgData));
-  EFI_IPv4_ADDRESS         *  _ServerList;
-  EFI_IPv4_ADDRESS _Dns = {8,8,8,8}; // google dns
-  DnsServerListCount++;
-  _ServerList  = AllocatePool (DnsServerListCount * sizeof (EFI_IPv4_ADDRESS));
-  if (_ServerList == NULL) {
-    return EFI_OUT_OF_RESOURCES;
-  }
-  CopyMem (_ServerList, &_Dns, sizeof (EFI_IPv4_ADDRESS));//put Google DNS as 1st 
-  CopyMem (_ServerList+1,DnsServerList,DataSize);
-  DEBUG ((DEBUG_ERROR, "%d DNS Server Found.\n",DnsServerListCount));
   Dns4CfgData.DnsServerListCount = DnsServerListCount;
-  Dns4CfgData.DnsServerList      = _ServerList;
+  Dns4CfgData.DnsServerList      = DnsServerList;
   Dns4CfgData.UseDefaultSetting  = HttpInstance->IPv4Node.UseDefaultAddress;
   Dns4CfgData.RetryInterval      = PcdGet32 (PcdHttpDnsRetryInterval);
   Dns4CfgData.RetryCount         = PcdGet32 (PcdHttpDnsRetryCount);
@@ -133,7 +125,20 @@ HttpDns4 (
                                        );
   if (EFI_ERROR (Status)) {
     goto Exit;
-  }
+  } 
+
+  goto Start;
+  
+Fixed_DNS:
+
+  EFI_IPv4_ADDRESS _Dns = {8,8,8,8};
+  DEBUG ((DEBUG_WARN, "Resolving IP from 8.8.8.8.\n"));  
+  for(int count =0; count< DnsServerListCount;count++){
+	 CopyMem (DnsServerList + count, &_Dns, sizeof (EFI_IPv4_ADDRESS));
+  }  
+  Retry = FALSE;
+  
+Start:
 
   //
   // Create event to set the is done flag when name resolution is finished.
@@ -170,20 +175,28 @@ HttpDns4 (
   Status = Token.Status;
   if (!EFI_ERROR (Status)) {
     if (Token.RspData.H2AData == NULL) {
+	 if(Retry)  goto Fixed_DNS;
       Status = EFI_DEVICE_ERROR;
-      goto Exit;
+	  goto Exit;
     }
-
+	
     if ((Token.RspData.H2AData->IpCount == 0) || (Token.RspData.H2AData->IpList == NULL)) {
-      Status = EFI_DEVICE_ERROR;
-      goto Exit;
+      if(Retry)  goto Fixed_DNS;	  
+	  Status = EFI_DEVICE_ERROR;
+	  goto Exit;
     }
-
-    //
+	//
     // We just return the first IP address from DNS protocol.
     //
     IP4_COPY_ADDRESS (IpAddress, Token.RspData.H2AData->IpList);
+	DEBUG ((DEBUG_WARN, "Connect to %d.%d.%d.%d\n",IpAddress->Addr[0],IpAddress->Addr[1],IpAddress->Addr[2],IpAddress->Addr[3]));
     Status = EFI_SUCCESS;
+	goto Exit;
+  }  
+  
+  if(Retry) {
+	 DEBUG ((DEBUG_WARN, "DNS resolve error, do retry.\n"));
+	  goto Fixed_DNS;
   }
 
 Exit:
@@ -220,9 +233,9 @@ Exit:
       );
   }
 
-  if (_ServerList != NULL) {
-    FreePool (_ServerList);
-  }
+  //if (_ServerList != NULL) {
+  //  FreePool (_ServerList);
+  //}
   
   if (DnsServerList != NULL) {
     FreePool (DnsServerList);
@@ -230,6 +243,7 @@ Exit:
 
   return Status;
 }
+
 
 /**
   Retrieve the host address using the EFI_DNS6_PROTOCOL.

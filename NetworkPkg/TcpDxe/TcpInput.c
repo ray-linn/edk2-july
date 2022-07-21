@@ -889,7 +889,7 @@ TcpInput (
 
       goto StepSix;
     }
-
+    DEBUG ((DEBUG_WARN,"TcpInput: idle here 2.\n"));
     goto DISCARD;
   } else if (Tcb->State == TCP_SYN_SENT) {
     //
@@ -1004,7 +1004,7 @@ TcpInput (
         goto StepSix;
       }
     }
-
+    DEBUG ((DEBUG_WARN,"TcpInput: idle here.\n"));
     goto DISCARD;
   }
 
@@ -1033,7 +1033,10 @@ TcpInput (
     if (!TCP_FLG_ON (Seg->Flag, TCP_FLG_RST)) {
       TcpSendAck (Tcb);
     }
-
+    DEBUG (
+      (DEBUG_WARN,
+       "TcpInput: my Tcp Seq Acceptable. \n")
+      );
     goto DISCARD;
   }
 
